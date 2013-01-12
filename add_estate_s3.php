@@ -310,6 +310,35 @@
    </li>
 </ul>
 </div>
+<?php
+
+
+$noe_melk   = $_POST['ezafe_melk_noe_melk'];
+$noe_vagozari = $_POST['ezafe_melk_noe_vagozari'];
+
+$melk_metraj   = $_POST['ezafe_melk_metraj'];
+$noe_sanad = $_POST['ezafe_melk_noe_sanad'];
+
+$melk_jahat   = $_POST['ezafe_melk_jahat'];
+$melk_sen_bana = $_POST['ezafe_melk_sen_bana'];
+
+$melk_bazsazishode  = $_POST['ezafe_melk_bazsazishode'];
+$melk_ghabelesokonat = $_POST['ezafe_melk_ghabelesokonat'];
+
+$melk_ostan   = $_POST['ezafe_melk_ostan'];
+$melk_shahr = $_POST['ezafe_melk_shahr'];
+
+$melk_mahdude   = $_POST['ezafe_melk_mahdude'];
+$melk_address = $_POST['ezafe_melk_address'];
+
+$melk_tabaghe   = $_POST['ezafe_melk_tabaghe'];
+$melk_pelak = $_POST['ezafe_melk_pelak'];
+
+$melk_vahed   = $_POST['ezafe_melk_vahed'];
+$melk_tedade_vahed = $_POST['ezafe_melk_tedade_vahed'];
+$melk_tedad-khab = $_POST['ezafe_melk_tedad-khab'];
+
+?>
       <div class="show">
           <div id="wrap">
 
