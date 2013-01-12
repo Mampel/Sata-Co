@@ -1171,6 +1171,21 @@ caption {
 	color: #797268;
 }
 
+div.request div.box-txt-right {
+	width : 240px; 
+}
+
+div.request div.box-txt-left {
+	width : 240px; 
+}
+
+div.request label {
+	line-height : 20px;
+}
+
+div.request input[type="range"] {
+	margin : 7px 0 0 0 !important;
+}
 
 /*---------- Forms -------------------------------------------------------------------------------*/
 
