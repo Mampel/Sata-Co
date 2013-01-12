@@ -326,8 +326,8 @@ $noe_vagozari = $_POST['filereg_noe_vagozari'];
               <div class="box-txt cover">
               	<label id="txt" >وضعیت : &nbsp;</label>
                 <span id="checkbox cover">
-                    <span class="train left" dir="rtl">قابل سکونت &nbsp;<input name="ezafe_melk_bazsazishode" type="checkbox" ></span>
-                    <span class="train left" dir="rtl">بازسازی شده &nbsp;<input name="ezafe_melk_ghabelesokonat" type="checkbox"></span>
+                    <span class="train left" dir="rtl">قابل سکونت &nbsp;<input name="ezafe_melk_ghabelesokonat" type="checkbox" ></span>
+                    <span class="train left" dir="rtl">بازسازی شده &nbsp;<input name="ezafe_melk_bazsazishode" type="checkbox"></span>
               	</span>
               </div>
               
