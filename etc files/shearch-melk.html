@@ -1,31 +1,45 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Untitled Document</title>
-  <link type="text/css" rel="stylesheet" href="css/reset.css" />
-  <link type="text/css" rel="stylesheet" href="css/style.css" />
-  <link type="text/css" rel="stylesheet" href="css/form-style.css">
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/form-style.css">
+
+
+
+
+
 </head>
+
+
+
 <body>
 <div class="container">
 	<div class="header">
     	<div class="header-search">
         	<form>
-				<input id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
+				<input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
             </form>
         </div>
     </div>
     
     <div class="content">
     
-    <div id='cssmenu'>
+    
+    	<div id='cssmenu'>
 <ul>
    <li class='active '><a href='index.html'><span>داشبورد</span></a></li>
    <li class='has-sub '><a href='#'><span>فعالیت ها</span></a>
       <ul>
-      	 <li><a href='#'><span>ثبت ملک</span></a></li>
-         <li><a href='#'><span>درخواست ملک</span></a></li>
+      	 <li><a href='1st-step-filereg.html'><span>ثبت ملک</span></a></li>
+         <li class='has-sub '><a href='#'><span>درخواست ملک</span></a>
+            <ul>
+               <li><a href='darkhast-melk.html'><span>از روی لیست</span></a></li>
+               <li><a href='darkhast-melk-az ruye naghshe.html'><span>از روی نقشه</span></a></li>
+            </ul>
+         </li>
          <li class='has-sub '><a href='#'><span>لیست انتظار فایل</span></a>
             <ul>
                <li><a href='#'><span>چک کرد تکمیل اطلاعات</span></a></li>
@@ -130,6 +144,13 @@
    <li class='has-sub '><a href='#'><span>ارتباطات</span></a>
    	  <ul>
          <li><a href='#'><span>مرکز پیامک</span></a></li>
+         <li class='has-sub '><a href='#'><span>مرکز پیام</span></a>
+         	<ul>
+         		<li><a href='new-message.html'><span>پیام جدید</span></a></li>
+         		<li><a href='inbox-new-message.html'><span>صندوق ورودی</span></a></li>
+                <li><a href='outbox-new-message.html'><span>صندوق خروجی</span></a></li>
+            </ul>    
+         </li>
          <li><a href='#'><span>مرکز تماس</span></a></li>
          <li><a href='#'><span>اطلاعیه ها</span></a></li>
          <li><a href='#'><span>اخطارها</span></a></li>
@@ -220,7 +241,7 @@
    </li>
    <li class='has-sub '><a href='#'><span>وظایف</span></a>
    	  <ul>
-         <li><a href='modiriyate-vazayef.html'><span>تعریف وظیفه جدید</span></a></li>
+         <li><a href='#'><span>تعریف وظایف</span></a></li>
          <li><a href='#'><span>لیست انتظار وظایف موظف شده به من</span></a></li>
          <li><a href='#'><span>لیست وظایف محول نموده به دیگران</span></a></li>
          <li><a href='#'><span>لیست کل وظایف مرتبط به من</span></a></li>
@@ -228,181 +249,16 @@
    </li>
 </ul>
 </div>
-        <div class="show mlra">
+        
+        
+        <div class="show">
             <div id="wrap">
-              <form  action="">
-			         <div class="box-txt cover">
-              	<label id="txt" for="metrazh">متراژ :</label>
-              	<input type="text" name="ezafe_melk_metraj" placeholder="متراژ مورد نظر">
-              </div>           
-              <div class="box-txt cover">
-                	 <label for="noe_melk">نوع سند :</label>
-                     <select name="ezafe_melk_noe_melk">
-                        <option>ﻧﺎ ﻣﺸﺨﺺ</option>
-                        <option>ﻣﺴﮑﻮﻧﯽ</option>
-                        <option>ﺗﺠﺎﺭﯼ</option>
-                        <option>ﻣﻨﮕﻮﻟﻪ ﺩﺍﺭ</option>
-                        <option>ﺁﻣﺎﺩﻩ ﻣﺤﻀﺮ</option>
-                        <option>ﺩﺭ ﺩﺳﺖ ﺍﻗﺪﺍﻡ</option>
-                        <option>ﻭﮐﺎﻟﺘﯽ</option>
-                        <option>ﻗﻮﻟﻨﺎﻣﻪ ﺍﯼ</option>
-                        <option>ﺩﺳﺖ ﺍﻭﻝ</option>
-                        <option>ﻗﺮﺍﺭﺩﺍﺩﯼ</option>
-                        <option>ﻣﺒﺎﯾﻌﻪ ﻧﺎﻣﻪ</option>
-                        <option>ﺍﻭﻗﺎﻓﯽ</option>
-                        <option>ﺁﺳﺘﺎﻧﻪ</option>
-                        <option>ﻣﺸﺎﻉ</option>
-                        <option>ﺗﻌﺎﻭﻧﯽ</option>
-                        <option>ﺑﻨﯿﺎﺩﯼ</option>
-                        <option>ﺷﻮﺭﺍﺋﯽ</option>
-                        <option>ﺳﺎﺯﻣﺎﻧﯽ</option>
-                        <option>ﺁﻣﻮﺯﺵ</option>
-                        <option>ﺍﺩﺍﺭﯼ</option>
-                        <option>ﺻﻨﺎﯾﻊ ﺩﻓﺎﻉ</option>
-                        <option>ﺷﻬﺮﺩﺍﺭﯼ</option>
-                        <option>ﺯﻣﯿﻦ ﺷﻬﺮﯼ</option>
-                        <option>ﺑﻨﺠﺎﻕ</option>
-                        <option>ﺑﺎﻏﭽﻪ</option>
-                        <option>ﺗﺠﺎﺭﯼ-ﺻﻨﻌﺖ</option>
-                        <option>ﺑﯿﺖ ﺭﻫﺒﺮﯼ</option>
-                        <option>ﺻﻠﺢ ﻧﺎﻣﻪ ﺍﯼ</option>
-                    </select>
-              </div>
-              <div class="box-txt cover">
-              	<label id="txt" >جهت : &nbsp;</label>
-                <span class="train left" dir="rtl">شمال &nbsp;<input type="radio" name="ezafe_melk_jahat_shomal"></span>
-                <span class="train left" dir="rtl">جنوب &nbsp;<input type="radio" name="ezafe_melk_jahat_jonob"></span>
-                <span class="train left" dir="rtl">شرق &nbsp;<input type="radio" name="ezafe_melk_jahat_shargh"></span>
-                <span class="train left" dir="rtl">غرب &nbsp;<input type="radio" name="ezafe_melk_jahat_gharb"></span>
-              </div>
-              <div class="box-txt cover">
-                    <label id="txt" for="noe_vagozari">سن بنا :</label>
-                     <select name="ezafe_melk_noe_vagozari">
-                        <option value="1">نوساز</option>
-                        <option value="2">1</option>
-                        <option value="3">2</option>
-                        <option value="4">3</option>
-                        <option value="5">4</option>
-                        <option value="6">5</option>
-                        <option value="7">6</option>
-                        <option value="8">7</option>
-                        <option value="9">8</option>
-                        <option value="10">9</option>
-                        <option value="11">10</option>
-                        <option value="12">11</option>
-                        <option value="13">12</option>
-                        <option value="14">13</option>
-                        <option value="15">14</option>
-                        <option value="16">15</option>
-                        <option value="17">16</option>
-                        <option value="18">17</option>
-                        <option value="19">18</option>
-                        <option value="20">19</option>
-                        <option value="21">20</option>
-                        <option value="22">21</option>
-                        <option value="23">22</option>
-                        <option value="24">23</option>
-                        <option value="25">24</option>
-                        <option value="26">25</option>
-                        <option value="27">26</option>
-                        <option value="28">27</option>
-                        <option value="29">28</option>
-                        <option value="30">29</option>
-                        <option value="31">30</option>
-                        <option value="32">بیشتر از 30 سال</option>
-                    </select>
-              </div>
               
-              <div class="box-txt cover">
-              	<label id="txt" >وضعیت : &nbsp;</label>
-                <span id="checkbox cover">
-                    <span class="train left" dir="rtl">قابل سکونت &nbsp;<input name="ezafe_melk_bazsazishode" type="checkbox" ></span>
-                    <span class="train left" dir="rtl">بازسازی شده &nbsp;<input name="ezafe_melk_ghabelesokonat" type="checkbox"></span>
-              	</span>
-              </div>
-              
-              <div class="box-txt cover">
-                    <label id="txt" for="noe_vagozari">استان :</label>
-                     <select dir="rtl" name="ezafe_melk_ostan">
-                     	<option value="1">آذربایجان شرقی</option>
-                        <option value="2">آذربایجان غربی</option>
-                        <option value="3">اردبیل</option>
-                        <option value="4">اصفهان</option>
-                        <option value="5">البرز</option>
-                        <option value="6">ایلام</option>
-                        <option value="7">بوشهر</option>
-                        <option value="8">تهران</option>
-                        <option value="9">چهارمحال و بختیاری</option>
-                        <option value="10">خراسان جنوبی</option>
-                        <option value="11">خراسان رضوی</option>
-                        <option value="12">خراسان شمالی</option>
-                        <option value="13">خوزستان</option>
-                        <option value="14">زنجان</option>
-                        <option value="15">سمنان</option>
-                        <option value="16">سیستان و بلوچستان</option>
-                        <option value="17">فارس</option>
-                        <option value="18">قزوین</option>
-                        <option value="19">قم</option>
-                        <option value="20">گلستان</option>
-                        <option value="21">گیلان</option>
-                        <option value="22">لرستان</option>
-                        <option value="23">مازندران</option>
-                        <option value="24">مرکزی</option>
-                        <option value="25">هرمزگان</option>
-                        <option value="26">همدان</option>
-                        <option value="27">کردستان</option>
-                        <option value="28">کرمان</option>
-                        <option value="29">کرمانشاه</option>
-                        <option value="30">کهگیلویه و بویراحمد</option>
-                        <option value="31">یزد</option>
-					</select>
-              </div>
-              <div class="box-txt cover">
-              	<label id="txt" for="shahr" >شهر :</label>
-              	<input type="text" name="ezafe_melk_shahr" placeholder="" >
+              <div class="buttom">
+              	<button id="button"><a href="darkhast-melk-az ruye naghshe.html">جستجوی ملک از نقشه</a></button>
+                <button id="button"><a href="darkhast-melk.html">جستوجوی ملک از لیست</a></button>
               </div>  
-              
-              <div class="box-txt cover">
-              	<label id="txt" for="mahdude" >محدوده :</label>
-              	<input type="text" name="ezafe_melk_mahdude" placeholder="" >
-              </div> 
-              
-              <div class="box-txt cover">
-              	<label id="txt" for="address" >آدرس :</label>
-              	<textarea name="ezafe_melk_address" ></textarea>
-              </div>   
-              
-              <div class="box-txt cover">
-              	<label id="txt" for="tabaghe" >طبقه :</label>
-              	<input type="text" name="ezafe_melk_tabaghe" placeholder="" >
-              </div> 
-              
-              <div class="box-txt cover">
-              	<label id="txt" for="pelak" >پلاک :</label>
-              	<input type="text" name="ezafe_melk_pelak" placeholder="" >
-              </div>   
-              
-              <div class="box-txt cover">
-              	<label id="txt" for="vahed" >واحد :</label>
-                <input type="text" name="ezafe_melk_vahed" placeholder="" >
-              </div>
-              
-               <div class="box-txt cover">
-              	<label id="txt" for="tedad-vahed" >تعداد واحد :</label>
-              	<input type="text" name="ezafe_melk_tedade_vahed" placeholder="" >
-              </div>   
-              
-               <div class="box-txt cover">
-              	<label id="txt" for="tedad-khab" >تعداد خواب :</label>
-              	<input type="text" name="ezafe_melk_tedad-khab" placeholder="">
-              </div>   
-               
-              <div class="buttom cover">
-              	<button id="ezafe_melk_btn_back">بازگشت</button>
-                <button id="ezafe_melk_btn_next">مرحله بعد</button>
-              </div>  
-            </form>
-          </div>    
+            </div>    
         </div>
         <div class="clear"></div>
     </div>
