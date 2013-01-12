@@ -614,7 +614,7 @@ body {
 /*--------------------------------------*/
 
 div.tag{
-	width : 700px; 
+	width : 500px; 
 	background-color:#00CCFF;
 	margin:0 0 25px 230px;
 	border-radius: 20px 20px 20px 0;	
@@ -709,14 +709,14 @@ div.box-txt{
 }
 
 div.box-txt-left{
-	width:265px;
+	width:165px;
 	margin-bottom: 25px;
 	float : left;	
 }
 
 div.box-txt-right{
 	float:right;
-	width:293px;
+	width:193px;
 	margin-bottom: 25px;	
 }
 
@@ -777,7 +777,7 @@ div.box-txt-right{
 	outline: 0;
 	padding-right: 25px;
 /* for this page only */
-	width: 270px;
+	width: 170px;
 	display: block;
 	text-align:right;
 	direction:rtl;
