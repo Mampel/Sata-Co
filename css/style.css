@@ -650,8 +650,8 @@ div.table{
 /*-------------------------------------*/
 #wrap {
 	float : right; 
-	width: 700px;
-	padding: 30px;
+	width: 500px;
+	padding: 30px 80px;
 	margin-top: 30px;
 	margin-right: 120px;
 	border: 2px solid gray;
@@ -701,7 +701,7 @@ div.buttom-a{
 
 /*------------------------------------------------*/
 div.box-txt{
-	width:250px;
+	width:350px;
 	font-size: 22px;
 	line-height : 22px; 
 	text-align: right;
@@ -720,7 +720,7 @@ div.box-txt-right{
 	margin-bottom: 25px;	
 }
 
-#wrap button {
+#wrap button, #wrap input[type="submit"] {
 	width: 80px;
 	margin-right : 80px; 
 	color : #12123e;
@@ -777,7 +777,7 @@ div.box-txt-right{
 	outline: 0;
 	padding-right: 25px;
 /* for this page only */
-	width: 170px;
+	width: 270px;
 	display: block;
 	text-align:right;
 	direction:rtl;
@@ -939,13 +939,14 @@ div.box-txt-right{
 		)
 		rgb(245, 245, 245);
 /* for this page only */
-	width: 155px;
+	width: 255px;
 	display: block;
 	direction:rtl;
 }
 
 #wrap textarea {
 	height : 75px;
+	resize: vertical;
 }
 
 #txt-width{
