@@ -229,7 +229,7 @@
 </ul>
 <?php 
 
-$noe_melk   = $_POST['filereg_noe_melk'];
+$noe_melk = $_POST['filereg_noe_melk'];
 $noe_vagozari = $_POST['filereg_noe_vagozari'];
 
 //echo "<h1>$noe_melk----$noe_vagozari</h1>";
@@ -280,10 +280,10 @@ $noe_vagozari = $_POST['filereg_noe_vagozari'];
               </div>
               <div class="box-txt cover">
               	<label id="txt" >جهت : &nbsp;</label>
-                <span class="train left" dir="rtl">شمال &nbsp;<input type="radio" name="ezafe_melk_jahat" value="shomal"></span>
-                <span class="train left" dir="rtl">جنوب &nbsp;<input type="radio" name="ezafe_melk_jahat" value="jonob"></span>
-                <span class="train left" dir="rtl">شرق &nbsp;<input type="radio" name="ezafe_melk_jahat" value="shargh"></span>
-                <span class="train left" dir="rtl">غرب &nbsp;<input type="radio" name="ezafe_melk_jahat" value="gharb"></span>
+                <span class="train left" dir="rtl">شمال &nbsp;<input type="radio" name="ezafe_melk_jahat" value="شمال"></span>
+                <span class="train left" dir="rtl">جنوب &nbsp;<input type="radio" name="ezafe_melk_jahat" value="جنوب"></span>
+                <span class="train left" dir="rtl">شرق &nbsp;<input type="radio" name="ezafe_melk_jahat" value="شرق"></span>
+                <span class="train left" dir="rtl">غرب &nbsp;<input type="radio" name="ezafe_melk_jahat" value="غرب"></span>
               </div>
               <div class="box-txt cover">
                     <label id="txt" for="sen_bana">سن بنا :</label>
@@ -404,7 +404,7 @@ $noe_vagozari = $_POST['filereg_noe_vagozari'];
               
                <div class="box-txt cover">
               	<label id="txt" for="tedad-khab" >تعداد خواب :</label>
-              	<input type="text" name="ezafe_melk_tedad-khab" placeholder="">
+              	<input type="text" name="ezafe_melk_tedad_khab" placeholder="">
               </div>   
                
               <div class="buttom cover">
