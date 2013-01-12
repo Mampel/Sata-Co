@@ -1,15 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-<link type="text/css" rel="stylesheet" href="css/reset.css" />
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<link type="text/css" rel="stylesheet" href="css/form-style.css">
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css" />
+  <meta charset="utf-8">
+  <title>Untitled Document</title>
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link type="text/css" rel="stylesheet" href="css/form-style.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
     <script>
     $(function() {
         $( "#slider-range" ).slider({
@@ -25,13 +25,7 @@
             " - $" + $( "#slider-range" ).slider( "values", 1 ) );
     });
     </script>
-
-
-
-
 </head>
-
-
 
 <body>
 <div class="container">
@@ -262,7 +256,7 @@
               <div class="tag"><h3>درخواست ملک از روی لیست</h3></div>
               <div class="box-txt-right">
                     <label id="txt" for="ostan">استان :</label>
-                     <select dir="rtl">
+                     <select dir="rtl" name="request_list_ostan">
                      	<option value="1">آذربایجان شرقی</option>
                         <option value="2">آذربایجان غربی</option>
                         <option value="3">اردبیل</option>
@@ -299,7 +293,7 @@
               
               <div class="box-txt-left">
                     <label id="txt" for="shahr">شهر :</label>
-                     <select dir="rtl">
+                     <select dir="rtl" name="request_list_shahr">
               <optgroup label="&nbsp;-- کلان شهرها --"></optgroup>
               <option value="1" r="THR" selected="selected">تهران</option
               ><option value="5" r="ALB">کرج</option>
@@ -367,7 +361,7 @@
               
               <div class="box-txt-right">
                 	 <label id="txt" for="noe_melk">نوع ملک :</label>
-                     <select dir="rtl">
+                     <select dir="rtl" name="request_list_noe_melk">
                         <option>آپارتمان</option>
                         <option>خانه ویلایی</option>
                         <option>سوییت</option>
@@ -397,7 +391,7 @@
               </div>
               <div class="box-txt-left">
                     <label id="txt" for="noe_vagozari">نوع معامله :</label>
-                     <select dir="rtl">
+                     <select dir="rtl" name="request_list_noe_moamele">
                         <option>فروش</option>
                         <option>رهن و اجاره</option>
                         <option>رهن</option>
@@ -409,19 +403,19 @@
               
               <div class="box-txt-right">
               	<label id="txt" for="shahr" >قیمت :</label>
-              	<input type="range" min="0" max="10" step="0.1" value="3">
+              	<input type="range" name="request_list_gheymat" min="0" max="10" step="0.1" value="3">
                 <div class="list-c-m"></div>
               </div>  
               
               <div class="box-txt-left">
               	<label id="txt" for="shahr" >متراژ :</label>
-              	<input type="range" min="0" max="10" step="0.1" value="3">
+              	<input type="range" name="request_list_metraj" min="0" max="10" step="0.1" value="3">
                 <div class="list-c-m"></div>
               </div> 
               
               <div class="box-txt-right">
               	<label id="txt" for="shahr" >محدوده :</label>
-              	<input type="search" placeholder="جستجو" results="0">
+              	<input type="search" name="request_list_mahdode" placeholder="جستجو" results="0">
               </div> 
               
                <div class="box-txt-left">
@@ -430,7 +424,7 @@
               </div> 
               
               <div class="buttom cover">
-              	<button id="button" class="right">ثبت بعنوان درخواست ملک</button>
+              	<button name="request_list_submit" type="submit" class="right">ثبت بعنوان درخواست ملک</button>
               </div>  
            
            	<div class="show-result"></div> 
