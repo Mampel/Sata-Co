@@ -312,7 +312,7 @@
 </div>
       <div class="show">
           <div id="wrap">
-            <form  action="add_estate_s2.html" method="post">
+            <form  action="add_estate_s2.php" method="post">
               <div class="box-txt cover">
                  <label id="txt" for="noe_melk">نوع ملک :</label>
                    <select dir="rtl" name="filereg_noe_melk">
