@@ -313,35 +313,39 @@
 <?php
 
 
-$noe_melk   = $_POST['ezafe_melk_noe_melk'];
+$noe_melk = $_POST['ezafe_melk_noe_melk'];
 $noe_vagozari = $_POST['ezafe_melk_noe_vagozari'];
 
-$melk_metraj   = $_POST['ezafe_melk_metraj'];
+$melk_metraj = $_POST['ezafe_melk_metraj'];
 $noe_sanad = $_POST['ezafe_melk_noe_sanad'];
 
-$melk_jahat   = $_POST['ezafe_melk_jahat'];
+$melk_jahat = $_POST['ezafe_melk_jahat'];
 $melk_sen_bana = $_POST['ezafe_melk_sen_bana'];
 
-$melk_bazsazishode  = $_POST['ezafe_melk_bazsazishode'];
+$melk_bazsazishode = $_POST['ezafe_melk_bazsazishode'];
 $melk_ghabelesokonat = $_POST['ezafe_melk_ghabelesokonat'];
 
-$melk_ostan   = $_POST['ezafe_melk_ostan'];
+$melk_ostan = $_POST['ezafe_melk_ostan'];
 $melk_shahr = $_POST['ezafe_melk_shahr'];
 
-$melk_mahdude   = $_POST['ezafe_melk_mahdude'];
+$melk_mahdude = $_POST['ezafe_melk_mahdude'];
 $melk_address = $_POST['ezafe_melk_address'];
 
-$melk_tabaghe   = $_POST['ezafe_melk_tabaghe'];
+$melk_tabaghe = $_POST['ezafe_melk_tabaghe'];
 $melk_pelak = $_POST['ezafe_melk_pelak'];
 
-$melk_vahed   = $_POST['ezafe_melk_vahed'];
+$melk_vahed = $_POST['ezafe_melk_vahed'];
 $melk_tedade_vahed = $_POST['ezafe_melk_tedade_vahed'];
-$melk_tedad-khab = $_POST['ezafe_melk_tedad-khab'];
+$melk_tedad_khab = $_POST['ezafe_melk_tedad_khab'];
+
 
 ?>
       <div class="show">
           <div id="wrap">
-
+			<?php 
+				echo  $noe_melk."---".$noe_vagozari."---".$melk_metraj."---".$noe_sanad."---".$melk_jahat ."---".$melk_sen_bana."---".$melk_bazsazishode."---".$melk_ghabelesokonat."---".$melk_ostan; 
+				echo "---". $melk_shahr ."---". $melk_mahdude ."---". $melk_address ."---". $melk_tabaghe ."---". $melk_pelak ."---". $melk_vahed ."---". $melk_tedade_vahed ."---". $melk_tedad_khab;
+			?>
         </div>    
       </div>
       <div class="clear"></div>
