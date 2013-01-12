@@ -312,7 +312,7 @@
 </div>
       <div class="show">
           <div id="wrap">
-            <form  action="">
+            <form  action="add_estate_s2.html" method="post">
               <div class="box-txt cover">
                  <label id="txt" for="noe_melk">نوع ملک :</label>
                    <select dir="rtl" name="filereg_noe_melk">
@@ -355,7 +355,8 @@
                   </select>
             </div>
             <div class="buttom">
-              <button name="filereg_btn" type="submit"><a href="afzudan-melk.html">برو</a></button>
+              <!-- <button name="filereg_btn" type="submit"><a href="afzudan-melk.html">برو</a></button> -->
+			  <input name="filereg_btn" type="submit" value="برو"></input>
             </div>
           </form>  
         </div>    
