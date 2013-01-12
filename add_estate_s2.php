@@ -227,17 +227,27 @@
       </ul>	
    </li>
 </ul>
+<?php 
+
+$noe_melk   = $_POST['filereg_noe_melk'];
+$noe_vagozari = $_POST['filereg_noe_vagozari'];
+
+//echo "<h1>$noe_melk----$noe_vagozari</h1>";
+
+?>
 </div>
         <div class="show mlra">
             <div id="wrap">
-              <form  action="">
-			         <div class="box-txt cover">
-              	<label id="txt" for="metrazh">متراژ :</label>
-              	<input type="text" name="ezafe_melk_metraj" placeholder="متراژ مورد نظر">
-              </div>           
+              <form  action="add_estate_s3.php" method="post">
+			  <input type="hidden" name="ezafe_melk_noe_melk" value="<?php echo $noe_melk ?>"/>
+			  <input type="hidden" name="ezafe_melk_noe_vagozari" value="<?php echo $noe_vagozari ?>"/>
+			    <div class="box-txt cover">
+					<label id="txt" for="metrazh">متراژ :</label>
+					<input type="text" name="ezafe_melk_metraj" placeholder="متراژ مورد نظر">
+				</div>           
               <div class="box-txt cover">
-                	 <label for="noe_melk">نوع سند :</label>
-                     <select name="ezafe_melk_noe_melk">
+                	 <label for="noe_sanad">نوع سند :</label>
+                     <select name="ezafe_melk_noe_sanad">
                         <option>ﻧﺎ ﻣﺸﺨﺺ</option>
                         <option>ﻣﺴﮑﻮﻧﯽ</option>
                         <option>ﺗﺠﺎﺭﯼ</option>
@@ -270,14 +280,14 @@
               </div>
               <div class="box-txt cover">
               	<label id="txt" >جهت : &nbsp;</label>
-                <span class="train left" dir="rtl">شمال &nbsp;<input type="radio" name="ezafe_melk_jahat_shomal"></span>
-                <span class="train left" dir="rtl">جنوب &nbsp;<input type="radio" name="ezafe_melk_jahat_jonob"></span>
-                <span class="train left" dir="rtl">شرق &nbsp;<input type="radio" name="ezafe_melk_jahat_shargh"></span>
-                <span class="train left" dir="rtl">غرب &nbsp;<input type="radio" name="ezafe_melk_jahat_gharb"></span>
+                <span class="train left" dir="rtl">شمال &nbsp;<input type="radio" name="ezafe_melk_jahat" value="shomal"></span>
+                <span class="train left" dir="rtl">جنوب &nbsp;<input type="radio" name="ezafe_melk_jahat" value="jonob"></span>
+                <span class="train left" dir="rtl">شرق &nbsp;<input type="radio" name="ezafe_melk_jahat" value="shargh"></span>
+                <span class="train left" dir="rtl">غرب &nbsp;<input type="radio" name="ezafe_melk_jahat" value="gharb"></span>
               </div>
               <div class="box-txt cover">
-                    <label id="txt" for="noe_vagozari">سن بنا :</label>
-                     <select name="ezafe_melk_noe_vagozari">
+                    <label id="txt" for="sen_bana">سن بنا :</label>
+                     <select name="ezafe_melk_sen_bana">
                         <option value="1">نوساز</option>
                         <option value="2">1</option>
                         <option value="3">2</option>
@@ -322,7 +332,7 @@
               </div>
               
               <div class="box-txt cover">
-                    <label id="txt" for="noe_vagozari">استان :</label>
+                    <label id="txt" for="ostan">استان :</label>
                      <select dir="rtl" name="ezafe_melk_ostan">
                      	<option value="1">آذربایجان شرقی</option>
                         <option value="2">آذربایجان غربی</option>
@@ -398,8 +408,8 @@
               </div>   
                
               <div class="buttom cover">
-              	<button id="ezafe_melk_btn_back">بازگشت</button>
-                <button id="ezafe_melk_btn_next">مرحله بعد</button>
+				<a href="add_estate_s1.php" name="ezafe_melk_back">بازگشت</a>
+				<input type="submit" name="ezafe_melk_submit" value="ثبت ملک"></input>
               </div>  
             </form>
           </div>    
