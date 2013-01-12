@@ -1,20 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-<link type="text/css" rel="stylesheet" href="css/reset.css" />
-<link type="text/css" rel="stylesheet" href="css/style.css" />
-<link type="text/css" rel="stylesheet" href="css/form-style.css">
-
-
-
-
-
+  <meta charset="utf-8">
+  <title>Untitled Document</title>
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link type="text/css" rel="stylesheet" href="css/form-style.css">
 </head>
-
-
-
 <body>
 <div class="container">
 	<div class="header">
@@ -26,8 +18,6 @@
     </div>
     
     <div class="content">
-    
-    
     	<div id='cssmenu'>
 <ul>
    <li class='active '><a href='index.html'><span>داشبورد</span></a></li>
@@ -246,7 +236,7 @@
               <div class="tag"><h3>درخواست ملک از روی نقشه</h3></div> 
               <div class="box-txt-right">
                     <label id="txt" for="ostan">استان :</label>
-                     <select dir="rtl">
+                     <select dir="rtl" name="request_map_ostan">
                      	<option value="1">آذربایجان شرقی</option>
                         <option value="2">آذربایجان غربی</option>
                         <option value="3">اردبیل</option>
@@ -283,7 +273,7 @@
               
               <div class="box-txt-left">
                     <label id="txt" for="shahr">شهر :</label>
-                     <select dir="rtl">
+                     <select dir="rtl" name="request_map_shahr">
               <optgroup label="&nbsp;-- کلان شهرها --"></optgroup>
               <option value="1" r="THR" selected="selected">تهران</option
               ><option value="5" r="ALB">کرج</option>
@@ -351,7 +341,7 @@
               
               <div class="box-txt-right">
                 	 <label id="txt" for="noe_melk">نوع ملک :</label>
-                     <select dir="rtl">
+                     <select dir="rtl" name="request_map_noe_melk">
                         <option>آپارتمان</option>
                         <option>خانه ویلایی</option>
                         <option>سوییت</option>
@@ -381,7 +371,7 @@
               </div>
               <div class="box-txt-left">
                     <label id="txt" for="noe_vagozari">نوع معامله :</label>
-                     <select dir="rtl">
+                     <select dir="rtl" name="request_map_noe_moamele">
                         <option>فروش</option>
                         <option>رهن و اجاره</option>
                         <option>رهن</option>
@@ -393,13 +383,13 @@
               
               <div class="box-txt-right">
               	<label id="txt" for="gheymat" >قیمت :</label>
-              	<input type="range" min="0" max="10" step="0.1" value="3">
+              	<input type="range" name="request_map_gheymat" min="0" max="10" step="0.1" value="3">
                 <div class="list-c-m"></div>
               </div>  
               
               <div class="box-txt-left">
               	<label id="txt" for="metrazh" >متراژ :</label>
-              	<input type="range" min="0" max="10" step="0.1" value="3">
+              	<input type="range" name="request_map_metraj" min="0" max="10" step="0.1" value="3">
                 <div class="list-c-m"></div>
               </div> 
               
@@ -410,7 +400,7 @@
               </div> 
               
               <div class="buttom">
-              	<button id="button" title="در صورت پیدا نکردن ملک ....">ثبت بعنوان درخواست ملک</button>
+              	<button name="request_map_btn_submit" type="submit" title="در صورت پیدا نکردن ملک ....">ثبت بعنوان درخواست ملک</button>
               </div>  
            
            	<div class="show-result"></div>
