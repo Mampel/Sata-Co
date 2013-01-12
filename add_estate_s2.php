@@ -6,6 +6,7 @@
   <link type="text/css" rel="stylesheet" href="css/reset.css" />
   <link type="text/css" rel="stylesheet" href="css/style.css" />
   <link type="text/css" rel="stylesheet" href="css/form-style.css">
+  <script src="JScripts/city3.js"></script>
 </head>
 <body>
 <div class="container">
@@ -333,43 +334,50 @@ $noe_vagozari = $_POST['filereg_noe_vagozari'];
               
               <div class="box-txt cover">
                     <label id="txt" for="ostan">استان :</label>
-                     <select dir="rtl" name="ezafe_melk_ostan">
-                     	<option value="1">آذربایجان شرقی</option>
-                        <option value="2">آذربایجان غربی</option>
-                        <option value="3">اردبیل</option>
-                        <option value="4">اصفهان</option>
-                        <option value="5">البرز</option>
-                        <option value="6">ایلام</option>
-                        <option value="7">بوشهر</option>
-                        <option value="8">تهران</option>
-                        <option value="9">چهارمحال و بختیاری</option>
-                        <option value="10">خراسان جنوبی</option>
-                        <option value="11">خراسان رضوی</option>
-                        <option value="12">خراسان شمالی</option>
-                        <option value="13">خوزستان</option>
-                        <option value="14">زنجان</option>
-                        <option value="15">سمنان</option>
-                        <option value="16">سیستان و بلوچستان</option>
-                        <option value="17">فارس</option>
-                        <option value="18">قزوین</option>
-                        <option value="19">قم</option>
-                        <option value="20">گلستان</option>
-                        <option value="21">گیلان</option>
-                        <option value="22">لرستان</option>
-                        <option value="23">مازندران</option>
-                        <option value="24">مرکزی</option>
-                        <option value="25">هرمزگان</option>
-                        <option value="26">همدان</option>
-                        <option value="27">کردستان</option>
-                        <option value="28">کرمان</option>
-                        <option value="29">کرمانشاه</option>
-                        <option value="30">کهگیلویه و بویراحمد</option>
-                        <option value="31">یزد</option>
-					</select>
+					<select name="ezafe_melk_ostan" onChange="ldMenu(this.selectedIndex);" dir="rtl" id="id_ostan">
+						  <option value="0">لطفا استان خود را انتخاب کنید</option>
+						  <option  value="41">آذربايجان شرقی</option>
+						  <option  value="44">آذربايجان غربي</option>
+						  <option  value="45">اردبيل</option>
+						  <option  value="31">اصفهان</option>
+						  <option  value="84">ايلام</option>
+                          
+                          <option  value="77">بوشهر</option>
+                          <option  value="26">البرز</option>
+                          <option  value="21">تهران</option>
+                          <option  value="38">چهارمحال بختياري</option>
+                          <option  value="56">خراسان جنوبي</option>
+                          <option  value="51">خراسان رضوي</option>
+                          <option  value="58">خراسان شمالي</option>
+                          
+                          <option  value="61">خوزستان</option>
+                          <option  value="24">زنجان</option>
+                          <option  value="23">سمنان</option>
+                          <option  value="54">سيستان و بلوچستان</option>
+                          <option  value="71">فارس</option>
+                          <option  value="28">قزوين</option>
+                          
+                          <option  value="25">قم</option>
+                          <option  value="87">كردستان</option>
+                          <option  value="34">كرمان</option>
+                          <option  value="83">كرمانشاه</option>
+                          <option  value="74">كهكيلويه و بويراحمد</option>
+                          <option  value="17">گلستان</option>
+                          
+                          <option  value="13">گيلان</option>
+                          <option  value="66">لرستان</option>
+                          <option  value="15">مازندران</option>
+                          <option  value="86">مركزي</option>
+                          <option  value="76">هرمزگان</option>
+                          <option  value="81">همدان</option>
+                          <option  value="35">يزد</option>
+                    </select>
               </div>
               <div class="box-txt cover">
               	<label id="txt" for="shahr" >شهر :</label>
-              	<input type="text" name="ezafe_melk_shahr" placeholder="" >
+				    <select name="ezafe_melk_shahr" id="shahr" size="1" dir="rtl">
+						<option selected value="">لطفا شهر خود را انتخاب کنید</option>
+                    </select>
               </div>  
               
               <div class="box-txt cover">
