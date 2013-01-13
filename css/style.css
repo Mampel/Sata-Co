@@ -720,7 +720,7 @@ div.box-txt-right{
 	margin-bottom: 25px;	
 }
 
-#wrap button, #wrap input[type="submit"] {
+#wrap button, #wrap input[type="submit"],input[type="reset"] {
 	width: 80px;
 	margin-right : 80px; 
 	color : #12123e;
@@ -746,7 +746,7 @@ div.box-txt-right{
 	padding: 2px;
 }
 
-#wrap button:hover, #wrap input[type="submit"]:hover {
+#wrap button:hover, #wrap input[type="submit"]:hover,input[type="reset"]:hover {
 	color : #fff;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
 	background-color: #3072b3;
@@ -1217,6 +1217,19 @@ div.request input[type="range"] {
 div.register_melk input[type="text"], textarea {
 	width : 150px !important; 
 } 
+
+div.register_melk input[type="checkbox"] {
+	float: right;
+}
+
+div.register_melk input[type="submit"],input[type="reset"] {
+	margin-right : 0 !important; 
+}
+
+div.register_melk input[type="file"] {
+	width : 160px;
+	float : left;  
+}
 
 /*---------- Forms -------------------------------------------------------------------------------*/
 
