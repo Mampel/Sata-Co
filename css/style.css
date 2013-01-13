@@ -725,11 +725,32 @@ div.box-txt-right{
 	margin-right : 80px; 
 	color : #12123e;
 	border-radius: 4px;
+	cursor : pointer; 
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	-o-border-radius: 4px;
 	-ms-border-radius: 4px;
 	-khtml-border-radius: 4px;
+	background-color: #eaeaea;
+	background-image: -moz-linear-gradient(#fafafa, #eaeaea);
+	background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+	background-image: linear-gradient(#fafafa, #eaeaea);
+	background-repeat: repeat-x;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	border-bottom-color: #c5c5c5;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.075);
+}
+
+#wrap button:hover, #wrap input[type="submit"]:hover {
+	color : #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #3072b3;
+	background-image: -moz-linear-gradient(#599bcd, #5092d3);
+	background-image: -webkit-linear-gradient(#599bcd, #105293);
+	background-image: linear-gradient(#599bcd, #3072b3);
+	background-repeat: repeat-x;
+	border-color: #2a65a0; 
 }
 
 #wrap button:focus {
@@ -949,7 +970,7 @@ div.box-txt-right{
 	resize: vertical;
 }
 
-#txt-width{
+.txt-width{
 	height:120px;
 	font-size: 16px;
     color: black;
