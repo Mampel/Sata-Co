@@ -1195,21 +1195,28 @@ caption {
 	color: #797268;
 }
 
-div.request div.box-txt-right {
+div.request div.box-txt-right,
+div.register_melk div.box-txt-right {
 	width : 240px; 
 }
 
-div.request div.box-txt-left {
+div.request div.box-txt-left,
+div.register_melk div.box-txt-left {
 	width : 240px; 
 }
 
-div.request label {
+div.request label,
+div.register_melk label {
 	line-height : 20px;
 }
 
 div.request input[type="range"] {
 	margin : 7px 0 0 0 !important;
 }
+
+div.register_melk input[type="text"], textarea {
+	width : 150px !important; 
+} 
 
 /*---------- Forms -------------------------------------------------------------------------------*/
 
