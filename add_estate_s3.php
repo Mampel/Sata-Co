@@ -311,7 +311,7 @@
 </ul>
 </div>
 <?php
-
+require_once('inc/modules.php');
 
 $noe_melk = $_POST['ezafe_melk_noe_melk'];
 $noe_vagozari = $_POST['ezafe_melk_noe_vagozari'];
@@ -319,11 +319,11 @@ $noe_vagozari = $_POST['ezafe_melk_noe_vagozari'];
 $melk_metraj = $_POST['ezafe_melk_metraj'];
 $noe_sanad = $_POST['ezafe_melk_noe_sanad'];
 
-$melk_jahat = $_POST['ezafe_melk_jahat'];
+$melk_jahat = $_POST['ezafe_melk_jahat']; //radio button
 $melk_sen_bana = $_POST['ezafe_melk_sen_bana'];
 
-$melk_bazsazishode = $_POST['ezafe_melk_bazsazishode'];
-$melk_ghabelesokonat = $_POST['ezafe_melk_ghabelesokonat'];
+$melk_bazsazishode = $_POST['ezafe_melk_bazsazishode']; // check box
+$melk_ghabelesokonat = $_POST['ezafe_melk_ghabelesokonat']; // check box
 
 $melk_ostan = $_POST['ezafe_melk_ostan'];
 $melk_shahr = $_POST['ezafe_melk_shahr'];
@@ -338,6 +338,25 @@ $melk_vahed = $_POST['ezafe_melk_vahed'];
 $melk_tedade_vahed = $_POST['ezafe_melk_tedade_vahed'];
 $melk_tedad_khab = $_POST['ezafe_melk_tedad_khab'];
 
+//if( $melk_jahat && $melk_ostan && $melk_shahr){
+
+//foreach($_POST['checkbox'] as $checkbox){
+   // echo $checkbox . ' ';
+//}
+
+if(isset($melk_jahat)){
+	db_connect();
+
+	insert_book($noe_melk, $noe_vagozari, $melk_metraj, $noe_sanad, $melk_jahat, $melk_sen_bana, $melk_bazsazishode, $melk_ghabelesokonat, $melk_ostan, $melk_shahr, $melk_mahdude, $melk_address, $melk_tabaghe, $melk_pelak, $melk_vahed, $melk_tedade_vahed,$melk_tedad_khab);
+
+	db_close();
+
+	echo '<h2 class="ok">Melk Added.</h2>';
+	//echo $melk_jahat . '----' . $melk_ostan . '----' . $melk_shahr.'----';
+
+}else{
+	echo '<h2 class="err">Error in your data ...</h2>';
+}
 
 ?>
       <div class="show">
