@@ -1231,8 +1231,35 @@ div.register_melk input[type="file"] {
 	float : left;  
 }
 
-div.register_melk div.onvan label {
-	font-size : 15px; 
+div.register_melk div.title {
+	float : right !important;
+	text-align : right;
+	margin-left: 400px; 
+}
+
+div.register_melk div.title label {
+	font-size : 17px;
+	line-height : 20px;  
+	margin-bottom : 15px; 
+}
+
+div.register_melk div.row span.train input[type="radio"] {
+	float: right !important;
+}
+
+div.register_melk div.row {
+	float : right; 
+	width: 300px;
+	margin-bottom : 15px; 
+}
+
+div.register_melk div.row input[type="text"] {
+	width : 90px !important;
+	margin-right : 20px; 
+}
+
+div.register_melk div.row span.train {
+	margin-top: 4px;
 }
 
 /*---------- Forms -------------------------------------------------------------------------------*/
