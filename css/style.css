@@ -1262,6 +1262,13 @@ div.register_melk div.row span.train {
 	margin-top: 4px;
 }
 
+div.register_melk div.map {
+	margin-right : auto;  
+	width : 350px; 
+	min-height : 250px;
+	border: 1px solid #fff;
+}
+
 /*---------- Forms -------------------------------------------------------------------------------*/
 
 
