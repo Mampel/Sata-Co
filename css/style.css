@@ -1231,6 +1231,10 @@ div.register_melk input[type="file"] {
 	float : left;  
 }
 
+div.register_melk div.onvan label {
+	font-size : 15px; 
+}
+
 /*---------- Forms -------------------------------------------------------------------------------*/
 
 
