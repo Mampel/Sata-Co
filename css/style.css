@@ -740,6 +740,7 @@ div.box-txt-right{
 	border: 1px solid #ddd;
 	border-bottom-color: #c5c5c5;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.075);
+	font-family: "yekan";
 }
 
 #wrap button:hover, #wrap input[type="submit"]:hover {
