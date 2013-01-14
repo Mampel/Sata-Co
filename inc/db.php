@@ -12,7 +12,7 @@ $db = array(
 function db_err(){
 	$err_num = mysql_errno();
 	$err_msg = mysql_error();
-	die("Error $err_num: $err_msg");
+	//die("Error $err_num: $err_msg");
 }
 
 function db_connect(){
@@ -20,7 +20,6 @@ function db_connect(){
 	if($db['con']) return;
 	$db['con'] = @mysql_connect($db['server'],$db['user'],$db['pass']) or db_err();
 	@mysql_select_db($db['name'],$db['con']) or db_err();
-	
 	@mysql_query("SET NAMES 'UTF8'"); 
 	@mysql_query("SET character_set_connection = 'utf8'");  
 }
