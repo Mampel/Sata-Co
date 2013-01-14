@@ -332,8 +332,12 @@ if(isset($_POST['ezafe_melk_ghabelesokonat'])) {
 }else $melk_ghabelesokonat = "";
 
 $melk_ostan = $_POST['ezafe_melk_ostan'];
-$melk_shahr_com = $_POST['ezafe_melk_shahr'];
-$melk_shahr = end(explode("-",$melk_shahr_com));
+if(isset($_POST['ezafe_melk_shahr'])){
+	$melk_shahr_com = $_POST['ezafe_melk_shahr'];
+	$array_shahr = explode("-",$melk_shahr_com);
+	$melk_shahr = end($array_shahr);
+}else $melk_shahr_com = "";
+
 
 $melk_mahdude = $_POST['ezafe_melk_mahdude'];
 $melk_address = $_POST['ezafe_melk_address'];
@@ -365,7 +369,7 @@ $melk_tedad_khab = $_POST['ezafe_melk_tedad_khab'];
 
 ?>
       <div class="show">
-          <div id="wrap">
+          <div id="wrap" class="estate-s3">
 			  <div class="tag"><h3>فرم ثبت ملک جدید</h3></div>
 			<?php 
 			
@@ -376,9 +380,11 @@ $melk_tedad_khab = $_POST['ezafe_melk_tedad_khab'];
 				db_close();
 				echo '<h2 class="ok">ملک مورد نظر اضافه شد!</h2>';
 				
+			
 				//echo  $noe_melk."---".$noe_vagozari."---".$melk_metraj."---".$noe_sanad."---".$melk_jahat ."---".$melk_sen_bana."---".$melk_bazsazishode."---".$melk_ghabelesokonat."---".$melk_ostan; 
 				//echo "---". $melk_shahr ."---". $melk_mahdude ."---". $melk_address ."---". $melk_tabaghe ."---". $melk_pelak ."---". $melk_vahed ."---". $melk_tedade_vahed ."---". $melk_tedad_khab;
 			?>
+				<a href="add_estate_s1.php" name="ezafe_melk_back" class="btn">اضافه کردن ملک جدید</a>
         </div>    
       </div>
       <div class="clear"></div>
