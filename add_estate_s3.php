@@ -44,7 +44,6 @@
         </form>
         </div>
         <div id="dialog" title="Basic dialog">
-    <p>vahih.akhbarzade@gmail.com<br/>عضویت از 1342<br/>ادمین ارشد</p><button><a href="signin.html">خروج</a></button><button><a href="#">پروفایل</a></button><button><a href="#">حساب کاربری</a></button><button><a href="#">تغییر رمز عبور</a></button>
 </div>
    </div>
     
@@ -326,7 +325,8 @@ $melk_bazsazishode = $_POST['ezafe_melk_bazsazishode']; // check box
 $melk_ghabelesokonat = $_POST['ezafe_melk_ghabelesokonat']; // check box
 
 $melk_ostan = $_POST['ezafe_melk_ostan'];
-$melk_shahr = $_POST['ezafe_melk_shahr'];
+//$melk_shahr = $_POST['ezafe_melk_shahr'];
+$melk_shahr = end(explode("-",$_POST['ezafe_melk_shahr']));
 
 $melk_mahdude = $_POST['ezafe_melk_mahdude'];
 $melk_address = $_POST['ezafe_melk_address'];
@@ -344,7 +344,7 @@ $melk_tedad_khab = $_POST['ezafe_melk_tedad_khab'];
    // echo $checkbox . ' ';
 //}
 
-if(isset($melk_jahat)){
+//if(isset($melk_jahat)){
 	db_connect();
 
 	insert_book($noe_melk, $noe_vagozari, $melk_metraj, $noe_sanad, $melk_jahat, $melk_sen_bana, $melk_bazsazishode, $melk_ghabelesokonat, $melk_ostan, $melk_shahr, $melk_mahdude, $melk_address, $melk_tabaghe, $melk_pelak, $melk_vahed, $melk_tedade_vahed,$melk_tedad_khab);
@@ -353,10 +353,14 @@ if(isset($melk_jahat)){
 
 	echo '<h2 class="ok">Melk Added.</h2>';
 	//echo $melk_jahat . '----' . $melk_ostan . '----' . $melk_shahr.'----';
+	
+	$melk = db_getrows('melk1');
 
-}else{
-	echo '<h2 class="err">Error in your data ...</h2>';
-}
+	show_books($melk);
+
+//}else{
+	//echo '<h2 class="err">Error in your data ...</h2>';
+//}
 
 ?>
       <div class="show">

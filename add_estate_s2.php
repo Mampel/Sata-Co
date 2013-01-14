@@ -238,7 +238,7 @@ $noe_vagozari = $_POST['filereg_noe_vagozari'];
 ?>
 </div>
         <div class="show mlra">
-            <div id="wrap">
+            <div id="wrap" class="estate-s2">
               <form  action="add_estate_s3.php" method="post">
 			  <input type="hidden" name="ezafe_melk_noe_melk" value="<?php echo $noe_melk ?>"/>
 			  <input type="hidden" name="ezafe_melk_noe_vagozari" value="<?php echo $noe_vagozari ?>"/>
@@ -416,7 +416,7 @@ $noe_vagozari = $_POST['filereg_noe_vagozari'];
               </div>   
                
               <div class="buttom cover">
-				<a href="add_estate_s1.php" name="ezafe_melk_back">بازگشت</a>
+				<a href="add_estate_s1.php" name="ezafe_melk_back" class="btn">بازگشت</a>
 				<input type="submit" name="ezafe_melk_submit" value="ثبت ملک"></input>
               </div>  
             </form>
