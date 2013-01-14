@@ -35,7 +35,7 @@
 .ok{
 	background-color: #BAFFBA;
 	padding: 5px;
-	margin:10px;
+	margin:10px 10px 50px;
 	width:93%;
 	color: green;
 	border: 1px solid green;
@@ -52,7 +52,7 @@
 .error{
 	background-color: #FFB2B2;
 	padding: 5px;
-	margin:10px;
+	margin:10px 10px 50px;
 	width:93%;
 	color: red;
 	border: 1px solid red;
@@ -1023,6 +1023,11 @@ div.estate-s2 select{
 
 div.estate-s2  a{
 	padding: 3px 18px;
+}
+
+div.estate-s3  a{
+	margin: 0 175px 0 0;
+	padding: 10px 15px;
 }
 	
 .txt-width{
