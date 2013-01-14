@@ -326,10 +326,19 @@ $member_cell2 = $_POST['reg_melk_cell2'];
 $member_cell3 = $_POST['reg_melk_cell3'];
 
 $member_address = $_POST['reg_melk_address'];
-$member_internet = $_POST['reg_melk_etesalbe_internet'];
 
-$member_computer = $_POST['reg_melk_computer'];
-$member_img = $_POST['reg_melk_upload_img'];
+if(isset($_POST['reg_melk_etesalbe_internet'])){
+	$member_internet = $_POST['reg_melk_etesalbe_internet'];
+}else $member_internet = "";
+
+if(isset($_POST['reg_melk_computer'])){
+	$member_computer = $_POST['reg_melk_computer'];
+}else $member_computer = "";
+
+if(isset($_POST['reg_melk_upload_img'])){
+	$member_img = $_POST['reg_melk_upload_img'];
+}else $member_img = "";
+
 
 
 ?>
