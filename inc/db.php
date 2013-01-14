@@ -12,7 +12,7 @@ $db = array(
 function db_err(){
 	$err_num = mysql_errno();
 	$err_msg = mysql_error();
-	//die("Error $err_num: $err_msg");
+	die("Error $err_num: $err_msg");
 }
 
 function db_connect(){
