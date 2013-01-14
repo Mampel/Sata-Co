@@ -71,6 +71,6 @@ function show_books($books){
 
 }
 
-function insert_book($noe_melk, $noe_vagozari, $melk_metraj, $noe_sanad, $melk_jahat, $melk_sen_bana, $melk_bazsazishode, $melk_ghabelesokonat, $melk_ostan, $melk_shahr, $melk_mahdude, $melk_address, $melk_tabaghe, $melk_pelak, $melk_vahed, $melk_tedade_vahed,$melk_tedad_khab){
+function insert_melk($noe_melk, $noe_vagozari, $melk_metraj, $noe_sanad, $melk_jahat, $melk_sen_bana, $melk_bazsazishode, $melk_ghabelesokonat, $melk_ostan, $melk_shahr, $melk_mahdude, $melk_address, $melk_tabaghe, $melk_pelak, $melk_vahed, $melk_tedade_vahed,$melk_tedad_khab){
 	db_query("INSERT INTO melk1 VALUES(NULL, '$noe_melk', '$noe_vagozari', '$melk_metraj', '$noe_sanad', '$melk_jahat', '$melk_sen_bana', '$melk_bazsazishode', '$melk_ghabelesokonat', '$melk_ostan', '$melk_shahr', '$melk_mahdude', '$melk_address', '$melk_tabaghe', '$melk_pelak', '$melk_vahed', '$melk_tedade_vahed', '$melk_tedad_khab')");
 }
