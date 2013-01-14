@@ -32,6 +32,40 @@
 .last{margin-left:0 !important}
 .bold{font-weight:bold}
 
+.ok{
+	background-color: #BAFFBA;
+	padding: 5px;
+	margin:10px;
+	width:93%;
+	color: green;
+	border: 1px solid green;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+
+.error{
+	background-color: #FFB2B2;
+	padding: 5px;
+	margin:10px;
+	width:93%;
+	color: red;
+	border: 1px solid red;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+
 div.clear{
 	width:0;
 	height:0;
@@ -39,7 +73,12 @@ div.clear{
 }
 
 body{
-	background:#33b5e6 url(../Images/3home.jpg) no-repeat center top;
+	background:whiteSmoke;
+	/*font-family: yekan;*/
+}
+
+body.index{
+	background:#33b5e6;
 	/*font-family: yekan;*/
 }
 
@@ -1278,6 +1317,7 @@ div.register_melk div.map {
 	margin-right : auto;  
 	width : 430px; 
 	min-height : 250px;
+	background: url(../images/Mashhad.jpg) no-repeat center center;
 	border: 1px solid #fff;
 }
 
