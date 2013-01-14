@@ -615,14 +615,14 @@ body {
 
 div.tag{
 	width : 500px; 
-	background-color:#00CCFF;
+	background-color:#949494;
 	margin:0 0 25px 230px;
-	border-radius: 20px 20px 20px 0;	
+	border-radius: 20px;	
 }
 
 .tag h3{
-	font-weight:bold;
-	font-size:15px;
+	/*font-weight:bold;*/
+	font-size:23px;
 	text-align:center;
 	padding:12px;	
 }
@@ -720,7 +720,7 @@ div.box-txt-right{
 	margin-bottom: 25px;	
 }
 
-#wrap button, #wrap input[type="submit"],input[type="reset"] {
+#wrap button, #wrap input[type="submit"],input[type="reset"] ,.btn{
 	width: 80px;
 	margin-right : 80px; 
 	color : #12123e;
@@ -746,7 +746,7 @@ div.box-txt-right{
 	padding: 2px;
 }
 
-#wrap button:hover, #wrap input[type="submit"]:hover,input[type="reset"]:hover {
+#wrap button:hover, #wrap input[type="submit"]:hover,input[type="reset"]:hover, .btn:hover {
 	color : #fff;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
 	background-color: #3072b3;
@@ -974,6 +974,18 @@ div.box-txt-right{
 	resize: vertical;
 }
 
+div.estate-s2 textarea{
+	width: 257px !important;
+}
+
+div.estate-s2 select{
+	width: 270px !important;
+}
+
+div.estate-s2  a{
+	padding: 3px 18px;
+}
+	
 .txt-width{
 	height:120px;
 	font-size: 16px;
@@ -1264,7 +1276,7 @@ div.register_melk div.row span.train {
 
 div.register_melk div.map {
 	margin-right : auto;  
-	width : 350px; 
+	width : 430px; 
 	min-height : 250px;
 	border: 1px solid #fff;
 }
