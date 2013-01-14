@@ -29,6 +29,8 @@
 .cover:after{clear:both}
 .mla,.mlra{margin-left:auto !important}
 .mra,.mlra{margin-right:auto !important}
+.mt5{margin-top:5px;}
+.mt25{margin-top:25px;}
 .last{margin-left:0 !important}
 .bold{font-weight:bold}
 
@@ -808,7 +810,8 @@ div.box-txt-right{
 
 #wrap label{
 	float: right;
-	font-size: 13px;
+	font-size: 18px;
+	line-height : 20px; 
 	text-align: right;
 	direction:rtl;
 }
@@ -841,7 +844,7 @@ div.box-txt-right{
 	outline: 0;
 	padding-right: 25px;
 /* for this page only */
-	width: 170px;
+	width: 160px;
 	display: block;
 	text-align:right;
 	direction:rtl;
@@ -1248,12 +1251,12 @@ caption {
 
 div.request div.box-txt-right,
 div.register_melk div.box-txt-right {
-	width : 240px; 
+	width : 244px; 
 }
 
 div.request div.box-txt-left,
 div.register_melk div.box-txt-left {
-	width : 240px; 
+	width : 244px; 
 }
 
 div.request label,
@@ -1266,7 +1269,7 @@ div.request input[type="range"] {
 }
 
 div.register_melk input[type="text"], textarea {
-	width : 150px !important; 
+	width : 140px !important; 
 } 
 
 div.register_melk input[type="checkbox"] {
@@ -1278,7 +1281,7 @@ div.register_melk input[type="submit"],input[type="reset"] {
 }
 
 div.register_melk input[type="file"] {
-	width : 160px;
+	width : 140px;
 	float : left;  
 }
 
@@ -1292,6 +1295,10 @@ div.register_melk div.title label {
 	font-size : 17px;
 	line-height : 20px;  
 	margin-bottom : 15px; 
+}
+
+div.register_melk .train {
+	font-size : 13px !important; 
 }
 
 div.register_melk div.row span.train input[type="radio"] {
