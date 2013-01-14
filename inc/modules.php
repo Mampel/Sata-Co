@@ -74,3 +74,7 @@ function show_books($books){
 function insert_melk($noe_melk, $noe_vagozari, $melk_metraj, $noe_sanad, $melk_jahat, $melk_sen_bana, $melk_bazsazishode, $melk_ghabelesokonat, $melk_ostan, $melk_shahr, $melk_mahdude, $melk_address, $melk_tabaghe, $melk_pelak, $melk_vahed, $melk_tedade_vahed,$melk_tedad_khab){
 	db_query("INSERT INTO melk1 VALUES(NULL, '$noe_melk', '$noe_vagozari', '$melk_metraj', '$noe_sanad', '$melk_jahat', '$melk_sen_bana', '$melk_bazsazishode', '$melk_ghabelesokonat', '$melk_ostan', '$melk_shahr', '$melk_mahdude', '$melk_address', '$melk_tabaghe', '$melk_pelak', '$melk_vahed', '$melk_tedade_vahed', '$melk_tedad_khab')");
 }
+
+function insert_member($member_vahed, $member_ozviat, $member_fname, $member_lname, $member_tel, $member_cell, $member_cell2, $member_cell3, $member_address, $member_internet, $member_computer, $member_img){
+	db_query("INSERT INTO member1 VALUES(NULL, '$member_vahed', '$member_ozviat', '$member_fname', '$member_lname', '$member_tel', '$member_cell', '$member_cell2', '$member_cell3', '$member_address', '$member_internet', '$member_computer', '$member_img')");
+}
