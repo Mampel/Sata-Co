@@ -240,6 +240,7 @@ $noe_vagozari = $_POST['filereg_noe_vagozari'];
         <div class="show mlra">
             <div id="wrap" class="estate-s2">
               <form  action="add_estate_s3.php" method="post">
+			  <div class="tag"><h3>فرم ثبت ملک جدید</h3></div>
 			  <input type="hidden" name="ezafe_melk_noe_melk" value="<?php echo $noe_melk ?>"/>
 			  <input type="hidden" name="ezafe_melk_noe_vagozari" value="<?php echo $noe_vagozari ?>"/>
 			    <div class="box-txt cover">
