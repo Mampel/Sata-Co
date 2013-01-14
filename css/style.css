@@ -1273,7 +1273,7 @@ div.request input[type="range"] {
 	margin : 7px 0 0 0 !important;
 }
 
-div.register_melk input[type="text"], textarea {
+div.register_melk input[type="text"],div.register_melk textarea {
 	width : 140px !important; 
 } 
 
@@ -1294,6 +1294,10 @@ div.register_melk div.title {
 	float : right !important;
 	text-align : right;
 	margin-left: 400px; 
+}
+
+div.register_melk .computer {
+	width:160px !important;
 }
 
 div.register_melk div.title label {
@@ -1331,6 +1335,10 @@ div.register_melk div.map {
 	min-height : 250px;
 	background: url(../images/Mashhad.jpg) no-repeat center center;
 	border: 1px solid #fff;
+}
+
+div.typesms textarea {
+	width : 270px;
 }
 
 /*---------- Forms -------------------------------------------------------------------------------*/
