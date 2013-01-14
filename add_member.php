@@ -236,7 +236,7 @@
             <input type="text" name="reg_melk_name_vahed" >
         </div>
         <div class="box-txt-left cover">
-            <label id="txt">کد وضعیت:</label>
+            <label id="txt">کد عضویت:</label>
             <input type="text" name="reg_melk_code_vaziyat" >
         </div> 
         <div class="box-txt-right cover">
@@ -300,18 +300,46 @@
         <div class="clear"></div>
         <div class="row cover">
             <label id="txt">نوع ملک:</label>            
-            <span class="train left" dir="rtl">آپارتمانی &nbsp;<input type="checkbox" name="reg_melk_apartmant" value="آپارتمانی"></span>
+            <!-- <span class="train left" dir="rtl">آپارتمانی &nbsp;<input type="checkbox" name="reg_melk_apartmant" value="آپارتمانی"></span>
             <span class="train left" dir="rtl">ویلایی &nbsp;<input type="checkbox" name="reg_melk_vilayi" value="ویلایی"></span>
             <span class="train left" dir="rtl">مغازه &nbsp;<input type="checkbox" name="reg_melk_maghaze" value="مغازه"></span>
-            <span class="train left" dir="rtl">دفتر کار &nbsp;<input type="checkbox" name="reg_melk_swit" value="دفتر کار"></span>
-        </div>
+            <span class="train left" dir="rtl">دفتر کار &nbsp;<input type="checkbox" name="reg_melk_swit" value="دفتر کار"></span> -->
+			<select dir="rtl" name="filereg_noe_melk">
+			  <option>آپارتمان</option>
+			  <option>خانه ویلایی</option>
+			  <option>سوییت</option>
+			  <option>دفتر کار</option>
+			  <option>مغازه</option>
+			  <option>زمین</option>
+			  <option>کلنگی</option>
+			  <option>مستغلات - آپارتمان</option>
+			  <option>مستغلات - خانه شهری</option>
+			  <option>مستغلات - پاساژ با مرکز خرید</option>
+			  <option>مستغلات - باغ - باغچه</option>
+			  <option>مستغلات - انبار</option>
+			  <option>مستغلات - پارکینگ</option>
+			  <option>مستغلات - سوله</option>
+			  <option>مستغلات - کارگاه</option>
+			  <option>مستغلات - کارخانه</option>
+			  <option>مستغلات - استخر</option>
+			  <option>مستغلات - سالن ورزشی</option>
+			  <option>مستغلات - رستوران</option>
+			  <option>مستغلات - پرورش دام</option>
+			  <option>مستغلات - مرغ داری</option>
+			  <option>مستغلات - پرورش ماهی</option>
+			  <option>مستغلات - هتل</option>
+			  <option>مستغلات - هتل آپارتمان</option>
+			  <option>مستغلات - مسافرخانه</option>
+		  </select>
+	   </div>
         <div class="row cover">
             <label id="txt">نوع واگذاری:</label>            
-            <span class="train left" dir="rtl">فروش &nbsp;<input type="checkbox" name="reg_melk_forosh" value="فروش"></span>
+          <!--  <span class="train left" dir="rtl">فروش &nbsp;<input type="checkbox" name="reg_melk_forosh" value="فروش"></span>
             <span class="train left" dir="rtl">اجاره &nbsp;<input type="checkbox" name="reg_melk_ajare" value="اجاره"></span>
             <span class="train left" dir="rtl">رهن &nbsp;<input type="checkbox" name="reg_melk_rahn" value="رهن"></span>
-            <span class="train left" dir="rtl">رهن و اجاره &nbsp;<input type="checkbox" name="reg_melk_rahno_va_ejare" value="رهن و اجاره"></span>
-        </div>
+            <span class="train left" dir="rtl">رهن و اجاره &nbsp;<input type="checkbox" name="reg_melk_rahno_va_ejare" value="رهن و اجاره"></span> -->
+        
+		</div>
         <div class="clear"></div>
         <div class="cover">
          <div class="title right">
