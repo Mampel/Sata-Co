@@ -11,6 +11,8 @@
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="/resources/demos/external/jquery.bgiframe-2.1.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="JScripts/script.js"></script>
+    <script src="JScripts/melk_types.js"></script>
     <link rel="stylesheet" href="/resources/demos/style.css" />
     <script>
     // increase the default animation speed to exaggerate the effect
@@ -311,48 +313,33 @@
 </ul>
 </div>
       <div class="show">
-          <div id="wrap">
+          <div id="wrap" class="estate-s1">
             <form  action="add_estate_s2.php" method="post">
 			  <div class="tag"><h3>فرم ثبت ملک جدید</h3></div>
               <div class="box-txt cover">
                  <label id="txt" for="noe_melk">نوع ملک :</label>
                    <select dir="rtl" name="filereg_noe_melk">
-                      <option>آپارتمان</option>
-                      <option>خانه ویلایی</option>
-                      <option>سوییت</option>
-                      <option>دفتر کار</option>
-                      <option>مغازه</option>
-                      <option>زمین</option>
-                      <option>کلنگی</option>
-                      <option>مستغلات - آپارتمان</option>
-                      <option>مستغلات - خانه شهری</option>
-                      <option>مستغلات - پاساژ با مرکز خرید</option>
-                      <option>مستغلات - باغ - باغچه</option>
-                      <option>مستغلات - انبار</option>
-                      <option>مستغلات - پارکینگ</option>
-                      <option>مستغلات - سوله</option>
-                      <option>مستغلات - کارگاه</option>
-                      <option>مستغلات - کارخانه</option>
-                      <option>مستغلات - استخر</option>
-                      <option>مستغلات - سالن ورزشی</option>
-                      <option>مستغلات - رستوران</option>
-                      <option>مستغلات - پرورش دام</option>
-                      <option>مستغلات - مرغ داری</option>
-                      <option>مستغلات - پرورش ماهی</option>
-                      <option>مستغلات - هتل</option>
-                      <option>مستغلات - هتل آپارتمان</option>
-                      <option>مستغلات - مسافرخانه</option>
+                      <option value="0">آپارتمان</option>
+                      <option value="1">خانه ویلایی</option>
+                      <option value="2">سوییت</option>
+                      <option value="3">دفتر کار</option>
+                      <option value="4">مغازه</option>
+                      <option value="5">زمین</option>
+                      <option value="6">کلنگی</option>
+                      <option value="7">مستغلات - آپارتمان</option>
+                      <option value="8">مستغلات - خانه شهری</option>
+                      <option value="9">مستغلات - پاساژ با مرکز خرید</option>
+                      <option value="10">مستغلات - باغ - باغچه</option>
+                      <option value="11">مستغلات - انبار</option>
+                      <option value="12">مستغلات - صنعتی</option>
+                      <option value="13">مستغلات - کشاورزی</option>
+                      <option value="14">مستغلات - دامداری - دامپروری</option>
+                      <option value="15">مستغلات - هتل - هتل آپارتمان</option>
                   </select>
             </div>
             <div class="box-txt cover">
                   <label id="txt" for="noe_vagozari">نوع واگذاری :</label>
                    <select dir="rtl" name="filereg_noe_vagozari">
-                      <option>فروش</option>
-                      <option>رهن و اجاره</option>
-                      <option>رهن</option>
-                      <option>اجاره</option>
-                      <option>پیش فروش</option>
-                      <option>اجاره موقت</option>
                   </select>
             </div>
             <div class="buttom">
