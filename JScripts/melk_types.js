@@ -179,6 +179,6 @@ var fields_repo = {
 	}},
 	"61":{"field":"Metrazhe_dahaneh","label":"متراژ دهنه","type":"number"},
 	"62":{"field":"Tedad_Dahaneh","label":"تعداد دهنه","type":"number"},
-	"64":{"field":"Zarfiat","label":"Zarfiat","type":"text"},
+	"64":{"field":"Zarfiat","label":"ظرفیت","type":"text"},
 
 };
