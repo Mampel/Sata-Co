@@ -1020,8 +1020,12 @@ div.estate-s2 textarea{
 	width: 257px !important;
 }
 
-div.estate-s2 select{
+div.estate-s1 select, div.estate-s2 select{
 	width: 270px !important;
+}
+
+div.estate-s1 div.box-txt{
+	width:375px;
 }
 
 div.estate-s2  a{
