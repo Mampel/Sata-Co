@@ -230,8 +230,16 @@
 </ul>
 <?php 
 
-$noe_melk = $_POST['filereg_noe_melk'];
-$noe_vagozari = $_POST['filereg_noe_vagozari'];
+if(isset($_POST['filereg_noe_melk'])) {
+	$noe_melk = $_POST['filereg_noe_melk']; //radio button
+}else $noe_melk = "";
+
+if(isset($_POST['filereg_noe_vagozari'])) {
+	$noe_vagozari = $_POST['filereg_noe_vagozari']; //radio button
+}else $noe_vagozari = "";
+
+//$noe_melk = $_POST['filereg_noe_melk'];
+//$noe_vagozari = $_POST['filereg_noe_vagozari'];
 
 //echo "<h1>$noe_melk----$noe_vagozari</h1>";
 
