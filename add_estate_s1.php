@@ -319,8 +319,8 @@
               <div class="box-txt cover">
                  <label id="txt" for="noe_melk">نوع ملک :</label>
                    <select dir="rtl" name="filereg_noe_melk">
-                      <option value="0">آپارتمان</option>
-                      <option value="1">خانه ویلایی</option>
+                      <option value="-1">نوع ملک را انتخاب کنید!----</option>
+                     <!-- <option value="1">خانه ویلایی</option>
                       <option value="2">سوییت</option>
                       <option value="3">دفتر کار</option>
                       <option value="4">مغازه</option>
@@ -334,7 +334,7 @@
                       <option value="12">مستغلات - صنعتی</option>
                       <option value="13">مستغلات - کشاورزی</option>
                       <option value="14">مستغلات - دامداری - دامپروری</option>
-                      <option value="15">مستغلات - هتل - هتل آپارتمان</option>
+                      <option value="15">مستغلات - هتل - هتل آپارتمان</option> -->
                   </select>
             </div>
             <div class="box-txt cover">
