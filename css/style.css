@@ -33,6 +33,8 @@
 .mt25{margin-top:25px;}
 .last{margin-left:0 !important}
 .bold{font-weight:bold}
+.rtl{text-align:right}
+.ltr{text-align:left}
 
 .ok{
 	background-color: #BAFFBA;
@@ -915,7 +917,7 @@ div.box-txt-right{
 			to(rgb(210, 210, 210))
 		)
 		rgb(90, 90, 90);
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	height: 10px;
 	width: 10px;
 }
@@ -1341,8 +1343,178 @@ div.register_melk div.map {
 	border: 1px solid #fff;
 }
 
-div.typesms textarea {
-	width : 270px;
+/*------ typesms Page  -------------------------------------------------------------*/
+div#wrap.typesms *{
+	/*
+	
+	border:none !important;
+	*/
+}
+
+div#wrap.typesms{
+	width:910px;
+	margin-right:0;
+	padding:30px 15px;
+}
+
+#wrap.typesms label{
+	width:70px;
+}
+
+div#wrap.typesms textarea {
+	width : 460px;
+}
+
+div.custom-member{
+	width:230px;
+	min-height:500px;
+}
+
+div.custom-member div.show-member{
+	min-height:300px;
+}
+
+div.custom-member div.show-member div.members{
+	min-height:363px;
+	border: 1px solid #7E7E7E;
+	border-radius: 5px 5px 0 0;
+}
+
+div.show-member div.members div.member{
+	min-height:16px;
+	margin-top:10px;
+}
+
+div.show-member div.members div.member:hover{
+	background-color:#B8B8B8;
+}
+
+div.show-member div.members div.member.red{
+	color:red;
+}
+
+div.show-member div.members div.member.green{
+	color:green;
+}
+
+div.member span.delete{
+	width: 16px;
+	height: 16px;
+	background: url(../images/delete.png) no-repeat center center;
+	cursor:pointer;
+}
+
+div.member p.info-member{
+	width: 119px;
+	line-height: 15px;
+	margin: 0 25px 0 0;
+}
+
+div.member p.info-member:hover{
+	cursor:url(../images/add.png),pointer;
+}
+
+div.member span.send-info{
+	line-height:15px;
+	margin-left:5px;
+}
+
+div.custom-member div.custom-send{
+	min-height:200px;
+}
+/*
+div.custom-send input[type="submit"]{
+	width:160px !important;
+	margin-right:35px !important;
+}
+*/
+div.custom-member div.custom-send > div{
+	border:1px solid #7E7E7E;
+	border-radius:5px 5px 0 0;
+	min-height:160px;
+	margin:20px 0 0 0;
+}
+
+div.typesms h3{
+	height: 22px;
+	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	-ms-border-radius: 5px 5px 0 0;
+	-khtml-border-radius: 5px 5px 0 0;
+	font-size: 13px;
+	font-weight: normal;
+	background-color:#7E7E7E;
+	color: #383838;
+	margin:0 0 15px 0;
+	padding: 10px 15px 0 0;
+}
+
+div.custom-member div.custom-send input[type="text"]{
+	width: 180px !important;
+	margin: 20px 0 23px 17px;
+}
+
+div.files > div{
+	border:1px solid #7E7E7E;
+	border-radius:5px 5px 0 0;
+}
+
+div.files{
+	width:auto;
+	min-height:500px;
+	margin-left:240px;
+}
+
+div.files div.box-txt{
+	width:580px;
+	min-height:85px;
+	margin:0 30px 0 0;
+}
+
+div.files div.box-txt.sms-file{
+	min-height:213px;
+}
+
+textarea[name="type_sms_file"]{
+	min-height:200px;
+}
+
+div.custom-send a.addtolist{
+	width: 160px;
+	margin-right: 40px;
+	color: #12123E;
+	border-radius: 4px;
+	cursor: pointer;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	background-color: #EAEAEA;
+	background-image: -moz-linear-gradient(#FAFAFA, #EAEAEA);
+	background-image: -webkit-linear-gradient(#FAFAFA, #EAEAEA);
+	background-image: linear-gradient(#FAFAFA, #EAEAEA);
+	background-repeat: repeat-x;
+	border-radius: 3px;
+	border: 1px solid #DDD;
+	border-bottom-color: #C5C5C5;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.075);
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+	padding: 2px;
+}
+
+div.custom-send a.addtolist:hover{
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #3072B3;
+	background-image: -moz-linear-gradient(#599BCD, #5092D3);
+	background-image: -webkit-linear-gradient(#599BCD, #105293);
+	background-image: linear-gradient(#599BCD, #3072B3);
+	background-repeat: repeat-x;
+	border-color: #2A65A0;
 }
 
 /*---------- Forms -------------------------------------------------------------------------------*/
