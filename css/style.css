@@ -1517,6 +1517,46 @@ div.custom-send a.addtolist:hover{
 	border-color: #2A65A0;
 }
 
+div.sms-mobilenum{
+	width:460px;
+	height:75px;
+	-webkit-appearance: none;
+	-webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3),
+	 inset 0 1px 1px rgba(0, 0, 0, 0.2),
+	 0 0 0 1px #8C8C8C,
+	 0 2px 0 rgba(255, 255, 255, 0.3);
+	-webkit-transition-property: background-color, color;
+	-webkit-transition-duration: 0.4s;
+	border-radius: 3px;
+	font: 12px/1 'Yekan', sans-serif;
+	color: #5A5A5A;
+	padding: 0 5px;
+	background: -webkit-gradient(
+	 linear,
+	 left top,
+	 left bottom,
+	 from(rgba(0, 0, 0, 0.1)),
+	 to(transparent)
+	 )
+	 whiteSmoke;
+	display: block;
+	direction: rtl;
+	border: 1px solid black;
+	overflow:auto;
+}
+
+span.show-num{
+	display:block;
+	padding: 5px 8px;
+	border-radius: 5px;
+	margin:5px 0 0 0;
+}
+
+span.show-num:hover{
+	background-color:#BBB;
+	cursor:url(../images/del.png),pointer;
+}
+
 /*---------- Forms -------------------------------------------------------------------------------*/
 
 
