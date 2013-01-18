@@ -1376,7 +1376,7 @@ div.custom-member div.show-member{
 }
 
 div.custom-member div.show-member div.members{
-	min-height:363px;
+	height:440px;
 	border: 1px solid #7E7E7E;
 	border-radius: 5px 5px 0 0;
 }
