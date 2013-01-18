@@ -1352,7 +1352,8 @@ div#wrap.typesms *{
 }
 
 div#wrap.typesms{
-	width:910px;
+	width:970px;
+	margin-top:10px;
 	margin-right:0;
 	padding:30px 15px;
 }
@@ -1361,8 +1362,8 @@ div#wrap.typesms{
 	width:70px;
 }
 
-div#wrap.typesms textarea {
-	width : 460px;
+div#wrap.typesms div.box-txt textarea {
+	width : 611px;
 }
 
 div.custom-member{
@@ -1468,9 +1469,10 @@ div.files{
 }
 
 div.files div.box-txt{
-	width:580px;
+	width:702px;
 	min-height:85px;
-	margin:0 30px 0 0;
+	margin:0 15px 0 0;
+	padding-bottom:0;
 }
 
 div.files div.box-txt.sms-file{
@@ -1547,7 +1549,7 @@ div.sms-mobilenum{
 
 span.show-num{
 	display:block;
-	padding: 5px 8px;
+	padding: 5px 4px;
 	border-radius: 5px;
 	margin:5px 0 0 0;
 }
@@ -1555,6 +1557,30 @@ span.show-num{
 span.show-num:hover{
 	background-color:#BBB;
 	cursor:url(../images/del.png),pointer;
+}
+
+div.sms-mobilenum-container{
+	width: 296px;
+	height: 270px;
+	padding:12px 13px 20px 10px;
+}
+
+div.sms-mobilenum-container div.box-input > div{
+	width: 205px;
+	height: 255px;
+}
+
+div.sms-content-container{
+	margin-right:320px;
+	height: 270px;
+	padding:12px 13px 20px 10px;
+}
+
+div.sms-content-container div.box-input > textarea{
+	width:298px;
+	height: 255px !important;
+	font-family: Yekan;
+	font-size:15px;
 }
 
 /*---------- Forms -------------------------------------------------------------------------------*/
