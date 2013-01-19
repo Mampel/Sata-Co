@@ -35,13 +35,13 @@ var melk_types = [ //starts from zero
  * @type {Object}
  */
 var vagozari_types = {
-    "1": { "tit" : "فروش"           , "fields":[4,5] },
-    "2": { "tit" : "رهن و اجاره"    , "fields":[] },
-    "3": { "tit" : "رهن"            , "fields":[] },
-    "4": { "tit" : "اجاره"          , "fields":[] },
-    "5": { "tit" : "پیش فروش"       , "fields":[] },
-    "6": { "tit" : "مشارکت در ساخت" , "fields":[] },
-    "7": { "tit" : "اجاره موقت"     , "fields":[] }
+    "1": { "tit" : "فروش"           , "fields":[4,5] , "val":"0"},
+    "2": { "tit" : "رهن و اجاره"    , "fields":[]  , "val":"1"},
+    "3": { "tit" : "رهن"            , "fields":[]  , "val":"2"},
+    "4": { "tit" : "اجاره"          , "fields":[]  , "val":"3"},
+    "5": { "tit" : "پیش فروش"       , "fields":[]  , "val":"4"},
+    "6": { "tit" : "مشارکت در ساخت" , "fields":[]  , "val":"5"},
+    "7": { "tit" : "اجاره موقت"     , "fields":[]  , "val":"6"}
 };
 /**
  * Fields Repository
