@@ -38,37 +38,37 @@
         <div class="show">
             <div id="wrap" class="container-show-info">
 				<div class="show-info cover">
-					<div>
+					<div class="cover">
 						<h3>فرم نمایش اطلاعات عضو</h3>
 						<div class="show-info-detail right">
 							<form action="post">
 								<div class="box-txt-right cover">
 									<label id="txt">نام واحد:</label>
-									<input type="text" name="reg_melk_name_vahed" >
+									<input type="text" name="reg_melk_name_vahed" value="ساتا">
 								</div>
 								<div class="box-txt-left cover">
 									<label id="txt">کد عضویت:</label>
-									<input type="text" name="reg_melk_code_ozviat" >
+									<input type="text" name="reg_melk_code_ozviat" value="1400">
 								</div> 
 								<div class="box-txt-right cover">
 									<label id="txt">نام:</label>
-									<input type="text" name="reg_melk_name" >
+									<input type="text" name="reg_melk_name" value="محمدرضا">
 								</div>
 								<div class="box-txt-left cover">
 									<label id="txt">نام خانوادگی:</label>
-									<input type="text" name="reg_melk_familyname" />
+									<input type="text" name="reg_melk_familyname" value="شریعت زاده" />
 								</div>
 								<div class="box-txt-right cover">
 									<label id="txt">تلفن ثابت:</label>
-									<input type="text" name="reg_melk_tel" />
+									<input type="text" name="reg_melk_tel" value="0511-8789675"/>
 								</div>
 								<div class="box-txt-left cover">
-									<label id="txt" for="ostan">تلفن همراه:</label>
-									<input type="text" name="reg_melk_cell" />
+									<span class="redstar right">*</span><label id="txt" for="ostan">تلفن همراه:</label>
+									<input type="text" name="reg_melk_cell" value="09158135580"/>
 								</div>
 								<div class="box-txt-right cover">
 									<label id="txt">تلفن همراه2:</label>
-									<input type="text" name="reg_melk_cell2" />
+									<input type="text" name="reg_melk_cell2" value="09368706544"/>
 								</div>
 								<div class="box-txt-left cover">
 									<label id="txt">تلفن همراه3:</label>
@@ -76,20 +76,87 @@
 								</div>
 								<div class="box-txt-right address cover">
 									<label id="txt">آدرس:</label>
-									<textarea type="text" name="reg_melk_address" ></textarea>
+									<textarea type="text" name="reg_melk_address" value="مشهد - رضاشهر"></textarea>
 								</div>
 								<div class="clear"></div>
 								<div class="box-txt-right address cover">
-									<label id="txt">اطلاعات دیگر:</label>
+									<!--<label id="txt">اطلاعات دیگر:</label>-->
 									<label id="txt">این واحد به اینترنت متصل می باشد.</label>
 									<label id="txt">این واحد دارای کامپیوتر می باشد.</label>
 								</div>
 								<div class="clear"></div>
 								<input type="submit" value="ویرایش اطلاعات"/>
+								<p class="comment-star">پیامک های شرکت به این شماره همراه ارسال میشود<span class="redstar right">*</span>!</p>
 							</form>
 						</div>
 						<div class="show-pic">
 							<img src="images/profile-pic-default.jpg" />
+							<input type="file" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="setting-member cover">
+					<div class="cover">
+						<h3>تنظیمات کاربری</h3>
+						<div class="setting-member-detail cover">
+								<label id="txt">انواع ملک درخواستی:</label>
+								<div class="box-txt custom-melk cover">
+									<span class="train right" dir="rtl">آپارتمان &nbsp;<input type="checkbox" name="x[]" value="آپارتمان"></span>
+									<span class="train right" dir="rtl">خانه ویلایی &nbsp;<input type="checkbox" name="x[]" value="خانه ویلایی"></span>
+									<span class="train right" dir="rtl">سوئیت &nbsp;<input type="checkbox" name="x[]" value="سوئیت"></span>
+									<span class="train right" dir="rtl">دفتر کار&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مغازه&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									
+									<span class="train right" dir="rtl">زمین&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">کلنگی&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - آپارتمان&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - خانه شهری&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - پاساژ با مرکز خرید&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									
+									<span class="train right" dir="rtl">مستغلات - باغ - باغچه&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - انبار&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - پارکینگ&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - سوله&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - کارگاه&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									
+									<span class="train right" dir="rtl">مستغلات - کارخانه&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - استخر&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - سالن ورزشی&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - رستوران&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - پرورش دام&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									
+									<span class="train right" dir="rtl">مستغلات - مرغ داری&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - پرورش ماهی&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - هتل&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - هتل آپارتمان&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+									<span class="train right" dir="rtl">مستغلات - مسافرخانه&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+								</div>
+								<div class="other-options cover">
+									<div class="right">
+										<label id="txt">خواهان:</label>
+										<div class="box-txt cover">
+											<span class="train" dir="rtl">رهن و اجاره &nbsp;<input type="checkbox" name="x[]" value="آپارتمان"></span>
+											<span class="train" dir="rtl">خرید &nbsp;<input type="checkbox" name="x[]" value="خانه ویلایی"></span>
+											<span class="train" dir="rtl">مشارکت در ساخت &nbsp;<input type="checkbox" name="x[]" value="سوئیت"></span>
+											<span class="train" dir="rtl">پیش خرید &nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+										</div>
+									</div>
+									<div class="right">
+										<label id="txt">خوانده:</label>
+										<div class="box-txt cover">
+											<span class="train" dir="rtl">رهن و اجاره &nbsp;<input type="checkbox" name="x[]" value="آپارتمان"></span>
+											<span class="train" dir="rtl">خرید &nbsp;<input type="checkbox" name="x[]" value="خانه ویلایی"></span>
+											<span class="train" dir="rtl">مشارکت در ساخت &nbsp;<input type="checkbox" name="x[]" value="سوئیت"></span>
+											<span class="train" dir="rtl">پیش فروش &nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
+										</div>
+									</div>
+								</div>
+								<div class="box-txt cover">
+									<label id="txt">منطقه:</label>
+									<div class="map-area"></div>
+								</div>
+								<input type="submit" value="ویرایش تنظیمات"/>
 						</div>
 					</div>
 				</div>
