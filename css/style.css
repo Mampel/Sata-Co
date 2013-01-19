@@ -1378,6 +1378,7 @@ div.custom-member div.show-member{
 div.custom-member div.show-member div.members{
 	height:440px;
 	border: 1px solid #7E7E7E;
+	background-color: #E0E0E0;
 	border-radius: 5px 5px 0 0;
 }
 
@@ -1433,6 +1434,7 @@ div.custom-member div.custom-send > div{
 	border:1px solid #7E7E7E;
 	border-radius:5px 5px 0 0;
 	min-height:160px;
+	background-color: #E0E0E0;
 	margin:20px 0 0 0;
 }
 
@@ -1459,6 +1461,7 @@ div.custom-member div.custom-send input[type="text"]{
 
 div.files > div{
 	border:1px solid #7E7E7E;
+	background-color: #E0E0E0;
 	border-radius:5px 5px 0 0;
 }
 
@@ -1596,6 +1599,7 @@ div.show-info{
 	min-height: 300px;
 	margin: 0 auto;
 	border-radius: 5px 5px 0 0;
+	background-color: #E0E0E0;
 	border: 1px solid #7E7E7E;
 }
 
@@ -1622,7 +1626,7 @@ div.show-info div.show-info-detail input[type="text"]{
 	width: 170px !important;
 }
 
-div.show-info div.show-info-detail input[type="submit"]{
+div.container-show-info input[type="submit"]{
 	width: 115px !important;
 }
 
@@ -1632,14 +1636,73 @@ div.show-info div.show-pic{
 }
 
 div.show-info div.show-pic img{
-	margin: 20px 25px 0 0;
+	margin: 20px 7px 0 0;
 	width: 200px;
 	height: 142px;
 	border: 3px groove #D5D5D5;
-	box-shadow: 0 0 9px 6px #C5C5C5;
+	box-shadow:0 0 9px 6px #B9B9B9;
 }
 
+div.show-info-detail span.redstar{
+	color: red;
+	font-size: 20px;
+	line-height: 11px;
+	margin: -6px 0 0 3px;
+	font-weight: bold;
+}
 
+p.comment-star{
+	color: red;
+	font-size: 13px;
+	margin: 28px 0 0 0;
+}
+
+div.setting-member{
+	width: 905px;
+	min-height: 300px;
+	margin: 30px auto 0;
+	border-radius: 5px 5px 0 0;
+	background-color: #E0E0E0;
+	border: 1px solid #7E7E7E;
+}
+
+div.setting-member div.setting-member-detail{
+	padding:20px;
+}
+
+div.setting-member-detail div.box-txt{
+	width:auto;
+}
+
+div.setting-member-detail .train{
+	margin-right:20px
+}
+
+div.setting-member-detail div.other-options{
+	margin:10px 40px 0 0;
+}
+
+div.setting-member-detail div.other-options div.box-txt{
+	margin-right:45px;
+}
+
+div.setting-member-detail div.other-options > div{
+	width: 240px;
+	min-height: 130px;
+}
+
+div.setting-member-detail div.map-area{
+	margin-right: 105px;
+	margin-bottom: 15px;
+	width: 430px;
+	min-height: 250px;
+	background: url(../images/Mashhad.jpg) no-repeat center center;
+	border: 1px solid white;
+}
+
+div.setting-member-detail div.box-txt.custom-melk{
+	margin-right:150px;
+}
 
 /*---------- Forms -------------------------------------------------------------------------------*/
 
