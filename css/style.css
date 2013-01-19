@@ -1359,7 +1359,7 @@ div#wrap.typesms{
 }
 
 #wrap.typesms label{
-	width:70px;
+	max-width:70px;
 }
 
 div#wrap.typesms div.box-txt textarea {
@@ -1624,6 +1624,8 @@ div.show-info div.show-info-detail div.box-txt-right.address textarea{
 
 div.show-info div.show-info-detail input[type="text"]{
 	width: 170px !important;
+	font-family: 'Yekan' !Important;
+	font-size: 13px !important;
 }
 
 div.container-show-info input[type="submit"]{
@@ -1704,10 +1706,58 @@ div.setting-member-detail div.box-txt.custom-melk{
 	margin-right:150px;
 }
 
-/*---------- Forms -------------------------------------------------------------------------------*/
+/*---------- type_sms_filter Page -------------------------------------------------------------------------------*/
+div.filter-estate{
+	width: 660px;
+	min-height: 200px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
 
+div.filter-estate div.container-date{
+	height:40px;
+}
 
+div.filter-estate .box-txt-right{
+	width:170px;
+	margin: 0 20px;
+}
 
+div.filter-estate .box-txt-right input.date{
+	width:135px !important;
+}
+
+div.filter-estate div.estate-filter-type{
+	height:145px;
+	margin:10px 0 0 0;
+}
+
+div.estate-filter-type div.box-txt{
+	margin-right: 59px;
+	width: 600px;
+}
+
+div.estate-filter-type div.box-txt span.train{
+	margin-right: 20px;
+}
+
+div.filter-estate div.other-options {
+	height:100px;
+	margin: 10px 40px 0 0;
+}
+
+div.filter-estate div.other-options > div {
+	width: 240px;
+	min-height: 130px;
+}
+
+div.filter-estate div.other-options div.box-txt {
+	margin-right: 65px;
+}
+
+div.allmembers{
+	height:700px !important;
+}
 
 
 
