@@ -342,11 +342,12 @@
                    <select dir="rtl" name="filereg_noe_vagozari">
                   </select>
             </div>
+			<div class="append"></div>
             <div class="buttom">
               <!-- <button name="filereg_btn" type="submit"><a href="afzudan-melk.html">برو</a></button> -->
-			  <input name="filereg_btn" type="submit" value="برو"></input>
+			  <!--<input name="filereg_btn" type="submit" value="برو"></input>-->
+			  <a class="more-info" href="#">اطلاعات بیشتر</a>
             </div>
-			<div class="append"></div>
           </form>  
         </div>    
       </div>
