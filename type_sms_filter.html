@@ -10,15 +10,15 @@
   <link rel="stylesheet" type="text/css" href="CSS/calendar.css">-->
   <link type="text/css" rel="stylesheet" href="css/reset.css" />
 <link type="text/css" rel="stylesheet" href="css/style.css" />
-<link type="text/css" rel="stylesheet" href="css/form-style.css">
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="/resources/demos/external/jquery.bgiframe-2.1.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="JScripts/script.js"></script>
     <script src="JScripts/melk_types.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css" />
+	
+    <script src="JScripts/js-persian-cal.min.js"></script> 
+    <link rel="stylesheet" href="css/js-persian-cal.css" />
 </head>
 <body>
 <div class="container">
@@ -40,7 +40,7 @@
 				<div class="custom-member left">
 					<div class="show-member">
 						<div class="members allmembers">
-							<h3>لیست پیشنهادی ساتا</h3>
+							<h3>لیست تمام اعضای ساتا</h3>
 							<div>
 								<div class="member green">
 									<span class="delete right" title="حذف از لیست"></span>
@@ -106,11 +106,15 @@
 									<label id="txt">بازه زمانی: </label>
 									<div class="box-txt-right cover">
 										<label id="txt">  از  </label>
-										<input type="text" class="date" name="reg_melk_name_vahed" value="">
+										<span class="cal">
+											<input type="text" class="date" id="from-date" name="reg_melk_name_vahed" value="">
+										</span>
 									</div>
 									<div class="box-txt-right cover">
 										<label id="txt">  تا  </label>
-										<input type="text" class="date" name="reg_melk_name_vahed" value="">
+										<span class="cal">
+											<input type="text" class="date" id="to-date" name="reg_melk_name_vahed" value="">
+										</span>
 									</div>
 								</div>
 								<div class="estate-filter-type">
@@ -167,12 +171,76 @@
 										</div>
 									</div>
 								</div>
-								
 							</div>
 							<div class="buttom">
 								<input name="submit" type="submit" value="اعمال فیلتر"/>
 							</div>
+							<script type="text/javascript"> 
+								var receipt_date = new AMIB.persianCalendar( 'receipt_date', 'from-date');
+								var receipt_date1 = new AMIB.persianCalendar( 'receipt_date1', 'to-date');
+							</script> 
 						</form>  
+					</div>
+					<div class="filter-result-container">
+						<h3>فرم نتایح فیلتر</h3>
+						<div>
+							<div class="filter-result">
+								<table border="1">
+									<thead>
+										<tr>
+											<th>ردیف</th>
+											<th>تاریخ</th>
+											<th>ساعت</th>
+											<th>متن</th>
+											<th>وضعیت</th>
+											<th>گزارش</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="delete right" title="حذف از لیست"></span>ردیف</td>
+											<td>تاریخ</td>
+											<td>ساعت</td>
+											<td>متن</td>
+											<td>وضعیت</td>
+											<td>گزارش</td>
+										</tr>
+										<tr>
+											<td><span class="delete right" title="حذف از لیست"></span>ردیف</td>
+											<td>تاریخ</td>
+											<td>ساعت</td>
+											<td>متن</td>
+											<td>وضعیت</td>
+											<td>گزارش</td>
+										</tr>
+										<tr>
+											<td><span class="delete right" title="حذف از لیست"></span>ردیف</td>
+											<td>تاریخ</td>
+											<td>ساعت</td>
+											<td>متن</td>
+											<td>وضعیت</td>
+											<td>گزارش</td>
+										</tr>
+										<tr>
+											<td><span class="delete right" title="حذف از لیست"></span>ردیف</td>
+											<td>تاریخ</td>
+											<td>ساعت</td>
+											<td>متن</td>
+											<td>وضعیت</td>
+											<td>گزارش</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div id="sms-mobile-filter">
+								<label for="mobilenum">شماره های ارسالی :&nbsp;</label>
+								<div class="sms-mobilenum left" name="type_sms_mobilenum"></div>
+							</div>
+							<div class="buttom">
+								<input name="submit" type="submit" value="ارسال متن">
+								<input name="submit" type="submit" value="گزارش فایل">
+							</div>
+						</div>
 					</div>
 				</div>
             </div>    
