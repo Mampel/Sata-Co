@@ -1209,7 +1209,7 @@ caption {
 	direction:rtl;
 }
 
-#wrap th {
+/*#wrap th {
 	font: bold 11px Tahoma, Geneva, sans-serif;
 	color: #4f6b72;
 	border-right: 1px solid #C1DAD7;
@@ -1259,7 +1259,7 @@ caption {
 	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
 	color: #797268;
 }
-
+*/
 div.request div.box-txt-right,
 div.register_melk div.box-txt-right {
 	width : 244px; 
@@ -1711,7 +1711,6 @@ div.filter-estate{
 	width: 660px;
 	min-height: 200px;
 	margin: 0 auto;
-	border: 1px solid red;
 }
 
 div.filter-estate div.container-date{
@@ -1719,12 +1718,8 @@ div.filter-estate div.container-date{
 }
 
 div.filter-estate .box-txt-right{
-	width:170px;
+	width:190px;
 	margin: 0 20px;
-}
-
-div.filter-estate .box-txt-right input.date{
-	width:135px !important;
 }
 
 div.filter-estate div.estate-filter-type{
@@ -1759,16 +1754,75 @@ div.allmembers{
 	height:700px !important;
 }
 
+div.files div.filter-result-container{
+	min-height:200px;
+	margin:30px auto 0;
+}
+
+div.filter-result-container div.filter-result{
+	width: 680px;
+	margin: 0 auto;
+}
+
+div.filter-result table{
+	width:100%;
+	min-height:400px;
+	text-align:center;
+}
+
+div.filter-result table th{
+	height: 25px;
+	font-size: 17px;
+	line-height:23px;
+	border-bottom: 1px solid #969696;
+	background-color: #B9B9B9;
+}
+
+div.filter-result table tr{
+	height: 25px;
+	line-height:23px;
+	border-bottom: 1px solid #969696;
+}
+
+div.filter-result table tr span.delete{
+	width: 16px;
+	height: 16px;
+	background: url(../images/delete.png) no-repeat center center;
+	cursor: pointer;
+	margin:5px 0 0 0;
+}
+
+div#sms-mobile-filter{
+	width:680px;
+	height:151px;
+	margin:50px auto 0;
+}
+
+div#sms-mobile-filter > div.sms-mobilenum{
+	width:590px;
+	height:125px;
+}
+
+div#sms-mobile-filter > div.sms-mobilenum > span.show-num{
+	display:inline-block;
+}
 
 
 
+span.cal{
+	position:relative;
+	display:inline-block;
+	float:left;
+}
 
-
-
-
-
-
-
+/*div.filter-estate .box-txt-right input*/
+.date{
+	width: 135px !important;
+	background: white url(../images/txt-bg.png) no-repeat right center !important;
+	padding: 0 30px 0 0 !important;
+	font-family: yekan !important;
+	font-size: 15px !important;
+}
 
 
 
