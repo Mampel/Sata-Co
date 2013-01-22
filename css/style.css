@@ -70,6 +70,20 @@
 	-khtml-border-radius: 5px;
 }
 
+span.cal{
+	position:relative;
+	display:inline-block;
+	float:left;
+}
+
+.date{
+	width: 135px !important;
+	background: white url(../images/txt-bg.png) no-repeat right center !important;
+	padding: 0 30px 0 0 !important;
+	font-family: yekan !important;
+	font-size: 15px !important;
+}
+
 div.clear{
 	width:0;
 	height:0;
@@ -1376,7 +1390,7 @@ div.custom-member div.show-member{
 }
 
 div.custom-member div.show-member div.members{
-	height:440px;
+	height:451px;
 	border: 1px solid #7E7E7E;
 	background-color: #E0E0E0;
 	border-radius: 5px 5px 0 0;
@@ -1440,18 +1454,19 @@ div.custom-member div.custom-send > div{
 
 h3{
 	height: 22px;
+	line-height: 22px;
 	border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
 	-moz-border-radius: 5px 5px 0 0;
 	-o-border-radius: 5px 5px 0 0;
 	-ms-border-radius: 5px 5px 0 0;
 	-khtml-border-radius: 5px 5px 0 0;
-	font-size: 13px;
+	font-size: 19px;
 	font-weight: normal;
-	background-color:#7E7E7E;
+	background-color: #7E7E7E;
 	color: #383838;
-	margin:0 0 15px 0;
-	padding: 10px 15px 0 0;
+	margin: 0 0 15px 0;
+	padding: 10px 15px 10px 0;
 }
 
 div.custom-member div.custom-send input[type="text"]{
@@ -1751,11 +1766,11 @@ div.filter-estate div.other-options div.box-txt {
 }
 
 div.allmembers{
-	height:700px !important;
+	height:722px !important;
 }
 
 div.files div.filter-result-container{
-	min-height:200px;
+	min-height:449px;
 	margin:30px auto 0;
 }
 
@@ -1764,27 +1779,29 @@ div.filter-result-container div.filter-result{
 	margin: 0 auto;
 }
 
-div.filter-result table{
+#wrap table{
 	width:100%;
-	min-height:400px;
 	text-align:center;
 }
 
-div.filter-result table th{
-	height: 25px;
+/*div.filter-result */
+#wrap table th{
 	font-size: 17px;
-	line-height:23px;
 	border-bottom: 1px solid #969696;
 	background-color: #B9B9B9;
 }
 
-div.filter-result table tr{
-	height: 25px;
-	line-height:23px;
+#wrap table tr{
 	border-bottom: 1px solid #969696;
 }
 
-div.filter-result table tr span.delete{
+div.filter-result table th,
+div.filter-result table tr{
+	height: 25px;
+	line-height:25px;
+}
+
+#wrap table tr span.delete{
 	width: 16px;
 	height: 16px;
 	background: url(../images/delete.png) no-repeat center center;
@@ -1807,32 +1824,81 @@ div#sms-mobile-filter > div.sms-mobilenum > span.show-num{
 	display:inline-block;
 }
 
-
-
-span.cal{
-	position:relative;
-	display:inline-block;
-	float:left;
+/*---------- charge Page -------------------------------------------------------------------------------*/
+div#wrap.charge{
+	width: 400px;
+	float: none;
+	margin: 75px auto;
 }
 
-/*div.filter-estate .box-txt-right input*/
-.date{
-	width: 135px !important;
-	background: white url(../images/txt-bg.png) no-repeat right center !important;
-	padding: 0 30px 0 0 !important;
-	font-family: yekan !important;
-	font-size: 15px !important;
+div#wrap.charge div.charge-panel{
+	border: 1px solid #7E7E7E;
+	background-color: #E0E0E0;
+	border-radius: 5px 5px 0 0;
+	height:200px;
 }
 
+div#wrap.charge div.charge-panel input[type="text"]{
+	width:80px;
+	float:right;
+	margin-right:30px;
+	font-family: yekan;
+	font-size: 13px;
+}
 
+div#wrap.charge div.charge-panel div.row{
+	height:50px;
+	padding:0 20px;
+}
 
+div#wrap.charge div.charge-panel div.row span.train{
+	line-height:25px;
+}
 
+span.lblcharge{
+	line-height: 22px;
+	margin: 0 5px 0 0;
+}
 
+input[disabled="disabled"]{
+	background-color: #C4C4C4 !important;
+}
 
+/*---------- report_message Page -------------------------------------------------------------------------------*/
+div.report{
+	border: 1px solid #7E7E7E;
+	background-color: #E0E0E0;
+	border-radius: 5px 5px 0 0;
+}
 
+div.report > div{
+	width:850px;
+	margin:0 auto 50px;
+}
 
+div.report > div > table{
 
+}
 
+div.report > div > table th,
+div.report > div > table tr{
+	height:40px;
+	line-height:40px;
+}
+
+div.report div.invoice-info{
+	width: auto;
+	min-height: 95px;
+	padding: 10px 56px;
+}
+
+span.invoice-detail {
+	max-width: 335px;
+	margin-right: 10px;
+	display: inline-block;
+	font-size: 17px;
+	color: gray;
+}
 
 
 
