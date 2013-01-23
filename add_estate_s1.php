@@ -5,15 +5,12 @@
 <title>Untitled Document</title>
 <link type="text/css" rel="stylesheet" href="css/reset.css" />
 <link type="text/css" rel="stylesheet" href="css/style.css" />
-<link type="text/css" rel="stylesheet" href="css/form-style.css">
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="/resources/demos/external/jquery.bgiframe-2.1.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="JScripts/script.js"></script>
     <script src="JScripts/melk_types.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css" />
     <script>
     // increase the default animation speed to exaggerate the effect
     $.fx.speeds._default = 1000;
