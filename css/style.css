@@ -106,6 +106,91 @@ div.container{
 	/*background-color: #E4E4E4;*/
 }
 
+/*--- fileupload---------------------------------------------------------------------------------*/
+.file-upload {
+	overflow: hidden;
+	display: inline-block;
+	position: relative;	
+	vertical-align: middle;
+	text-align: center !important;
+	width: 60px;
+	height: 26px;
+	line-height: 13px !important;
+	background: #2458A0;
+	color: #C8C8C8;
+	margin: 22px 62px 0 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	cursor: pointer;
+}
+	
+.file-upload:hover {
+	color: white;
+	background: #173F79;
+	transition:all 300ms;
+	-webkit-transition:all 300ms;
+	-moz-transition:all 300ms;
+	-o-transition:all 300ms;
+	-ms-transition:all 300ms;
+	-khtml-transition:all 200ms;
+}
+
+.file-upload.focus { 
+	outline: 2px solid yellow;
+}
+
+.file-upload input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	font-size: 70px;
+	width: 96px;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.file-upload strong { 
+	font: normal 1.75em arial,sans-serif; 
+}	
+	
+.file-upload span {
+	color: #E9E9E9;
+	display: inline-block;
+	font-family: 'b Yekan', yekan, tahoma;
+	font-size: 13px;
+	left: 0;
+	padding-top: 0.45em;
+	position: absolute;
+	top: 0;
+	text-shadow:1px 1px 0 #333333;
+}
+
+/* Adjust the button size */	
+.file-upload { height: 25px; }
+.file-upload,
+.file-upload span {	width: 95px; }	
+
+.file-upload-status {
+	margin-left: 10px;
+	vertical-align: middle;
+	padding: 7px 11px;
+	font-weight: bold;	
+	font-size: 16px;
+	color: #888;
+	background: #f8f8f8;
+	border: 3px solid #ddd;
+}
+
+div.remove-pic input#filename{
+	width: 117px;
+}
+/*--- fileupload---------------------------------------------------------------------------------*/
+
 /*------------------------------------ container-up ---------------------------------------*/
 
 div.header{
@@ -1601,7 +1686,7 @@ div.sms-content-container div.box-input > textarea{
 	font-size:15px;
 }
 
-/*--------- member_show_info Page --------------------------------------------------------------------------------------*/
+/*---------profile & register Page --------------------------------------------------------------------------------------*/
 div#wrap.container-show-info{
 	width:970px;
 	margin-top:10px;
@@ -1719,6 +1804,18 @@ div.setting-member-detail div.map-area{
 
 div.setting-member-detail div.box-txt.custom-melk{
 	margin-right:150px;
+}
+
+a.charge-link{
+	margin: 0 0 35px 0;
+	display: inline-block;
+	font-size: 18px;
+	background: url(../Images/charge.png) no-repeat right center;
+	padding:0 20px 0 0;
+}
+
+a.charge-link:hover{
+	text-decoration:underline !important;
 }
 
 /*---------- type_sms_filter Page -------------------------------------------------------------------------------*/
@@ -1899,7 +1996,6 @@ span.invoice-detail {
 	font-size: 17px;
 	color: gray;
 }
-
 
 
 
