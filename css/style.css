@@ -1652,9 +1652,10 @@ div.sms-mobilenum{
 
 span.show-num{
 	display:block;
-	padding: 5px 4px;
+	padding: 5px 17px 5px 4px;
 	border-radius: 5px;
-	margin:5px 0 0 0;
+	margin: 5px 3px 0 0;
+	background:url(../images/mobile.png) no-repeat right center;
 }
 
 span.show-num:hover{
