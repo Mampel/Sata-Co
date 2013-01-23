@@ -19,6 +19,9 @@
 	
     <script src="JScripts/js-persian-cal.min.js"></script> 
     <link rel="stylesheet" href="css/js-persian-cal.css" />
+	
+    <script src="JScripts/pdate.min.js"></script> <!-- for persian date -->
+	
 </head>
 <body>
 <div class="container">
@@ -175,9 +178,11 @@
 							<div class="buttom">
 								<input name="submit" type="submit" value="اعمال فیلتر"/>
 							</div>
+							<span id="pdate1">date:</span>
 							<script type="text/javascript"> 
 								var receipt_date = new AMIB.persianCalendar( 'receipt_date', 'from-date');
 								var receipt_date1 = new AMIB.persianCalendar( 'receipt_date1', 'to-date');
+								AMIB.showPDate( 'pdate1' );
 							</script> 
 						</form>  
 					</div>
