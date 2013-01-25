@@ -1,3 +1,40 @@
+var ostanOptions = '<option value="0">لطفا استان خود را انتخاب کنید</option>' +
+					  '<option  value="41">آذربايجان شرقی</option>' +
+					  '<option  value="44">آذربايجان غربي</option>' +
+					  '<option  value="45">اردبيل</option>' +
+					  '<option  value="31">اصفهان</option>' +
+					  '<option  value="84">ايلام</option>' +
+					  
+					  '<option  value="77">بوشهر</option>' +
+					  '<option  value="26">البرز</option>' +
+					  '<option  value="21">تهران</option>' +
+					  '<option  value="38">چهارمحال بختياري</option>' +
+					  '<option  value="56">خراسان جنوبي</option>' +
+					  '<option  value="51">خراسان رضوي</option>' +
+					  '<option  value="58">خراسان شمالي</option>' +
+					  
+					  '<option  value="61">خوزستان</option>' +
+					  '<option  value="24">زنجان</option>' +
+					  '<option  value="23">سمنان</option>' +
+					  '<option  value="54">سيستان و بلوچستان</option>' +
+					  '<option  value="71">فارس</option>' +
+					  '<option  value="28">قزوين</option>' +
+					  
+					  '<option  value="25">قم</option>' +
+					  '<option  value="87">كردستان</option>' +
+					  '<option  value="34">كرمان</option>' +
+					  '<option  value="83">كرمانشاه</option>' +
+					  '<option  value="74">كهكيلويه و بويراحمد</option>' +
+					  '<option  value="17">گلستان</option>' +
+					  
+					  '<option  value="13">گيلان</option>' +
+					  '<option  value="66">لرستان</option>' +
+					  '<option  value="15">مازندران</option>' +
+					  '<option  value="86">مركزي</option>' +
+					  '<option  value="76">هرمزگان</option>' +
+					  '<option  value="81">همدان</option>' +
+					 ' <option  value="35">يزد</option>';
+
 function ldMenu(mySubject) {
 var Indx=mySubject;
 with (document.getElementById('shahr')) 
