@@ -1942,6 +1942,7 @@ div#wrap.charge div.charge-panel input[type="text"]{
 	margin-right:30px;
 	font-family: yekan;
 	font-size: 13px;
+	direction:ltr;
 }
 
 div#wrap.charge div.charge-panel div.row{
@@ -1982,6 +1983,10 @@ div.report > div > table th,
 div.report > div > table tr{
 	height:40px;
 	line-height:40px;
+}
+
+div.report input[type="checkbox"]{
+	margin:0 0 0 5px;
 }
 
 div.report div.invoice-info{
