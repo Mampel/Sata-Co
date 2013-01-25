@@ -35,13 +35,13 @@ var melk_types = [ //starts from zero
  * @type {Object}
  */
 var vagozari_types = {
-    "1": { "tit" : "فروش"           , "fields":[4,5] , "val":"0"},
-    "2": { "tit" : "رهن و اجاره"    , "fields":[]  , "val":"1"},
-    "3": { "tit" : "رهن"            , "fields":[]  , "val":"2"},
-    "4": { "tit" : "اجاره"          , "fields":[]  , "val":"3"},
-    "5": { "tit" : "پیش فروش"       , "fields":[]  , "val":"4"},
-    "6": { "tit" : "مشارکت در ساخت" , "fields":[]  , "val":"5"},
-    "7": { "tit" : "اجاره موقت"     , "fields":[]  , "val":"6"}
+    "1": { "tit" : "فروش"           , "fields":[3,4,5] , "val":"1"},
+    "2": { "tit" : "رهن و اجاره"    , "fields":[3,4]  , "val":"2"},
+    "3": { "tit" : "رهن"            , "fields":[2,3]  , "val":"3"},
+    "4": { "tit" : "اجاره"          , "fields":[3,4]  , "val":"4"},
+    "5": { "tit" : "پیش فروش"       , "fields":[2,3,4]  , "val":"5"},
+    "6": { "tit" : "مشارکت در ساخت" , "fields":[2,3]  , "val":"6"},
+    "7": { "tit" : "اجاره موقت"     , "fields":[4,5]  , "val":"7"}
 };
 /**
  * Fields Repository
