@@ -11,6 +11,8 @@
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="JScripts/script.js"></script>
     <script src="JScripts/melk_types.js"></script>
+	
+  <script src="JScripts/city3.js"></script>
     <script>
     // increase the default animation speed to exaggerate the effect
     $.fx.speeds._default = 1000;
@@ -336,13 +338,12 @@
             </div>
             <div class="box-txt cover">
                   <label id="txt" for="noe_vagozari">نوع واگذاری :</label>
-                   <select dir="rtl" name="filereg_noe_vagozari">
-                  </select>
+                   <select dir="rtl" name="filereg_noe_vagozari"></select>
             </div>
 			<div class="append"></div>
             <div class="buttom">
               <!-- <button name="filereg_btn" type="submit"><a href="afzudan-melk.html">برو</a></button> -->
-			  <!--<input name="filereg_btn" type="submit" value="برو"></input>-->
+			  <input name="filereg_btn" type="submit" value="برو"></input>
 			  <a class="more-info" href="#">اطلاعات بیشتر</a>
             </div>
           </form>  
