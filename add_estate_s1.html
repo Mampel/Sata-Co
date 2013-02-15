@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="JScripts/script.js"></script>
+    <script src="JScripts/melk_types.js"></script>
+	
+  <script src="JScripts/city3.js"></script>
+    <script>
+    // increase the default animation speed to exaggerate the effect
+    $.fx.speeds._default = 1000;
+    $(function() {
+        $( "#dialog" ).dialog({
+            autoOpen: false,
+            show: "blind",
+            hide: "explode"
+        });
+ 
+        $( "#opener" ).click(function() {
+            $( "#dialog" ).dialog( "open" );
+            return false;
+        });
+    });
+    </script>
+
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+  <div class="header">
+		<nav class="main-nav">
+			<menu>
+				<li><a href="index.html">صفحه اصلی</a></li>
+				<li><a href="add_estate_s1.html">ثبت ملک</a></li>
+				<li><a href="register.html">ثبت عضو</a></li>
+				<li><a href="invoice.html">صورتحساب</a></li>
+				<li><a href="outbox.html">صندوق خروجی</a></li>
+				<li><a href="member_list.html">لیست اعضا</a></li>
+				<li><a href="type_sms_filter.html">ارسال پیام</a></li>
+			</menu>
+		</nav>
+	      <div class="header-search">
+		        <form>
+		          		<input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
+		        </form>
+	        </div>
+   </div>
+    
+    <div class="content">
+   
+      <div class="show">
+          <div id="wrap" class="estate-s1">
+            <form  action="add_estate_s2.php" method="post">
+			  <div class="tag"><h3>فرم ثبت ملک جدید</h3></div>
+              <div class="box-txt cover">
+                 <label id="txt" for="noe_melk">نوع ملک :</label>
+                   <select dir="rtl" name="filereg_noe_melk">
+                      <option value="-1">نوع ملک را انتخاب کنید!----</option>
+                     <!-- <option value="1">خانه ویلایی</option>
+                      <option value="2">سوییت</option>
+                      <option value="3">دفتر کار</option>
+                      <option value="4">مغازه</option>
+                      <option value="5">زمین</option>
+                      <option value="6">کلنگی</option>
+                      <option value="7">مستغلات - آپارتمان</option>
+                      <option value="8">مستغلات - خانه شهری</option>
+                      <option value="9">مستغلات - پاساژ با مرکز خرید</option>
+                      <option value="10">مستغلات - باغ - باغچه</option>
+                      <option value="11">مستغلات - انبار</option>
+                      <option value="12">مستغلات - صنعتی</option>
+                      <option value="13">مستغلات - کشاورزی</option>
+                      <option value="14">مستغلات - دامداری - دامپروری</option>
+                      <option value="15">مستغلات - هتل - هتل آپارتمان</option> -->
+                  </select>
+            </div>
+            <div class="box-txt cover">
+                  <label id="txt" for="noe_vagozari">نوع واگذاری :</label>
+                   <select dir="rtl" name="filereg_noe_vagozari"></select>
+            </div>
+            <div class="box-txt cover">
+                   <a href="map.html" class="map-link-estate">نقشه</a>
+            </div>
+	<div class="append"></div>
+            <div class="buttom">
+             	 <!-- <button name="filereg_btn" type="submit"><a href="afzudan-melk.html">برو</a></button> -->
+		  <input name="filereg_btn" type="submit" value="برو"></input>
+		  <a class="more-info btn" href="#">اطلاعات بیشتر</a>
+            </div>
+          </form>  
+        </div>    
+      </div>
+      <div class="clear"></div>
+  </div>
+</div>
+</body>
+</html>

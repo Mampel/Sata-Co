@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/form-style.css">
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="/resources/demos/external/jquery.bgiframe-2.1.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script>
+    // increase the default animation speed to exaggerate the effect
+    $.fx.speeds._default = 1000;
+    $(function() {
+        $( "#dialog" ).dialog({
+            autoOpen: false,
+            show: "blind",
+            hide: "explode"
+        });
+ 
+        $( "#opener" ).click(function() {
+            $( "#dialog" ).dialog( "open" );
+            return false;
+        });
+    });
+    </script>
+
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+  <div class="header">
+      <div class="header-search">
+        <form>
+          <input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
+        </form>
+        </div>
+        <div id="dialog" title="Basic dialog">
+</div>
+   </div>
+    
+    <div class="content">
+    
+<?php
+require_once('inc/modules.php');
+
+$noe_melk = $_POST['ezafe_melk_noe_melk'];
+$noe_vagozari = $_POST['ezafe_melk_noe_vagozari'];
+
+$melk_metraj = $_POST['ezafe_melk_metraj'];
+$noe_sanad = $_POST['ezafe_melk_noe_sanad'];
+
+if(isset($_POST['ezafe_melk_jahat'])) {
+	$melk_jahat = $_POST['ezafe_melk_jahat']; //radio button
+}else $melk_jahat = "";
+$melk_sen_bana = $_POST['ezafe_melk_sen_bana'];
+
+
+if(isset($_POST['ezafe_melk_bazsazishode'])) {
+	$melk_bazsazishode = $_POST['ezafe_melk_bazsazishode']; // check box
+}else $melk_bazsazishode = "";
+if(isset($_POST['ezafe_melk_ghabelesokonat'])) { 
+	$melk_ghabelesokonat = $_POST['ezafe_melk_ghabelesokonat']; // check box
+}else $melk_ghabelesokonat = "";
+
+$melk_ostan = $_POST['ezafe_melk_ostan'];
+if(isset($_POST['ezafe_melk_shahr'])){
+	$melk_shahr_com = $_POST['ezafe_melk_shahr'];
+	$array_shahr = explode("-",$melk_shahr_com);
+	$melk_shahr = end($array_shahr);
+}else $melk_shahr_com = "";
+
+
+$melk_mahdude = $_POST['ezafe_melk_mahdude'];
+$melk_address = $_POST['ezafe_melk_address'];
+
+$melk_tabaghe = $_POST['ezafe_melk_tabaghe'];
+$melk_pelak = $_POST['ezafe_melk_pelak'];
+
+$melk_vahed = $_POST['ezafe_melk_vahed'];
+$melk_tedade_vahed = $_POST['ezafe_melk_tedade_vahed'];
+$melk_tedad_khab = $_POST['ezafe_melk_tedad_khab'];
+
+//if( $melk_jahat && $melk_ostan && $melk_shahr){
+
+//foreach($_POST['checkbox'] as $checkbox){
+   // echo $checkbox . ' ';
+//}
+
+//if(isset($melk_jahat)){
+
+	//echo $melk_jahat . '----' . $melk_ostan . '----' . $melk_shahr.'----';
+	
+	//$melk = db_getrows('melk1');
+
+	//show_books($melk);
+
+//}else{
+	//echo '<h2 class="err">Error in your data ...</h2>';
+//}
+
+?>
+      <div class="show">
+          <div id="wrap" class="estate-s3">
+			  <div class="tag"><h3>فرم ثبت ملک جدید</h3></div>
+			<?php 
+			
+				db_connect();
+
+				insert_melk($noe_melk, $noe_vagozari, $melk_metraj, $noe_sanad, $melk_jahat, $melk_sen_bana, $melk_bazsazishode, $melk_ghabelesokonat, $melk_ostan, $melk_shahr, $melk_mahdude, $melk_address, $melk_tabaghe, $melk_pelak, $melk_vahed, $melk_tedade_vahed,$melk_tedad_khab);
+
+				db_close();
+				echo '<h2 class="ok">ملک مورد نظر اضافه شد!</h2>';
+				
+			
+				//echo  $noe_melk."---".$noe_vagozari."---".$melk_metraj."---".$noe_sanad."---".$melk_jahat ."---".$melk_sen_bana."---".$melk_bazsazishode."---".$melk_ghabelesokonat."---".$melk_ostan; 
+				//echo "---". $melk_shahr ."---". $melk_mahdude ."---". $melk_address ."---". $melk_tabaghe ."---". $melk_pelak ."---". $melk_vahed ."---". $melk_tedade_vahed ."---". $melk_tedad_khab;
+			?>
+				<a href="add_estate_s1.html" name="ezafe_melk_back" class="btn">اضافه کردن ملک جدید</a>
+        </div>    
+      </div>
+      <div class="clear"></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Untitled Document</title>
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link type="text/css" rel="stylesheet" href="css/form-style.css">
+</head>
+<body>
+<div class="container">
+   <div class="header">
+      <div class="header-search">
+         <form>
+            <input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
+            </form>
+        </div>
+    </div>
+    
+    <div class="content">
+   
+  <div class="show">
+    <div id="wrap" class="register_melk">
+      <form  action="add_member_s2.php" method="post">
+        <div class="tag"><h3>فرم ثبت عضو جدید</h3></div>
+        <div class="box-txt-right cover">
+            <label id="txt">نام واحد:</label>
+            <input type="text" name="reg_melk_name_vahed" >
+        </div>
+        <div class="box-txt-left cover">
+            <label id="txt">کد عضویت:</label>
+            <input type="text" name="reg_melk_code_ozviat" >
+        </div> 
+        <div class="box-txt-right cover">
+            <label id="txt">نام:</label>
+            <input type="text" name="reg_melk_name" >
+        </div>
+        <div class="box-txt-left cover">
+            <label id="txt">نام خانوادگی:</label>
+            <input type="text" name="reg_melk_familyname" />
+        </div>
+        <div class="box-txt-right cover">
+            <label id="txt">تلفن ثابت:</label>
+            <input type="text" name="reg_melk_tel" />
+        </div>
+        <div class="box-txt-left cover">
+            <label id="txt" for="ostan">تلفن همراه:</label>
+            <input type="text" name="reg_melk_cell" />
+        </div>
+        <div class="box-txt-right cover">
+            <label id="txt">تلفن همراه2:</label>
+            <input type="text" name="reg_melk_cell2" />
+        </div>
+        <div class="box-txt-left cover">
+            <label id="txt">تلفن همراه3:</label>
+            <input type="text" name="reg_melk_cell3" />
+        </div>
+        <div class="box-txt-right cover">
+            <label id="txt">آدرس:</label>
+            <textarea type="text" name="reg_melk_address" ></textarea>
+        </div>
+        <div class="clear"> </div>
+        <div class="box-txt-right cover">
+            <span class="train left" dir="rtl">اتصال به اینترنت &nbsp;<input type="checkbox" name="reg_melk_etesalbe_internet" value="اتصال به اینترنت"></span>
+        </div>
+        <div class="box-txt-left cover">
+            <span class="train left" dir="rtl">کامپیوتر &nbsp;<input type="checkbox" name="reg_melk_computer" value="کامپیوتر"  ></span>
+        </div>
+        <div class="box-txt-right cover">
+            <label id="txt">عکس از واحد:</label>
+            <input type="file" name="reg_melk_upload_img" multiple="multiple" />
+        </div>
+        <div class="box-txt-left cover">
+            <input type="reset" name="reg_melk_reset" value="پاک کردن فرم"/>
+            <input type="submit" name="reg_melk_submit" value="ثبت" />
+        </div>
+        <div class="title cover right">
+            <label id="txt">تنضیمات:</label>            
+        </div>
+        <div class="clear"></div>
+        <div class="row">
+            <span class="train right" dir="rtl">تعدادی &nbsp;<input type="radio" name="reg_melk_tedadi" value="تعدادی"></span>
+            <input type="text" name="reg_melk_tedadi_txt" />
+            <input type="text" name="reg_melk_tedadi_txt2" />
+        </div>
+        <div class="clear"></div>
+        <div class="row">
+            <span class="train right" dir="rtl">روزانه &nbsp;<input type="radio" name="reg_melk_tedadi" value="روزانه"></span>
+            <input type="text" name="reg_melk_rozane_txt" />
+            <input type="text" name="reg_melk_rozane_txt2" />
+        </div>
+        <div class="clear"></div>
+        <div class="row cover">
+            <label id="txt">نوع ملک:</label>            
+            <!-- <span class="train left" dir="rtl">آپارتمانی &nbsp;<input type="checkbox" name="reg_melk_apartmant" value="آپارتمانی"></span>
+            <span class="train left" dir="rtl">ویلایی &nbsp;<input type="checkbox" name="reg_melk_vilayi" value="ویلایی"></span>
+            <span class="train left" dir="rtl">مغازه &nbsp;<input type="checkbox" name="reg_melk_maghaze" value="مغازه"></span>
+            <span class="train left" dir="rtl">دفتر کار &nbsp;<input type="checkbox" name="reg_melk_swit" value="دفتر کار"></span> -->
+			<select dir="rtl" name="filereg_noe_melk">
+			  <option>آپارتمان</option>
+			  <option>خانه ویلایی</option>
+			  <option>سوییت</option>
+			  <option>دفتر کار</option>
+			  <option>مغازه</option>
+			  <option>زمین</option>
+			  <option>کلنگی</option>
+			  <option>مستغلات - آپارتمان</option>
+			  <option>مستغلات - خانه شهری</option>
+			  <option>مستغلات - پاساژ با مرکز خرید</option>
+			  <option>مستغلات - باغ - باغچه</option>
+			  <option>مستغلات - انبار</option>
+			  <option>مستغلات - پارکینگ</option>
+			  <option>مستغلات - سوله</option>
+			  <option>مستغلات - کارگاه</option>
+			  <option>مستغلات - کارخانه</option>
+			  <option>مستغلات - استخر</option>
+			  <option>مستغلات - سالن ورزشی</option>
+			  <option>مستغلات - رستوران</option>
+			  <option>مستغلات - پرورش دام</option>
+			  <option>مستغلات - مرغ داری</option>
+			  <option>مستغلات - پرورش ماهی</option>
+			  <option>مستغلات - هتل</option>
+			  <option>مستغلات - هتل آپارتمان</option>
+			  <option>مستغلات - مسافرخانه</option>
+		  </select>
+	   </div>
+        <div class="row cover">
+            <label id="txt">نوع واگذاری:</label>            
+          <!--  <span class="train left" dir="rtl">فروش &nbsp;<input type="checkbox" name="reg_melk_forosh" value="فروش"></span>
+            <span class="train left" dir="rtl">اجاره &nbsp;<input type="checkbox" name="reg_melk_ajare" value="اجاره"></span>
+            <span class="train left" dir="rtl">رهن &nbsp;<input type="checkbox" name="reg_melk_rahn" value="رهن"></span>
+            <span class="train left" dir="rtl">رهن و اجاره &nbsp;<input type="checkbox" name="reg_melk_rahno_va_ejare" value="رهن و اجاره"></span> -->
+        
+		</div>
+        <div class="clear"></div>
+        <div class="cover">
+         <div class="title right">
+            <label id="txt">منطقه:</label>            
+         </div>
+         <div class="map"></div>
+        </div>
+      </form>    
+    </div> 
+   </div>
+</div>
+</body>
+</html>

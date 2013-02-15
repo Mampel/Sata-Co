@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/form-style.css">
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="/resources/demos/external/jquery.bgiframe-2.1.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script>
+    // increase the default animation speed to exaggerate the effect
+    $.fx.speeds._default = 1000;
+    $(function() {
+        $( "#dialog" ).dialog({
+            autoOpen: false,
+            show: "blind",
+            hide: "explode"
+        });
+ 
+        $( "#opener" ).click(function() {
+            $( "#dialog" ).dialog( "open" );
+            return false;
+        });
+    });
+    </script>
+
+
+
+</head>
+
+
+
+<body>
+<div class="container">
+  <div class="header">
+      <div class="header-search">
+        <form>
+          <input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
+        </form>
+        </div>
+        <div id="dialog" title="Basic dialog">
+</div>
+   </div>
+    
+    <div class="content">
+    
+    
+<?php
+require_once('inc/modules.php');
+
+
+$member_vahed = $_POST['reg_melk_name_vahed'];
+$member_ozviat= $_POST['reg_melk_code_ozviat'];
+
+$member_fname = $_POST['reg_melk_name'];
+$member_lname = $_POST['reg_melk_familyname'];
+
+$member_tel = $_POST['reg_melk_tel'];
+$member_cell = $_POST['reg_melk_cell'];
+
+$member_cell2 = $_POST['reg_melk_cell2'];
+$member_cell3 = $_POST['reg_melk_cell3'];
+
+$member_address = $_POST['reg_melk_address'];
+
+if(isset($_POST['reg_melk_etesalbe_internet'])){
+	$member_internet = $_POST['reg_melk_etesalbe_internet'];
+}else $member_internet = "";
+
+if(isset($_POST['reg_melk_computer'])){
+	$member_computer = $_POST['reg_melk_computer'];
+}else $member_computer = "";
+
+if(isset($_POST['reg_melk_upload_img'])){
+	$member_img = $_POST['reg_melk_upload_img'];
+}else $member_img = "";
+
+
+
+?>
+      <div class="show">
+          <div id="wrap" class="estate-s3">
+			  <div class="tag"><h3>فرم ثبت عضو جدید</h3></div>
+			<?php 
+			
+				db_connect();
+
+				insert_member($member_vahed, $member_ozviat, $member_fname, $member_lname, $member_tel, $member_cell, $member_cell2, $member_cell3, $member_address, $member_internet, $member_computer, $member_img);
+
+				db_close();
+				echo '<h2 class="ok">یک عضو جدید ثبت شد!</h2>';
+				
+			
+				//echo  $noe_melk."---".$noe_vagozari."---".$melk_metraj."---".$noe_sanad."---".$melk_jahat ."---".$melk_sen_bana."---".$melk_bazsazishode."---".$melk_ghabelesokonat."---".$melk_ostan; 
+				//echo "---". $melk_shahr ."---". $melk_mahdude ."---". $melk_address ."---". $melk_tabaghe ."---". $melk_pelak ."---". $melk_vahed ."---". $melk_tedade_vahed ."---". $melk_tedad_khab;
+			?>
+				<a href="add_member_s1.html" name="ezafe_melk_back" class="btn">افزودن عضو جدید</a>
+        </div>    
+      </div>
+      <div class="clear"></div>
+  </div>
+</div>
+</body>
+</html>
