@@ -1,6 +1,5 @@
 $(function(){
 	var pics = $('div.pixel'),
-		sections = $('div.section'),
 		itop = 0, 
 		ileft = 0, 
 		n = 35,
@@ -11,7 +10,7 @@ $(function(){
 		if(ileft == (n*iwidth)) {ileft=0;  itop += iheight; }
 		$(this).css({top:itop, left:ileft});
 		ileft += iwidth;
-    }
+	}
  	pics.each(position);
 
 	var toggle = function(elm){
