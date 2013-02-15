@@ -12,10 +12,11 @@
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 <link type="text/css" rel="stylesheet" href="css/form-style.css">
 
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="/resources/demos/external/jquery.bgiframe-2.1.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>-->
+    <script src="JScripts/jquery.js"></script>
     <script src="JScripts/script.js"></script>
     <script src="JScripts/melk_types.js"></script>
     <link rel="stylesheet" href="/resources/demos/style.css" />
@@ -23,22 +24,31 @@
 <body>
 <div class="container">
 	<div class="header">
-    	<div class="header-search">
-        	<form>
+		<nav class="main-nav">
+			<menu>
+				<li><a href="index.html">صفحه اصلی</a></li>
+				<li><a href="add_estate_s1.html">ثبت ملک</a></li>
+				<li><a href="register.html">ثبت عضو</a></li>
+				<li><a href="invoice.html">صورتحساب</a></li>
+				<li><a href="outbox.html">صندوق خروجی</a></li>
+				<li><a href="member_list.html">لیست اعضا</a></li>
+				<li><a href="type_sms_filter.html">ارسال پیام</a></li>
+			</menu>
+		</nav>
+	    	<div class="header-search">
+		        	<form>
 				<input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
-            </form>
-        </div>
+		            </form>
+	        </div>
     </div>
     
     <div class="content">
-		<div id='cssmenu'>
-
-		</div> 
+	
         <div class="show">
             <div id="wrap" class="charge">
 				<div class="charge-panel cover">
 					<h3>فرم شارژ پیامک اعضا</h3>
-					<div>
+					<div class="cover">
 						<form action="">
 							<div class="row cover">
 								<span class="train right" dir="rtl">روزانه &nbsp;<input type="radio" name="charge-type" value="روزانه" checked="true" ></span>
@@ -50,6 +60,12 @@
 								<input type="text" name="number_sms" /><span class="lblcharge right">پیام</span>
 								<input type="text" name="number_price" /><span class="lblcharge right">تومان</span>
 							</div>
+							<br />
+							<br />
+							<div class="row cover">
+								<span class="lblcharge right">شارژ کنونی: </span><span class="lblcharge right">234</span><span class="lblcharge right">روز + </span><span class="lblcharge right">234</span><span class="lblcharge right">پیام</span>
+							</div>
+							
 							<div class="row">
 								<input type="submit" value="شارژ" name="" />
 							</div>

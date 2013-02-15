@@ -23,18 +23,26 @@
 <body>
 <div class="container">
 	<div class="header">
-    	<div class="header-search">
-        	<form>
+		<nav class="main-nav">
+			<menu>
+				<li><a href="index.html">صفحه اصلی</a></li>
+				<li><a href="add_estate_s1.html">ثبت ملک</a></li>
+				<li><a href="register.html">ثبت عضو</a></li>
+				<li><a href="invoice.html">صورتحساب</a></li>
+				<li><a href="outbox.html">صندوق خروجی</a></li>
+				<li><a href="member_list.html">لیست اعضا</a></li>
+				<li><a href="type_sms_filter.html">ارسال پیام</a></li>
+			</menu>
+		</nav>
+	    	<div class="header-search">
+		        	<form>
 				<input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
-            </form>
-        </div>
+		            </form>
+	        </div>
     </div>
     
     <div class="content">
 
-    <div id='cssmenu'>
-
-	</div> 
         <div class="show">
             <div id="wrap" class="container-show-info">
 				<div class="show-info cover">
@@ -76,7 +84,18 @@
 								</div>
 								<div class="box-txt-right address cover">
 									<label id="txt">آدرس:</label>
-									<textarea type="text" name="reg_melk_address" value="مشهد - رضاشهر"></textarea>
+									<textarea type="text" name="reg_melk_address" placeholder="مشهد - رضاشهر"></textarea>
+								</div>
+								<div class="box-txt-right address cover">
+									<label id="txt"> توضیحات:</label>
+									<textarea type="text" name="reg_melk_des" placeholder="----"></textarea>
+								</div>
+								<div class="box-txt-left cover">
+									<label id="txt">وضعیت:</label>
+									<select name="" id="">
+										<option value="0">فعال</option>
+										<option value="1">غیر فعال</option>
+									</select>
 								</div>
 								<div class="clear"></div>
 								<div class="box-txt-right address cover">
@@ -103,61 +122,58 @@
 					<div class="cover">
 						<h3>تنظیمات کاربری</h3>
 						<div class="setting-member-detail cover">
-								<label id="txt">انواع ملک درخواستی:</label>
-								<div class="box-txt custom-melk cover">
-									<span class="train right" dir="rtl">آپارتمان &nbsp;<input type="checkbox" name="x[]" value="آپارتمان"></span>
-									<span class="train right" dir="rtl">خانه ویلایی &nbsp;<input type="checkbox" name="x[]" value="خانه ویلایی"></span>
-									<span class="train right" dir="rtl">سوئیت &nbsp;<input type="checkbox" name="x[]" value="سوئیت"></span>
-									<span class="train right" dir="rtl">دفتر کار&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مغازه&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									
-									<span class="train right" dir="rtl">زمین&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">کلنگی&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - آپارتمان&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - خانه شهری&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - پاساژ با مرکز خرید&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									
-									<span class="train right" dir="rtl">مستغلات - باغ - باغچه&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - انبار&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - پارکینگ&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - سوله&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - کارگاه&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									
-									<span class="train right" dir="rtl">مستغلات - کارخانه&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - استخر&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - سالن ورزشی&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - رستوران&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - پرورش دام&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									
-									<span class="train right" dir="rtl">مستغلات - مرغ داری&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - پرورش ماهی&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - هتل&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - هتل آپارتمان&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-									<span class="train right" dir="rtl">مستغلات - مسافرخانه&nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-								</div>
-								<div class="other-options cover">
-									<div class="right">
-										<label id="txt">خواهان:</label>
-										<div class="box-txt cover">
-											<span class="train" dir="rtl">رهن و اجاره &nbsp;<input type="checkbox" name="x[]" value="آپارتمان"></span>
-											<span class="train" dir="rtl">خرید &nbsp;<input type="checkbox" name="x[]" value="خانه ویلایی"></span>
-											<span class="train" dir="rtl">مشارکت در ساخت &nbsp;<input type="checkbox" name="x[]" value="سوئیت"></span>
-											<span class="train" dir="rtl">پیش خرید &nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-										</div>
-									</div>
-									<div class="right">
-										<label id="txt">خوانده:</label>
-										<div class="box-txt cover">
-											<span class="train" dir="rtl">رهن و اجاره &nbsp;<input type="checkbox" name="x[]" value="آپارتمان"></span>
-											<span class="train" dir="rtl">خرید &nbsp;<input type="checkbox" name="x[]" value="خانه ویلایی"></span>
-											<span class="train" dir="rtl">مشارکت در ساخت &nbsp;<input type="checkbox" name="x[]" value="سوئیت"></span>
-											<span class="train" dir="rtl">پیش فروش &nbsp;<input type="checkbox" name="x[]" value="زمین"></span>
-										</div>
-									</div>
-								</div>
-								<div class="box-txt cover">
-									<label id="txt">منطقه:</label>
-									<div class="map-area"></div>
+								<div class="estate-filter-type">
+									<!--<label id="txt">نوع ملک:</label>-->
+									<select class="right">
+										<option value="khahan" >خواهان</option>
+										<option value="khande">خوانده</option>
+									</select>
+									<select dir="rtl" name="filter_noe_melk" class="right">
+                     								<option value="-1">نوع ملک را انتخاب کنید!----</option>
+									</select>
+									<select dir="rtl" name="filter_noe_vagozari" class="right"></select>
+									<a href="#" class="btn left" >اضافه کردن به لیست</a>
+									<table border="1">
+										<thead>
+											<tr>
+												<th></th>
+												<th>خواهان/خوانده</th>
+												<th>نوع ملک</th>
+												<th>نوع واگذاری</th>
+												<th></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><span class="delete right" title="حذف از لیست"></span></td>
+												<td>خواهان/خوانده</td>
+												<td>نوع ملک</td>
+												<td>نوع واگذاری</td>
+												<td><a href="map.html" title="نقشه" class="map-link"></a></td>
+											</tr>
+											<tr>
+												<td><span class="delete right" title="حذف از لیست"></span></td>
+												<td>خواهان/خوانده</td>
+												<td>نوع ملک</td>
+												<td>نوع واگذاری</td>
+												<td><a href="map.html" title="نقشه" class="map-link"></a></td>
+											</tr>
+											<tr>
+												<td><span class="delete right" title="حذف از لیست"></span></td>
+												<td>خواهان/خوانده</td>
+												<td>نوع ملک</td>
+												<td>نوع واگذاری</td>
+												<td><a href="map.html" title="نقشه" class="map-link"></a></td>
+											</tr>
+											<tr>
+												<td><span class="delete right" title="حذف از لیست"></span></td>
+												<td>خواهان/خوانده</td>
+												<td>نوع ملک</td>
+												<td>نوع واگذاری</td>
+												<td><a href="map.html" title="نقشه" class="map-link"></a></td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 								<a href="charge.html" class="charge-link">شارژ پیامک</a>
 								<div class="clear"></div>

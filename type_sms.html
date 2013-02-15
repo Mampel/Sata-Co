@@ -23,18 +23,26 @@
 <body>
 <div class="container">
 	<div class="header">
-    	<div class="header-search">
-        	<form>
+		<nav class="main-nav">
+			<menu>
+				<li><a href="index.html">صفحه اصلی</a></li>
+				<li><a href="add_estate_s1.html">ثبت ملک</a></li>
+				<li><a href="register.html">ثبت عضو</a></li>
+				<li><a href="invoice.html">صورتحساب</a></li>
+				<li><a href="outbox.html">صندوق خروجی</a></li>
+				<li><a href="member_list.html">لیست اعضا</a></li>
+				<li><a href="type_sms_filter.html">ارسال پیام</a></li>
+			</menu>
+		</nav>
+	    	<div class="header-search">
+		        	<form>
 				<input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
-            </form>
-        </div>
+		            </form>
+	        </div>
     </div>
     
     <div class="content">
 
-    <div id='cssmenu'>
-
-	</div> 
         <div class="show">
             <div id="wrap" class="typesms">
 				<div class="custom-member left">
@@ -99,14 +107,18 @@
 				<div class="files">
 					<div>
 						<h3>فرم ارسال پیامک</h3>
-						<form  action="">
+						<form  action="" method="" name="">
+							<div class="extraInfo">
+								<label class="show-extrainfo" id="txt">تعداد مشاور املاک هدف دریافت نکرده:</label>
+								<br />
+								<label class="show-extrainfo" id="txt">تعداد دریافت کنندگان این فایل:</label>
+								<br />
+							</div>
 							<input type="hidden"  name="type_sms_mobilenum_hidden" />
 							<div class="box-txt sms-file">
 								<label for="file" >فایل :&nbsp;</label>
 								<textarea class="txt-width" name="type_sms_file" ></textarea>
 							</div>
-							<!--
-							 -->
 							<div class="sms-mobilenum-container right">
 								<div class="box-input">
 									<label for="mobilenum">شماره های ارسالی :&nbsp;</label>
@@ -121,7 +133,10 @@
 							</div>							
 							<div class="buttom">
 								<input name="submit" type="submit" value="ارسال متن"/>
-								<input name="submit" type="submit" value="گزارش فایل"/>
+								<input name="submit" type="button" class="btn" value="گزارش فایل"/>
+								<input name="submit" type="button" class="btn" value="ذخیره متن"/>
+								<input name="submit" type="button" class="btn w-14" value="ارسال به ارسال نشده ها"/>
+								<input name="submit" type="button" class="btn" value="بایگانی"/>
 							</div>
 						</form>  
 					</div>

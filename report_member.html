@@ -8,89 +8,176 @@
   <script type="text/javascript" language="JavaScript" src="JScripts/amin.js"></script>
   <script type="text/javascript" language="JavaScript" src="JScripts/calendar.js"></script>
   <link rel="stylesheet" type="text/css" href="CSS/calendar.css">-->
-  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+
+
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
 <link type="text/css" rel="stylesheet" href="css/style.css" />
-<link type="text/css" rel="stylesheet" href="css/form-style.css">
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="/resources/demos/external/jquery.bgiframe-2.1.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script src="JScripts/script.js"></script>
-    <script src="JScripts/melk_types.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css" />
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="JScripts/script.js"></script>
+<script src="JScripts/melk_types.js"></script>
+	
+<script src="JScripts/js-persian-cal.min.js"></script> 
+	
+<script src="JScripts/pdate.min.js"></script> <!-- for persian date -->
 </head>
 <body>
 <div class="container">
 	<div class="header">
-    	<div class="header-search">
-        	<form>
+		<nav class="main-nav">
+			<menu>
+				<li><a href="index.html">صفحه اصلی</a></li>
+				<li><a href="add_estate_s1.html">ثبت ملک</a></li>
+				<li><a href="register.html">ثبت عضو</a></li>
+				<li><a href="invoice.html">صورتحساب</a></li>
+				<li><a href="outbox.html">صندوق خروجی</a></li>
+				<li><a href="member_list.html">لیست اعضا</a></li>
+				<li><a href="type_sms_filter.html">ارسال پیام</a></li>
+			</menu>
+		</nav>
+	    	<div class="header-search">
+		        	<form>
 				<input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
-            </form>
-        </div>
+		            </form>
+	        </div>
     </div>
     
     <div class="content">
 
-    <div id='cssmenu'>
-
-	</div> 
         <div class="show">
             <div id="wrap" class="typesms">
 				<div class="report">
-					<h3>گزارش برای یک عضو</h3>
-					<div>
-						<table>
+					<h3>املاک ساتا</h3>
+					<div>						
+						<div class="reportmember-filter">
+							<form action="" name="" method="">
+								<div class="right">
+									<label id="txt">تعداد خواهان:</label>
+									<div class="box-txt cover">
+										<!--<input type="text" />-->
+										<label id="txt" >45 عدد</label>
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">تعداد خوانده:</label>
+									<div class="box-txt cover">
+										<!--<input type="text" />-->
+										<label id="txt" >4566 عدد</label>
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">تعداد ارسال شده ها:</label>
+									<div class="box-txt cover">
+										<!--<input type="text" />-->
+										<label id="txt" >232 عدد</label>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<br />
+								<div class="right">
+									<label id="txt">وضعیت:</label>
+									<div class="box-txt cover">
+										<select>
+											<option value="-1" >لطفا وضعیت را انتخاب کنید!---</option>
+											<option value="0" >رسیده</option>
+											<option value="1" >نرسیده</option>
+										</select>
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">متن:</label>
+									<div class="box-txt cover">
+										<input type="text" />
+									</div>
+								</div>
+
+								<div class="right">
+									<label id="txt">بازه زمانی: </label>
+									<label id="txt">  از  </label>
+									<div class="box-txt cover">
+										<span class="cal">
+											<input type="text" class="date" id="from-date" name="reg_melk_name_vahed" value="" readonly >
+										</span>
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">  تا  </label>
+									<div class="box-txt cover">
+										<span class="cal">
+											<input type="text" class="date" id="to-date" name="reg_melk_name_vahed" value="" readonly >
+										</span>
+									</div>
+								</div>
+
+								<div class="right">
+									<input type="submit" class="left" value="فیلتر" />
+									<!--<input type="button" class="btn left" value="ارسال مجدد" />-->
+								</div>
+								<script type="text/javascript"> 
+									var receipt_date = new AMIB.persianCalendar( 'receipt_date', 'from-date');
+									var receipt_date1 = new AMIB.persianCalendar( 'receipt_date1', 'to-date');
+								</script> 
+							</form>
+						</div>
+						<table class="reportmember-tbl">
 							<thead>
 								<tr>
+									<th></th>
 									<th>ردیف</th>
 									<th>تاریخ</th>
 									<th>ساعت</th>
 									<th>متن</th>
 									<th>وضعیت</th>
-									<th>باقیمانده</th>
+									<th class="resend"></th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
+									<td><input type="checkbox" name="" /></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
 									<td>ساعت</td>
 									<td>متن</td>
 									<td>وضعیت</td>
-									<td>باقیمانده</td>
+									<td><input type="button" class="btn" value="ارسال مجدد" /></td>
 								</tr>
 								<tr>
+									<td><input type="checkbox" name="" /></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
 									<td>ساعت</td>
 									<td>متن</td>
 									<td>وضعیت</td>
-									<td>باقیمانده</td>
+									<td><input type="button" class="btn" value="ارسال مجدد" /></td>
 								</tr>
 								<tr>
+									<td><input type="checkbox" name="" /></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
 									<td>ساعت</td>
 									<td>متن</td>
 									<td>وضعیت</td>
-									<td>باقیمانده</td>
+									<td><input type="button" class="btn" value="ارسال مجدد" /></td>
 								</tr>
 								<tr>
+									<td><input type="checkbox" name="" /></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
 									<td>ساعت</td>
 									<td>متن</td>
 									<td>وضعیت</td>
-									<td>باقیمانده</td>
+									<td><input type="button" class="btn" value="ارسال مجدد" /></td>
 								</tr>
 								<tr>
+									<td><input type="checkbox" name="" /></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
 									<td>ساعت</td>
 									<td>متن</td>
 									<td>وضعیت</td>
-									<td>باقیمانده</td>
+									<td><input type="button" class="btn" value="ارسال مجدد" /></td>
 								</tr>
 							</tbody>
 						</table>
