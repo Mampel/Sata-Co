@@ -1,24 +1,13 @@
-
 *{
 	margin:0;
 	padding:0;
-	
 	/*
-	
 	border:none !important;
 	*/
-	
 }
 
 body{
 	background-color:#e5e5e5;
-}
-
-div.container-map{
-	width:500px;
-	height:450px;
-	margin: 200px auto 0;
-	border:1px solid blue;
 }
 
 div.map{
@@ -31,16 +20,7 @@ div.map{
 	border:1px solid #05060A;
 }
 
-div.section{
-	width:245px;
-	height:188px;
-	/*outline:1px solid red;*/
-	position:absolute;
-	top:0;
-	left:0;
-}
-
-div.pixel{
+div.map div.pixel{
 	width:35px; /*35*/
 	height:35px; /*35*/
 	outline:1px solid rgba(6, 6, 187, 0.33);

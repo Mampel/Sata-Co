@@ -17,11 +17,6 @@
 	font-weight:normal;
 }
 
-/*div{
-	outline:1px solid #F00;
-}
-*/
-
 .left{float:left}
 .right{float:right}
 .cover{*zoom:1;}
@@ -260,7 +255,7 @@ div.header-search input{
 
 div.content{
 	width:auto;
-	min-height:690px;
+	/*min-height:690px;*/
 	background-color : whitesmoke;
 }
 
@@ -284,11 +279,11 @@ div.content nav menu li {
 }
 
 a{
-	-webkit-transition:all .5s linear;
-	-moz-transition:all .5s linear;
-	-o-transition:all .5s linear;
-	-ms-transition:all .5s linear;
-	transition:all .5s linear;	
+	-webkit-transition:all .3s linear;
+	-moz-transition:all .3s linear;
+	-o-transition:all .3s linear;
+	-ms-transition:all .3s linear;
+	transition:all .3s linear;	
 }
 
 #cssmenu{
@@ -480,7 +475,7 @@ select {
 div.main-container{
 	width: 1260px;
 	margin: 0 auto;
-	padding: 70px 10px 0;
+	padding: 30px 10px 0;
 	direction:rtl;
 }
 
@@ -623,7 +618,6 @@ div.main-container div.left div.message > p > a{
 
 div.main-container div.left div.notifications div.notice{
 	width: auto;
-	padding:11px 4px;
 	/*min-height: 47px;*/
 	margin: 8px 0 0 0;
 	background-color: #EEE;
@@ -639,14 +633,20 @@ div.left div.notifications div.notice p{
 margin:3px 0 0 0;
 }
 
-div.left div.notifications div.notice p > a{
+div.left div.notifications div.notice a{
+	display: block;
+	width: 200px;
+	min-height: 28px;
+	background: url(../images/notice.jpg) no-repeat 98% center;
+	padding: 11px 33px 11px 5px;
+	line-height: 26px;
 	text-decoration: none;
 	color: #999;
 	font-family: Yekan;
 	font-size: 14px;
 }
 
-div.left div.notifications div.notice p > a:hover{
+div.left div.notifications div.notice a:hover{
 	text-decoration: underline;
 }
 
@@ -791,17 +791,17 @@ div.table{
 
 /*-------------------------------------*/
 #wrap {
-	float : right; 
 	width: 500px;
 	padding: 30px 80px;
-	margin-top: 30px;
-	margin-right: 120px;
+	/*margin-top: 30px;*/
+	/*margin-right: 120px;*/
 	border: 2px solid gray;
 	border-radius: 5px;
 	direction:rtl;
 	background-color: #d0d0d0;
 	min-height: 100px;
 	font-family: 'yekan';
+	margin: 30px auto;
 }
 
 #left {
@@ -1443,17 +1443,9 @@ div.register_melk div.map {
 }
 
 /*------ typesms Page  -------------------------------------------------------------*/
-div#wrap.typesms *{
-	/*
-	
-	border:none !important;
-	*/
-}
-
 div#wrap.typesms{
 	width:970px;
-	margin-top:10px;
-	margin-right:0;
+	margin:10px auto 0;
 	padding:30px 15px;
 }
 
@@ -1475,7 +1467,7 @@ div.custom-member div.show-member{
 }
 
 div.custom-member div.show-member div.members{
-	height:451px;
+	height:570px;
 	border: 1px solid #7E7E7E;
 	background-color: #E0E0E0;
 	border-radius: 5px 5px 0 0;
@@ -1690,8 +1682,6 @@ div.sms-content-container div.box-input > textarea{
 /*---------profile & register Page --------------------------------------------------------------------------------------*/
 div#wrap.container-show-info{
 	width:970px;
-	margin-top:10px;
-	margin-right:0;
 	padding:30px 15px;
 }
 
@@ -1721,6 +1711,9 @@ div.show-info div.show-info-detail div.box-txt-right.address{
 
 div.show-info div.show-info-detail div.box-txt-right.address textarea{
 	width: 317px;
+	font-family: 'Yekan' !Important;
+	font-size: 13px !important;
+	padding:5px 7px;
 }
 
 div.show-info div.show-info-detail input[type="text"]{
@@ -1794,6 +1787,10 @@ div.setting-member-detail div.other-options > div{
 	min-height: 130px;
 }
 
+div.map-box-container{
+	margin-top:50px;
+}
+
 div.setting-member-detail div.map-area{
 	margin-right: 105px;
 	margin-bottom: 15px;
@@ -1803,12 +1800,17 @@ div.setting-member-detail div.map-area{
 	border: 1px solid white;
 }
 
+div.setting-member-detail div.map-area > a{
+	display: block;
+	min-height: 250px;
+}
+
 div.setting-member-detail div.box-txt.custom-melk{
 	margin-right:150px;
 }
 
 a.charge-link{
-	margin: 0 0 35px 0;
+	margin: 35px 0 25px 0;
 	display: inline-block;
 	font-size: 18px;
 	background: url(../Images/charge.png) no-repeat right center;
@@ -1836,7 +1838,7 @@ div.filter-estate .box-txt-right{
 }
 
 div.filter-estate div.estate-filter-type{
-	height:145px;
+	min-height:145px;
 	margin:10px 0 0 0;
 }
 
@@ -1847,6 +1849,23 @@ div.estate-filter-type div.box-txt{
 
 div.estate-filter-type div.box-txt span.train{
 	margin-right: 20px;
+}
+
+div.estate-filter-type select{
+	width:200px !important;
+	float:right !important;
+	margin-right:10px;
+	margin-bottom:15px;
+}
+
+div.estate-filter-type a{
+	width:125px !important;
+	text-align:center;
+	margin:0 0 10px 0;
+}
+
+div.estate-filter-type table{
+	margin:10px 0 0 0;
 }
 
 div.filter-estate div.other-options {
@@ -1864,7 +1883,7 @@ div.filter-estate div.other-options div.box-txt {
 }
 
 div.allmembers{
-	height:722px !important;
+	height:650px !important;
 }
 
 div.files div.filter-result-container{
@@ -1933,7 +1952,7 @@ div#wrap.charge div.charge-panel{
 	border: 1px solid #7E7E7E;
 	background-color: #E0E0E0;
 	border-radius: 5px 5px 0 0;
-	height:200px;
+	min-height:200px;
 }
 
 div#wrap.charge div.charge-panel input[type="text"]{
@@ -1975,10 +1994,6 @@ div.report > div{
 	margin:0 auto 50px;
 }
 
-div.report > div > table{
-
-}
-
 div.report > div > table th,
 div.report > div > table tr{
 	height:40px;
@@ -2003,5 +2018,472 @@ span.invoice-detail {
 	color: gray;
 }
 
+/* -- For Map Page -- */
+div.map{
+	width:1225px;
+	height:750px;
+	margin:0 auto;
+	background: url(../images/map/map.jpg) no-repeat center center;
+	background-size:cover;
+	position:relative;
+	border:1px solid #05060A;
+}
+
+div.map div.pixel{
+	width:20px;
+	height:20px;
+	outline:1px solid rgba(6, 6, 187, 0.33);
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+div.map-setting{
+	width: 230px;
+	padding: 10px 50px 10px 20px;
+	min-height:600px;
+	border:2px solid #5E5E5E;
+	background:#ddd;
+	position: fixed;
+	top:50px;
+	left:-265px;
+	z-index: 100;
+	border-radius:10px;
+}
+
+div.map-setting div.map-options label.mp-option{
+	display:block;
+	float:right;
+	font-size: 18px;
+	font-family: yekan;
+	margin:10px 0 0 0;
+}
+
+div.map-setting div.map-options label.mp-option input[type="checkbox"]{
+	margin:5px 5px 5px 10px;
+}
+
+div.map-setting div.map-options a{
+	text-decoration:none !important;
+	margin:10px 48px 0 !important;
+}
+
+div.map-setting div.map-options input[type="text"]{
+	float: left;
+	-webkit-appearance: none;
+	-webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3),
+	 inset 0 1px 1px rgba(0, 0, 0, 0.2),
+	 0 0 0 1px #8C8C8C,
+	 0 2px 0 rgba(255, 255, 255, 0.3);
+	-webkit-transition-property: background-color, color;
+	-webkit-transition-duration: 0.4s;
+	border-radius: 3px;
+	font: 19px/1 'Lucida Grande', sans-serif;
+	color: #5A5A5A;
+	height: 20px;
+	padding: 0 5px;
+	background: -webkit-gradient(
+	 linear,
+	 left top,
+	 left bottom,
+	 from(rgba(0, 0, 0, 0.1)),
+	 to(transparent)
+	 )
+	 whiteSmoke;
+	width: 160px;
+	display: block;
+	direction: rtl;
+	margin: 24px 36px 21px;
+}
+
+div.close-map{
+	width: 50px;
+	height: 50px;
+	position:absolute;
+	top:47%;
+	right:-25px;
+	cursor:pointer;
+	border-radius: 50%;
+	border: 2px solid #747373;
+	background: #DDD url(../images/pin.png) no-repeat center center;
+	-webkit-transform-origin: 26px 26px;
+	-webkit-transform: rotate(-100deg);
+	-webkit-transition:all 700ms;
+}
+
+/* --outbox Page -- */
+
+div.outbox-filter div.right,div.reportmember-filter div.right,div.invoice-filter div.right,div.report-file div.right{
+	margin:0 55px 0 0 !important;
+}
+
+div.outbox-filter label#txt{
+	max-width:none !important;
+}
+div.reportmember-filter label#txt{
+	max-width:300px !important;
+}
+
+div.outbox-filter div.box-txt,div.reportmember-filter div.box-txt,div.invoice-filter div.box-txt{
+	width:315px !important;
+}
+
+div.outbox-filter input[type="text"],div.reportmember-filter input[type="text"],div.invoice-filter input[type="text"],div.report-file input[type="text"]{
+	width:190px !important;
+}
+
+div.outbox-filter input.date{
+	width:170px !important;
+}
+
+div.outbox-filter input[type="submit"]{
+	margin-bottom:20px !important;
+}
+
+div.reportmember-filter input[type="submit"]{
+	margin-bottom:20px !important;
+}
+
+div.reportmember-filter select{
+	width:205px !important;
+}
+
+table.reportmember-tbl input{
+	margin:0 !important;
+}
+
+table.reportmember-tbl .resend{
+	width:11% !important;
+}
+
+/*div.report-file label{
+	width: 500px;
+	margin: 16px 0 16px 0;
+	max-width:none !important;
+}
+*/
+div.extraInfo{
+	width:auto;
+	min-height:120px;
+	padding:0 16px 0;
+}
+
+div.files label.show-extrainfo{
+	width: 500px;
+	margin: 16px 0 16px 0;
+	max-width:none !important;
+}
+
+div.files input[name="submit"]{
+	margin-right:40px !important;
+}
+
+div.files .w-14{
+	width:140px !important;
+}
+
+nav.main-nav menu{
+	list-style-type: none;
+	width: 910px;
+	margin: 0 auto;
+}
+
+nav.main-nav menu li{
+	float:right;
+	margin:10px 5px 0 0;
+}
+
+nav.main-nav menu li a{
+	display:block;
+	text-decoration:none;
+	color:#FFF;
+	padding: 5px 8px;
+	font-size: 13px;
+	font-family: Yekan;
+	background-color: #306769;
+	border-radius: 5px;
+}
+
+nav.main-nav menu li a:hover{
+	text-decoration:underline;
+	background-color: #586768;
+}
+
+div.invoice-filter div.invoice-filter-btns{
+	margin:20px 430px 20px 0 !important;
+}
+
+div.setting-member div.setting-member-detail a.map-link{
+	display:block;
+	width:20px !important;
+	height:20px !important;
+	margin:0 !important;
+	background: url("../images/map.png") no-repeat center center;
+}
+
+table tr:hover{
+	background-color: #A2A2A2;
+}
+
+a.map-link-estate{
+	font-size: 20px;
+	background-image: url(../images/map.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding: 0 24px 0 0;
+}
+
+a.map-link-estate:hover{
+	text-decoration:underline !important;
+}
+
+div.reportmember-filter input.date{
+	width: 170px !important;
+}
+
+div.report-file label#txt{
+	max-width:100px !important;
+}
+
+div.report-file select{
+	width:205px !important;
+}
+
+div.report-file input[type="submit"]{
+	margin-bottom: 20px !important;
+}
+
+div.report-file td a{
+	margin:0 5px 0 0 !important;
+}
+
+th.th-btns{
+	width:310px;
+}
+
+div.invoice-filter label{
+	max-width:120px !important;
+}
+
+.h45{
+	min-height:45px;
+}
+
+.resend-outbox{
+	margin:30px 380px 0 0;
+}
+
+div.invoice-filter span.cal > .date{
+	width:170px !important;
+}
+
+hr{
+	margin:10px 0 30px 0;
+}
+
+td.total-invoice-td{
+	border:1px solid #969696;
+}
+
+div.map-link-memberList{
+	margin-right:45px;
+}
+
+td.tar{
+	text-align:right;
+}
+
+div.outbox-filter select{
+	width:205px !important;
+}
+ 
+div.typesms > div.files.files-list{
+	min-height:300px !important;
+	margin-left:0 !important;
+}
+
+table.files-list-tbl tr{
+	height: 20px;
+	text-align: center;
+	line-height: 30px;
+}
+
+table.files-list-tbl tr select{
+	width:80px !important;
+	float: none !important;
+	margin-top: 11px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*
+JS Persian Calendar - by AMIB
+http://amib.ir/weblog
+amib@amib.ir
+*/
+
+a.pcalBtn {
+	width: 19px;
+	height: 18px;
+	vertical-align: middle;
+	display: inline-block;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	z-index: 5;
+}
+
+a.pcalBtn:hover {
+	outline: 1px solid #25589f;
+}
+
+input.valid {
+	background-color: #e5fae2;
+}
+
+input.invalid {
+	background-color: #fee5e7;
+}
+
+div.picker {
+	direction: rtl;
+	background-color: #fff;
+	border: 2px solid #999999;
+	position: absolute;
+	padding: 3px;
+	box-shadow: 1px 1px 2px rgba( 0, 0, 0, 0.3 );
+	border-radius: 6px 0px 6px 6px;
+}
+
+div.picker table{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border: 1px solid #bbb;
+	background-color: #eee;
+	font: 11px Tahoma;
+}
+
+div.picker td {
+	width: 22px;
+	border: 1px solid #bbb;
+	text-align: center;
+	padding: 0px;
+}
+
+div.picker div.navBack {
+/*	float: right;
+	uncommenting this line breaks IE display of element
+	in some unknown situations !
+*/
+}
+
+div.picker div.navBack a{
+	float: right;
+}
+
+div.picker div.navFwd {
+	float: left;
+}
+
+div.picker div.navFwd a {
+	float: left;
+}
+
+div.picker span.navInfo {
+	padding: 5px 0px;
+	display: inline-block;
+}
+
+div.picker td.pickerHead a {
+	padding: 5px;
+}
+
+div.picker td.pickerHead a.nav {
+	display: block;
+}
+
+div.picker td.pickerHead a.monYear {
+	display: inline-block;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+div.picker a.weekday {
+	display: block;
+	padding: 2px 0px;
+}
+
+div.picker a.friday {
+	background-color: #ffcccc;
+}
+
+div.picker a.selected {
+	background-color: #CCFFCC;
+}
+
+div.picker a.today {
+	background-color: #fff5cc;
+}
+
+div.picker td.calWeekdays {
+	background-color: #BBBBBB;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 2px;
+}
+
+div.picker td.pickerFoot a {
+	display: block;
+	padding: 2px;
+}
+
+div.picker a {
+	text-decoration: none;
+	color: #333;
+	-moz-transition: all 0.1s cubic-bezier(0,1,1,0);
+	-webkit-transition: all 0.1s cubic-bezier(0,1,1,0);
+	-o-transition: all 0.1s cubic-bezier(0,1,1,0);
+	transition: all 0.1s cubic-bezier(0,1,1,0);
+}
+
+div.picker a:hover {
+	text-decoration: none;
+	color: #004;
+	background-color: #66CCFF;
+}
+
+div.monthYearPicker {
+	background-color: #EEEEEE;
+	border: solid 2px #999;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px rgba( 0, 0, 0, 0.3 );
+	text-align: center;
+	position: absolute;
+	font: 11px Tahoma;
+}
+
+div.monthYearPicker a {
+	text-decoration: none;
+	color: #333;
+	-moz-transition: all 0.1s cubic-bezier(0,1,1,0);
+	-webkit-transition: all 0.1s cubic-bezier(0,1,1,0);
+	-o-transition: all 0.1s cubic-bezier(0,1,1,0);
+	transition: all 0.1s cubic-bezier(0,1,1,0);
+	display: block;
+	padding: 5px;
+}
+
+div.monthYearPicker a.selected {
+	background-color: #CCFFCC;
+}
+
+div.monthYearPicker a:hover {
+	text-decoration: none;
+	color: #004;
+	background-color: #66CCFF;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
