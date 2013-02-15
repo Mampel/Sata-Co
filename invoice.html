@@ -3,44 +3,49 @@
 <head>
   <meta charset="utf-8">
   <title>Untitled Document</title>
- <!--<link type="text/css" rel="stylesheet" href="css/reset.css" />
-  <link type="text/css" rel="stylesheet" href="css/style.css" />
-  <script type="text/javascript" language="JavaScript" src="JScripts/amin.js"></script>
-  <script type="text/javascript" language="JavaScript" src="JScripts/calendar.js"></script>
-  <link rel="stylesheet" type="text/css" href="CSS/calendar.css">-->
-  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
 <link type="text/css" rel="stylesheet" href="css/style.css" />
-<link type="text/css" rel="stylesheet" href="css/form-style.css">
 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
-    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-    <script src="/resources/demos/external/jquery.bgiframe-2.1.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    <script src="JScripts/script.js"></script>
-    <script src="JScripts/melk_types.js"></script>
-    <link rel="stylesheet" href="/resources/demos/style.css" />
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="JScripts/script.js"></script>
+<script src="JScripts/melk_types.js"></script>
+	
+<script src="JScripts/js-persian-cal.min.js"></script> 
+	
+<script src="JScripts/pdate.min.js"></script> <!-- for persian date -->
 </head>
 <body>
 <div class="container">
 	<div class="header">
-    	<div class="header-search">
-        	<form>
+		<nav class="main-nav">
+			<menu>
+				<li><a href="index.html">صفحه اصلی</a></li>
+				<li><a href="add_estate_s1.html">ثبت ملک</a></li>
+				<li><a href="register.html">ثبت عضو</a></li>
+				<li><a href="invoice.html">صورتحساب</a></li>
+				<li><a href="outbox.html">صندوق خروجی</a></li>
+				<li><a href="member_list.html">لیست اعضا</a></li>
+				<li><a href="type_sms_filter.html">ارسال پیام</a></li>
+			</menu>
+		</nav>
+	    	<div class="header-search">
+		        	<form>
 				<input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
-            </form>
-        </div>
+		            </form>
+	        </div>
     </div>
     
     <div class="content">
 
-    <div id='cssmenu'>
-
-	</div> 
         <div class="show">
             <div id="wrap" class="typesms">
 				<div class="report">
 					<h3>صورتحساب عضو</h3>
 					<div>
-						<div class="invoice-info">
+						<!--<div class="invoice-info">
 								<div class="box-txt right cover">
 									<label id="txt">نام واحد:</label>
 									<span class="invoice-detail">ساتا</span>
@@ -57,73 +62,127 @@
 									<label id="txt">آدرس:</label>
 									<span class="invoice-detail">مشهد - رضاشهر -خاقانی</span>
 								</div>
+						</div>-->
+						<div class="invoice-filter">
+							<form action="" name="" method="">
+								<div class="right">
+									<label id="txt">نام:</label>
+									<div class="box-txt cover">
+										<input type="text" />
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">نام واحد:</label>
+									<div class="box-txt cover">
+										<input type="text" />
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">کد عضویت:</label>
+									<div class="box-txt cover">
+										<input type="text" />
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">شماره موبایل:</label>
+									<div class="box-txt cover">
+										<input type="text" />
+									</div>
+								</div>
+								<div class="clear"></div>
+								<hr />
+								<div class="right">
+									<label id="txt">بازه زمانی: </label>
+									<label id="txt">  از  </label>
+									<div class="box-txt cover">
+										<span class="cal">
+											<input type="text" class="date" id="from-date" name="reg_melk_name_vahed" value="" readonly >
+										</span>
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">  تا  </label>
+									<div class="box-txt cover">
+										<span class="cal">
+											<input type="text" class="date" id="to-date" name="reg_melk_name_vahed" value="" readonly >
+										</span>
+									</div>
+								</div>
+
+								<div class="right invoice-filter-btns">
+									<input type="submit" class="left" value="فیلتر" />
+								</div>
+								<script type="text/javascript"> 
+									var receipt_date = new AMIB.persianCalendar( 'receipt_date', 'from-date');
+									var receipt_date1 = new AMIB.persianCalendar( 'receipt_date1', 'to-date');
+								</script> 
+							</form>
 						</div>
 						<table>
 							<thead>
 								<tr>
+									<th></th>
 									<th>ردیف</th>
 									<th>تاریخ</th>
-									<th>ساعت</th>
-									<th>نوع</th>
+									<th>تعداد</th>
+									<th>روز</th>
 									<th>مبلغ</th>
-									<th>باقیمانده</th>
-									<th>توضیحات</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
+									<td><input type="checkbox"></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
-									<td>ساعت</td>
-									<td>نوع</td>
+									<td>تعداد</td>
+									<td>روز</td>
 									<td>مبلغ</td>
-									<td>باقیمانده</td>
-									<td>توضیحات</td>
 								</tr>
 								<tr>
+									<td><input type="checkbox"></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
-									<td>ساعت</td>
-									<td>نوع</td>
+									<td>تعداد</td>
+									<td>روز</td>
 									<td>مبلغ</td>
-									<td>باقیمانده</td>
-									<td>توضیحات</td>
 								</tr>
 								<tr>
+									<td><input type="checkbox"></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
-									<td>ساعت</td>
-									<td>نوع</td>
+									<td>تعداد</td>
+									<td>روز</td>
 									<td>مبلغ</td>
-									<td>باقیمانده</td>
-									<td>توضیحات</td>
 								</tr>
 								<tr>
+									<td><input type="checkbox"></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
-									<td>ساعت</td>
-									<td>نوع</td>
+									<td>تعداد</td>
+									<td>روز</td>
 									<td>مبلغ</td>
-									<td>باقیمانده</td>
-									<td>توضیحات</td>
 								</tr>
 								<tr>
+									<td><input type="checkbox"></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
-									<td>ساعت</td>
-									<td>نوع</td>
+									<td>تعداد</td>
+									<td>روز</td>
 									<td>مبلغ</td>
-									<td>باقیمانده</td>
-									<td>توضیحات</td>
 								</tr>
 								<tr>
+									<td><input type="checkbox"></td>
 									<td>ردیف</td>
 									<td>تاریخ</td>
-									<td>ساعت</td>
-									<td>نوع</td>
+									<td>تعداد</td>
+									<td>روز</td>
 									<td>مبلغ</td>
-									<td>باقیمانده</td>
-									<td>توضیحات</td>
+								</tr>
+								<tr>
+									<td class="total-invoice-td" colspan="3">جمع کل : </td>
+									<td class="total-invoice-td"></td>
+									<td class="total-invoice-td"></td>
+									<td class="total-invoice-td"></td>
 								</tr>
 							</tbody>
 						</table>
