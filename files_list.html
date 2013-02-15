@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ساتا</title>
+ <!--<link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" language="JavaScript" src="JScripts/amin.js"></script>
+  <script type="text/javascript" language="JavaScript" src="JScripts/calendar.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/calendar.css">-->
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="JScripts/script.js"></script>
+    <script src="JScripts/melk_types.js"></script>
+	
+    <script src="JScripts/js-persian-cal.min.js"></script> 
+    <link rel="stylesheet" href="css/js-persian-cal.css" />
+	
+    <script src="JScripts/pdate.min.js"></script> <!-- for persian date -->
+	
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<nav class="main-nav">
+			<menu>
+				<li><a href="index.html">صفحه اصلی</a></li>
+				<li><a href="add_estate_s1.html">ثبت ملک</a></li>
+				<li><a href="register.html">ثبت عضو</a></li>
+				<li><a href="invoice.html">صورتحساب</a></li>
+				<li><a href="outbox.html">صندوق خروجی</a></li>
+				<li><a href="member_list.html">لیست اعضا</a></li>
+				<li><a href="type_sms_filter.html">ارسال پیام</a></li>
+			</menu>
+		</nav>
+	    	<div class="header-search">
+		        	<form>
+				<input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
+		            </form>
+	        </div>
+    </div>
+    
+    <div class="content">
+
+        <div class="show">
+            <div id="wrap" class="typesms cover">
+				<div class="files files-list">
+					<div>
+						<h3>فرم فیلتر فایل</h3>
+						<form  action="">
+							<input type="hidden"  name="type_sms_mobilenum_hidden" />		
+							<div class="filter-estate">
+								<div class="cover container-date">
+									<label id="txt">بازه زمانی: </label>
+									<div class="box-txt-right cover">
+										<label id="txt">  از  </label>
+										<span class="cal">
+											<input type="text" class="date" id="from-date" name="reg_melk_name_vahed" value="" readonly >
+										</span>
+									</div>
+									<div class="box-txt-right cover">
+										<label id="txt">  تا  </label>
+										<span class="cal">
+											<input type="text" class="date" id="to-date" name="reg_melk_name_vahed" value="" readonly >
+										</span>
+									</div>
+								</div>
+								<div class="estate-filter-type">
+									<select class="right">
+										<option value="khahan" >خواهان</option>
+										<option value="khande">خوانده</option>
+									</select>
+									<select dir="rtl" name="filter_noe_melk" class="right">
+                     								<option value="-1">نوع ملک را انتخاب کنید!----</option>
+									</select>
+									<select dir="rtl" name="filter_noe_vagozari" class="right"></select>
+									<select class="right">
+										<option value="-1" >نوع وضعیت را انتخاب کنید!----</option>
+										<option value="0">فعال</option>
+										<option value="1">غیر فعال</option>
+									</select>
+									<table border="1" class="files-list-tbl">
+										<thead>
+											<tr>
+												<th>خواهان/خوانده</th>
+												<th>نوع ملک</th>
+												<th>نوع واگذاری</th>
+												<th>وضعیت</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>خواهان/خوانده</td>
+												<td>نوع ملک</td>
+												<td>نوع واگذاری</td>
+												<td>
+													<select class="right">
+														<option value="0">فعال</option>
+														<option value="1">غیر فعال</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<td>خواهان/خوانده</td>
+												<td>نوع ملک</td>
+												<td>نوع واگذاری</td>
+												<td>
+													<select class="right">
+														<option value="0">فعال</option>
+														<option value="1">غیر فعال</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<td>خواهان/خوانده</td>
+												<td>نوع ملک</td>
+												<td>نوع واگذاری</td>
+												<td>
+													<select class="right">
+														<option value="0">فعال</option>
+														<option value="1">غیر فعال</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<td>خواهان/خوانده</td>
+												<td>نوع ملک</td>
+												<td>نوع واگذاری</td>
+												<td>
+													<select class="right">
+														<option value="0">فعال</option>
+														<option value="1">غیر فعال</option>
+													</select>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="buttom">
+								<input name="submit" type="submit" value="اعمال فیلتر"/>
+							</div>
+							<script type="text/javascript"> 
+								var receipt_date = new AMIB.persianCalendar( 'receipt_date', 'from-date');
+								var receipt_date1 = new AMIB.persianCalendar( 'receipt_date1', 'to-date');
+							</script> 
+						</form>  
+					</div>
+				</div>
+            </div>    
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>

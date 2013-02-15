@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Untitled Document</title>
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link type="text/css" rel="stylesheet" href="css/form-style.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script>
+    $(function() {
+        $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+            }
+        });
+        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    });
+    </script>
+</head>
+
+<body>
+<div class="container">
+	<div class="header">
+    	<div class="header-search">
+        	<form>
+				<input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
+            </form>
+        </div>
+    </div>
+    
+    <div class="content">
+    
+    
+    	<div id='cssmenu'>
+<ul>
+   <li class='active '><a href='index.html'><span>داشبورد</span></a></li>
+   <li class='has-sub '><a href='#'><span>فعالیت ها</span></a>
+      <ul>
+      	 <li><a href='#'><span>ثبت ملک</span></a></li>
+         <li><a href='#'><span>درخواست ملک</span></a></li>
+         <li class='has-sub '><a href='#'><span>لیست انتظار فایل</span></a>
+            <ul>
+               <li><a href='#'><span>چک کرد تکمیل اطلاعات</span></a></li>
+               <li><a href='#'><span>تماس چک کرد</span></a></li>
+               <li><a href='#'><span>مستند سازی</span></a></li>
+               <li><a href='#'><span>کارشناسی قیمت</span></a></li>
+               <li><a href='#'><span>نایپ پیامک</span></a></li>
+               <li><a href='#'><span>فید بک</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub '><a href='#'><span>نمایندگی ها</span></a>
+            <ul>
+               <li><a href='#'><span>تائید درخواست های نمایندگی</span></a></li>
+               <li><a href='#'><span>ارسال پکیج و آموزش به نمایندگی ها</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub '><a href='#'><span>مشاورین</span></a>
+            <ul>
+               <li><a href='#'><span>ارسال پکیج و آموزش به مشاورین</span></a></li>
+               <li><a href='#'><span>تائید مشاور املاک</span></a></li>
+               <li><a href='#'><span>ثبت نام اولیه مشاور املاک</span></a></li>
+            </ul>
+         </li>
+         <li><a href='#'><span>درخواست ارسال ایمیل</span></a></li>
+         <li><a href='#'><span>درخواست ارسال پیامک</span></a></li>
+         <li><a href='#'><span>لیست انتظار رسیدگی</span></a></li>
+         <li><a href='#'><span>ارسال اخطاریه</span></a></li>
+         <li><a href='#'><span>ثبت نام اولیه مشاور املاک</span></a></li>
+         <li><a href='#'><span>لیست انتظار تائید مشاور املاک</span></a></li>
+         <li><a href='#'><span>لیست انتظار ارسال پکیج و آموزش به مشاورین</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub '><a href='#'><span>مرکز فایل</span></a>
+   	  <ul>
+      	 <li class='has-sub '><a href='#'><span>فعال</span></a>
+            <ul>
+               <li><a href='#'><span>املاک سپرده شده</span></a></li>
+               <li><a href='#'><span>درخواست های ملک</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub '><a href='#'><span>بازارچه فایل</span></a>
+            <ul>
+               <li><a href='#'><span>املاک سپرده شده</span></a></li>
+               <li><a href='#'><span>درخواست های ملک</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub '><a href='#'><span>بایگانی</span></a>
+            <ul>
+               <li><a href='#'><span>املاک سپرده شده</span></a></li>
+               <li><a href='#'><span>درخواست های ملک</span></a></li>
+            </ul>
+         </li>
+         <li><a href='#'><span>فایل های کمک کننده به استعلام قیمت</span></a></li>
+      </ul>	
+   </li>
+   <li class='has-sub '><a href='#'><span>مالی</span></a>
+   	  <ul>
+      	 <li class='has-sub '><a href='#'><span>حسابداری</span></a>
+            <ul>
+               <li><a href='#'><span>بستانکاری</span></a></li>
+               <li><a href='#'><span>بدهکاری</span></a></li>
+               <li><a href='#'><span>همه تراکنش ها</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub '><a href='#'><span>درخواست وجه</span></a>
+            <ul>
+               <li><a href='#'><span>لیست درخواست های وجه شما</span></a></li>
+               <li><a href='#'><span>لیست درخواست های موافقت شده</span></a></li>
+            </ul>
+         </li>
+         <li><a href='#'><span>سرمایه گذاری در ساتا</span></a></li>
+         <li><a href='#'><span>واریز وجه</span></a></li>
+         <li><a href='#'><span>آموزش</span></a></li>
+         <li class='has-sub '><a href='#'><span>حقوق شما</span></a>
+            <ul>
+               <li><a href='#'><span>حقوق</span></a></li>
+               <li><a href='#'><span>اضافه کاری</span></a></li>
+               <li><a href='#'><span>پاداش ها و جزاها</span></a></li>
+            </ul>
+         </li>
+      </ul>	
+   </li>
+   <li class='has-sub '><a href='#'><span>افراد</span></a>
+   	  <ul>
+      	 <li><a href='#'><span>کاربران</span></a></li>
+      	 <li class='has-sub '><a href='#'><span>همکاران</span></a>
+            <ul>
+               <li><a href='#'><span>مدیران</span></a></li>
+            </ul>
+         </li>
+         <li><a href='#'><span>متفرقه</span></a></li>
+         <li><a href='#'><span>مهندسان عمران و معماران</span></a></li>
+         <li><a href='#'><span>سازندگان</span></a></li>
+         <li><a href='#'><span>فعالان خرید و فروش</span></a></li>
+         <li><a href='#'><span>دانشجویان عمران و معماری</span></a></li>
+         <li><a href='#'><span>مستاجران</span></a></li>
+         <li><a href='#'><span>خریداران</span></a></li>
+         <li><a href='#'><span>سرمایه داران</span></a></li>
+         <li><a href='#'><span>اضافه نمودن گروه به افراد</span></a></li>
+      </ul>	
+   </li>
+   <li class='has-sub '><a href='#'><span>ارتباطات</span></a>
+   	  <ul>
+         <li><a href='#'><span>مرکز پیامک</span></a></li>
+         <li><a href='#'><span>مرکز تماس</span></a></li>
+         <li><a href='#'><span>اطلاعیه ها</span></a></li>
+         <li><a href='#'><span>اخطارها</span></a></li>
+         <li><a href='#'><span>مرکز پست الکترونیک</span></a></li>
+         <li><a href='#'><span>نظرسنجی</span></a></li>
+         <li><a href='#'><span>تبلیغات</span></a></li>
+      </ul>	
+   </li>
+   <li class='has-sub '><a href='#'><span>دفترچه تلفن</span></a>
+   	  <ul>
+         <li><a href='#'><span>مهندسان عمران و معماران</span></a></li>
+         <li><a href='#'><span>فعالان خرید و فروش</span></a></li>
+         <li><a href='#'><span>دانشجویان عمران و معماری</span></a></li>
+         <li><a href='#'><span>سازندگان</span></a></li>
+         <li><a href='#'><span>کاربران</span></a></li>
+         <li><a href='#'><span>مستاجران</span></a></li>
+         <li><a href='#'><span>خریداران</span></a></li>
+         <li><a href='#'><span>متفرقه</span></a></li>
+         <li><a href='#'><span>سرمایه داران</span></a></li>
+         <li><a href='#'><span>اضافه نمودن گروه به افراد</span></a></li>
+      </ul>	
+   </li>
+   <li class='has-sub '><a href='#'><span>مدیریت</span></a>
+   	  <ul>
+         <li><a href='#'><span>نمایندگی ها</span></a></li>
+         <li><a href='#'><span>نمایندگی های مویرگی</span></a></li>
+         <li><a href='#'><span>سرپرستی های استان ها</span></a></li>
+      </ul>	
+   </li>
+   <li class='has-sub '><a href='#'><span>گزارشات</span></a>
+   	  <ul>
+      	 <li class='has-sub '><a href='#'><span>فایلینگ</span></a>
+            <ul>
+               <li><a href='#'><span>خوانده</span></a></li>
+               <li><a href='#'><span>خواهان</span></a></li>
+               <li><a href='#'><span>نقشه</span></a></li>
+               <li><a href='#'><span>بر اساس منطقه</span></a></li>
+               <li class='has-sub '><a href='#'><span>بایگانی</span></a>
+                    <ul>
+                       <li><a href='#'><span>معامله شده</span></a></li>
+                       <li><a href='#'><span>انصراف از معامله</span></a></li>
+                    </ul>
+         	   </li>
+               <li><a href='#'><span>در حال انتظار</span></a></li>
+               <li><a href='#'><span>متوسط فایل در روز</span></a></li>
+               <li><a href='#'><span>متوسط فایل در ماه</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub '><a href='#'><span>افراد</span></a>
+            <ul>
+               <li class='has-sub '><a href='#'><span>مشاورین املاک</span></a>
+                    <ul>
+                       <li><a href='#'><span>ثبت نام شده</span></a></li>
+                    </ul>
+               </li>
+               <li><a href='#'><span>کاربران</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub '><a href='#'><span>نظرسنجی ها</span></a>
+            <ul>
+               <li><a href='#'><span>مالکان</span></a></li>
+               <li><a href='#'><span>مشاورین املاک</span></a></li>
+               <li><a href='#'><span>جویندگان ملک</span></a></li>
+            </ul>
+         </li>
+      </ul>	
+   </li>
+   <li class='has-sub '><a href='#'><span>پایگاه دانش</span></a>
+   	  <ul>
+         <li><a href='#'><span>ویکی</span></a></li>
+         <li><a href='#'><span>عمومی</span></a></li>
+      </ul>	
+   </li>
+   <li class='has-sub '><a href='#'><span>سامانه ها</span></a>
+   	  <ul>
+      	 <li><a href='#'><span>مدیریت دفتر املاک</span></a></li>
+      	 <li class='has-sub '><a href='#'><span>کارشناسی قیمت</span></a>
+            <ul>
+               <li><a href='#'><span>معامله شده ها</span></a></li>
+               <li><a href='#'><span>قیمت پیشنهادی مشاورین املاک</span></a></li>
+               <li><a href='#'><span>سیستم مقایسه گر</span></a></li>
+               <li><a href='#'><span>تابع نرمال</span></a></li>
+               <li><a href='#'><span>فایل های کمک کننده به استعلام قیمت</span></a></li>
+            </ul>
+         </li>
+         <li><a href='#'><span>سامانه هوشمند انطباق</span></a></li>
+      </ul>	
+   </li>
+   <li class='has-sub '><a href='#'><span>وظایف</span></a>
+   	  <ul>
+         <li><a href='modiriyate-vazayef.html'><span>تعریف وظیفه جدید</span></a></li>
+         <li><a href='#'><span>لیست انتظار وظایف موظف شده به من</span></a></li>
+         <li><a href='#'><span>لیست وظایف محول نموده به دیگران</span></a></li>
+         <li><a href='#'><span>لیست کل وظایف مرتبط به من</span></a></li>
+      </ul>	
+   </li>
+</ul>
+</div>
+          
+        <div class="show">
+          <div id="wrap" class="request">
+            <form  action="">
+              <div class="tag"><h3>درخواست ملک از روی لیست</h3></div>
+              <div class="box-txt-right">
+                    <label id="txt" for="ostan">استان :</label>
+                     <select dir="rtl" name="request_list_ostan">
+                     	<option value="1">آذربایجان شرقی</option>
+                        <option value="2">آذربایجان غربی</option>
+                        <option value="3">اردبیل</option>
+                        <option value="4">اصفهان</option>
+                        <option value="5">البرز</option>
+                        <option value="6">ایلام</option>
+                        <option value="7">بوشهر</option>
+                        <option value="8">تهران</option>
+                        <option value="9">چهارمحال و بختیاری</option>
+                        <option value="10">خراسان جنوبی</option>
+                        <option value="11">خراسان رضوی</option>
+                        <option value="12">خراسان شمالی</option>
+                        <option value="13">خوزستان</option>
+                        <option value="14">زنجان</option>
+                        <option value="15">سمنان</option>
+                        <option value="16">سیستان و بلوچستان</option>
+                        <option value="17">فارس</option>
+                        <option value="18">قزوین</option>
+                        <option value="19">قم</option>
+                        <option value="20">گلستان</option>
+                        <option value="21">گیلان</option>
+                        <option value="22">لرستان</option>
+                        <option value="23">مازندران</option>
+                        <option value="24">مرکزی</option>
+                        <option value="25">هرمزگان</option>
+                        <option value="26">همدان</option>
+                        <option value="27">کردستان</option>
+                        <option value="28">کرمان</option>
+                        <option value="29">کرمانشاه</option>
+                        <option value="30">کهگیلویه و بویراحمد</option>
+                        <option value="31">یزد</option>
+					</select>
+              </div>
+              
+              <div class="box-txt-left">
+                    <label id="txt" for="shahr">شهر :</label>
+                     <select dir="rtl" name="request_list_shahr">
+              <optgroup label="&nbsp;-- کلان شهرها --"></optgroup>
+              <option value="1" r="THR" selected="selected">تهران</option
+              ><option value="5" r="ALB">کرج</option>
+              <option value="2" r="KHR">مشهد</option>
+              <option value="3" r="ISF">اصفهان</option>
+              <option value="4" r="AZE">تبریز</option>
+              <option value="6" r="FRS">شیراز</option>
+              <option value="7" r="KHZ">اهواز</option>
+              <optgroup label="&nbsp;-- استان آذربايجان شرقي --" r="AZE"></optgroup>
+              <option value="4" r="AZE">تبریز</option>
+              <option value="52" r="AZE">مراغه</option>
+              <option value="68" r="AZE">مرند</option>
+              <option value="88" r="AZE">میانه</option>
+              <option value="90" r="AZE">اهر</option>
+              <option value="104" r="AZE">بناب</option>
+              <option value="180" r="AZE">سراب</option>
+              <option value="196" r="AZE">آذرشهر</option>
+              <option value="227" r="AZE">هادی‌شهر</option>
+              <option value="240" r="AZE">عجب‌شیر</option>
+              <option value="249" r="AZE">سردرود</option>
+              <option value="254" r="AZE">ملکان</option>
+              <option value="291" r="AZE">شبستر</option>
+              <optgroup label="&nbsp;-- استان آذربايجان غربي --" r="AZW"></optgroup>
+              <option value="10" r="AZW">ارومیه</option
+              ><option value="42" r="AZW">خوی</option>
+              <option value="51" r="AZW">بوکان</option>
+              <option value="55" r="AZW">مهاباد</option>
+              <option value="69" r="AZW">میاندوآب</option>
+              <option value="101" r="AZW">سلماس</option>
+              <option value="107" r="AZW">نقده</option>
+              <option value="126" r="AZW">پیرانشهر</option>
+              <option value="169" r="AZW">تکاب</option>
+              <option value="181" r="AZW">ماکو</option>
+              <option value="194" r="AZW">سردشت</option>
+              <option value="205" r="AZW">شاهین‌دژ</option>
+              <option value="221" r="AZW">اشنویه</option>
+              <option value="266" r="AZW">قره‌ضیاءالدین</option>
+              <optgroup label="&nbsp;-- استان اردبيل --" r="ARD"></optgroup>
+              <option value="17" r="ARD">اردبیل</option>
+              <option value="98" r="ARD">پارس‌آباد</option>
+              <option value="120" r="ARD">مشگین‌شهر</option>
+              <option value="190" r="ARD">خلخال</option>
+              <option value="225" r="ARD">گرمی</option>
+              <optgroup label="&nbsp;-- استان اصفهان --" r="ISF"></optgroup>
+              <option value="3" r="ISF">اصفهان</option>
+              <option value="26" r="ISF">کاشان</option>
+              <option value="32" r="ISF">خمینی‌شهر</option>
+              <option value="36" r="ISF">نجف‌آباد</option>
+              <option value="62" r="ISF">شاهین‌شهر</option>
+              <option value="72" r="ISF">شهرضا</option>
+              <option value="89" r="ISF">خوراسگان</option>
+              <option value="119" r="ISF">مبارکه</option>
+              <option value="130" r="ISF">زرین‌شهر</option>
+              <option value="131" r="ISF">آران و بیدگل</option>
+              <option value="132" r="ISF">فولادشهر</option>
+              <option value="156" r="ISF">گلپایگان</option>
+              <option value="163" r="ISF">بهارستان</option>
+              <option value="173" r="ISF">درچه پیاز</option>
+              <option value="192" r="ISF">فلاورجان</option>
+              <option value="207" r="ISF">دولت‌آباد</option>
+              <option value="220" r="ISF">قهدریجان</option>
+              <option value="239" r="ISF">سمیرم</option><option value="252" r="ISF">نائین</option><option value="261" r="ISF">کلیشاد و سودرجان</option><option value="265" r="ISF">گل‌دشت</option><option value="282" r="ISF">خوانسار</option><option value="284" r="ISF">گز</option><option value="285" r="ISF">خورزوق</option><optgroup label="&nbsp;-- استان البرز --" r="ALB"></optgroup><option value="5" r="ALB">کرج</option><option value="79" r="ALB">نظرآباد</option><option value="95" r="ALB">محمدشهر</option><option value="100" r="ALB">کمال‌شهر</option><option value="164" r="ALB">هشتگرد</option><option value="170" r="ALB">مشکین دشت</option><option value="176" r="ALB">ماهدشت</option><optgroup label="&nbsp;-- استان ايلام --" r="ILM"></optgroup><option value="49" r="ILM">ایلام</option><option value="229" r="ILM">ایوان</option><option value="232" r="ILM">دهلران</option><option value="274" r="ILM">آبدانان</option><optgroup label="&nbsp;-- استان بوشهر --" r="BOO"></optgroup><option value="47" r="BOO">بوشهر</option><option value="84" r="BOO">برازجان</option><option value="121" r="BOO">بندر گناوه</option><option value="215" r="BOO">خورموج</option><option value="255" r="BOO">بندر کنگان</option><optgroup label="&nbsp;-- استان تهران --" r="THR"></optgroup><option value="1" r="THR">تهران</option><option value="19" r="THR">اسلام‌شهر</option><option value="27" r="THR">گلستان</option><option value="29" r="THR">قدس</option><option value="30" r="THR">ملارد</option><option value="34" r="THR">ورامین</option><option value="40" r="THR">شهریار</option><option value="44" r="THR">قرچک</option><option value="54" r="THR">نسیم‌شهر</option><option value="61" r="THR">پاکدشت</option><option value="103" r="THR">اندیشه</option><option value="118" r="THR">رباط کریم</option><option value="136" r="THR">صالح‌آباد</option><option value="138" r="THR">باقرشهر</option><option value="139" r="THR">باغستان</option><option value="177" r="THR">بومهن</option><option value="179" r="THR">چهاردانگه</option><option value="185" r="THR">پیشوا</option><option value="197" r="THR">دماوند</option><option value="244" r="THR">پردیس</option><option value="248" r="THR">وحیدیه</option><option value="256" r="THR">نصیرآباد</option><option value="283" r="THR">حسن‌آباد</option><optgroup label="&nbsp;-- استان چهارمحال و بختياري --" r="BKH"></optgroup><option value="60" r="BKH">شهرکرد</option><option value="151" r="BKH">بروجن</option><option value="223" r="BKH">فرخ‌شهر</option><option value="241" r="BKH">فارسان</option><option value="264" r="BKH">لردگان</option><option value="289" r="BKH">هفشجان</option><optgroup label="&nbsp;-- استان خراسان جنوبي --" r="KHS"></optgroup><option value="48" r="KHS">بیرجند</option><option value="212" r="KHS">قائن</option><option value="258" r="KHS">فردوس</option><optgroup label="&nbsp;-- استان خراسان رضوي --" r="KHR"></optgroup><option value="2" r="KHR">مشهد</option><option value="35" r="KHR">سبزوار</option><option value="37" r="KHR">نیشابور</option><option value="67" r="KHR">تربت حیدریه</option><option value="80" r="KHR">قوچان</option><option value="93" r="KHR">تربت جام</option><option value="99" r="KHR">کاشمر</option><option value="159" r="KHR">تایباد</option><option value="183" r="KHR">چناران</option><option value="202" r="KHR">گناباد</option><option value="204" r="KHR">درگز</option><option value="208" r="KHR">سرخس</option><option value="211" r="KHR">فریمان</option><option value="269" r="KHR">بردسکن</option><option value="277" r="KHR">خواف</option><optgroup label="&nbsp;-- استان خراسان شمالي --" r="KHN"></optgroup><option value="45" r="KHN">بجنورد</option><option value="96" r="KHN">شیروان</option><option value="145" r="KHN">اسفراین</option><option value="253" r="KHN">گرمه جاجرم</option><optgroup label="&nbsp;-- استان خوزستان --" r="KHZ"></optgroup><option value="7" r="KHZ">اهواز</option><option value="31" r="KHZ">دزفول</option><option value="33" r="KHZ">آبادان</option><option value="64" r="KHZ">خرمشهر</option><option value="66" r="KHZ">اندیمشک</option><option value="70" r="KHZ">بندر ماهشهر</option><option value="73" r="KHZ">مسجدسلیمان</option><option value="74" r="KHZ">ایذه</option><option value="78" r="KHZ">بهبهان</option><option value="83" r="KHZ">شوشتر</option><option value="114" r="KHZ">بندر امام خمینی</option><option value="125" r="KHZ">امیدیه</option><option value="137" r="KHZ">شوش</option><option value="148" r="KHZ">رامهرمز</option><option value="153" r="KHZ">شادگان</option><option value="171" r="KHZ">سوسنگرد</option><option value="247" r="KHZ">هندیجان</option><option value="250" r="KHZ">رامشیر</option><option value="260" r="KHZ">شیبان</option><option value="271" r="KHZ">حمیدیه</option><option value="275" r="KHZ">گتوند</option><option value="279" r="KHZ">باغ‌ملک</option><optgroup label="&nbsp;-- استان زنجان --" r="ZAN"></optgroup><option value="21" r="ZAN">زنجان</option><option value="111" r="ZAN">ابهر</option><option value="154" r="ZAN">خرمدره</option><option value="243" r="ZAN">قیدار</option><optgroup label="&nbsp;-- استان سمنان --" r="SMN"></optgroup><option value="59" r="SMN">شاهرود</option><option value="63" r="SMN">سمنان</option><option value="127" r="SMN">دامغان</option><option value="188" r="SMN">گرمسار</option><option value="281" r="SMN">مهدی‌شهر</option><optgroup label="&nbsp;-- استان سيستان و بلوچستان --" r="BAL"></optgroup><option value="11" r="BAL">زاهدان</option><option value="57" r="BAL">زابل</option><option value="77" r="BAL">ایرانشهر</option><option value="110" r="BAL">چابهار</option><option value="122" r="BAL">سراوان</option><option value="128" r="BAL">خاش</option><option value="224" r="BAL">کنارک</option><optgroup label="&nbsp;-- استان فارس --" r="FRS"></optgroup><option value="6" r="FRS">شیراز</option><option value="65" r="FRS">مرودشت</option><option value="75" r="FRS">جهرم</option><option value="86" r="FRS">فسا</option><option value="92" r="FRS">کازرون</option><option value="124" r="FRS">فیروزآباد</option><option value="135" r="FRS">داراب</option><option value="140" r="FRS">آباده</option><option value="141" r="FRS">لار</option><option value="142" r="FRS">نورآباد</option><option value="149" r="FRS">اقلید</option><option value="165" r="FRS">نی‌ریز</option><option value="210" r="FRS">استهبان</option><option value="233" r="FRS">گراش</option><option value="257" r="FRS">قائمیه</option><option value="268" r="FRS">صفاشهر</option><option value="270" r="FRS">کوار</option><option value="273" r="FRS">خرامه</option><option value="276" r="FRS">لامرد</option><optgroup label="&nbsp;-- استان قزوين --" r="QAZ"></optgroup><option value="20" r="QAZ">قزوین</option><option value="106" r="QAZ">تاکستان</option><option value="113" r="QAZ">الوند</option><option value="150" r="QAZ">اقبالیه</option><option value="157" r="QAZ">آبیک</option><option value="182" r="QAZ">محمدیه</option><option value="288" r="QAZ">بیدستان</option><optgroup label="&nbsp;-- استان قم --" r="QOM"></optgroup><option value="8" r="QOM">قم</option><optgroup label="&nbsp;-- استان کردستان --" r="KRD"></optgroup><option value="23" r="KRD">سنندج</option><option value="56" r="KRD">سقز</option><option value="85" r="KRD">مریوان</option><option value="112" r="KRD">بانه</option><option value="115" r="KRD">قروه</option><option value="158" r="KRD">کامیاران</option><option value="161" r="KRD">بیجار</option><option value="263" r="KRD">دیواندره</option><option value="287" r="KRD">دهگلان</option><optgroup label="&nbsp;-- استان کرمان --" r="KER"></optgroup><option value="13" r="KER">کرمان</option><option value="46" r="KER">سیرجان</option><option value="53" r="KER">رفسنجان</option><option value="82" r="KER">جیرفت</option><option value="105" r="KER">بم</option><option value="133" r="KER">زرند</option><option value="168" r="KER">شهر بابک</option><option value="189" r="KER">کهنوج</option><option value="200" r="KER">بافت</option><option value="214" r="KER">بردسیر</option><option value="262" r="KER">راور</option><optgroup label="&nbsp;-- استان کرمانشاه --" r="KRM"></optgroup><option value="9" r="KRM">کرمانشاه</option><option value="87" r="KRM">اسلام‌آباد غرب</option><option value="143" r="KRM">هرسین</option><option value="152" r="KRM">کنگاور</option><option value="172" r="KRM">سنقر</option><option value="175" r="KRM">جوانرود</option><option value="201" r="KRM">سرپل ذهاب</option><option value="206" r="KRM">صحنه</option><optgroup label="&nbsp;-- استان کهگيلويه و بويراحمد --" r="KKB"></optgroup><option value="81" r="KKB">یاسوج</option><option value="97" r="KKB">دوگنبدان</option><option value="147" r="KKB">دهدشت</option><optgroup label="&nbsp;-- استان گلستان --" r="GOL"></optgroup><option value="24" r="GOL">گرگان</option><option value="58" r="GOL">گنبدکاووس</option><option value="160" r="GOL">علی‌آباد کتول</option><option value="166" r="GOL">بندر ترکمن</option><option value="191" r="GOL">آزادشهر</option><option value="222" r="GOL">کردکوی</option><option value="230" r="GOL">کلاله</option><option value="235" r="GOL">آق‌قلا</option><option value="242" r="GOL">مینودشت</option><option value="290" r="GOL">گالیکش</option><optgroup label="&nbsp;-- استان گيلان --" r="GIL"></optgroup><option value="12" r="GIL">رشت</option><option value="71" r="GIL">بندرانزلی</option><option value="109" r="GIL">لاهیجان</option><option value="116" r="GIL">لنگرود</option><option value="184" r="GIL">هشتپر</option><option value="186" r="GIL">آستارا</option><option value="195" r="GIL">صومعه‌سرا</option><option value="198" r="GIL">آستانه اشرفیه</option><option value="209" r="GIL">رودسر</option><option value="228" r="GIL">فومن</option><optgroup label="&nbsp;-- استان لرستان --" r="LOR"></optgroup><option value="22" r="LOR">خرم‌آباد</option><option value="28" r="LOR">بروجرد</option><option value="76" r="LOR">دورود</option><option value="91" r="LOR">کوهدشت</option><option value="102" r="LOR">الیگودرز</option><option value="129" r="LOR">نورآباد</option><option value="193" r="LOR">ازنا</option><option value="226" r="LOR">الشتر</option><option value="267" r="LOR">پلدختر</option><optgroup label="&nbsp;-- استان مازندران --" r="MAZ"></optgroup><option value="25" r="MAZ">ساری</option><option value="38" r="MAZ">بابل</option><option value="39" r="MAZ">آمل</option><option value="43" r="MAZ">قائم‌شهر</option><option value="94" r="MAZ">بهشهر</option><option value="155" r="MAZ">بابلسر</option><option value="162" r="MAZ">نکا</option><option value="167" r="MAZ">چالوس</option><option value="174" r="MAZ">تنکابن</option><option value="187" r="MAZ">نوشهر</option><option value="203" r="MAZ">فریدونکنار</option><option value="216" r="MAZ">رامسر</option><option value="234" r="MAZ">محمودآباد</option><option value="237" r="MAZ">جویبار</option><option value="246" r="MAZ">امیرکلا</option><option value="272" r="MAZ">نور</option><optgroup label="&nbsp;-- استان مرکزي --" r="MRK"></optgroup><option value="15" r="MRK">اراک</option><option value="41" r="MRK">ساوه</option><option value="117" r="MRK">خمین</option><option value="199" r="MRK">محلات</option><option value="213" r="MRK">دلیجان</option><option value="259" r="MRK">کرهرود</option><optgroup label="&nbsp;-- استان هرمزگان --" r="HRM"></optgroup><option value="18" r="HRM">بندرعباس</option><option value="134" r="HRM">میناب</option><option value="219" r="HRM">دهبارز</option><option value="245" r="HRM">بندرلنگه</option><option value="251" r="HRM">قشم</option><option value="280" r="HRM">کیش</option><option value="286" r="HRM">حاجی‌آباد</option><optgroup label="&nbsp;-- استان همدان --" r="HMD"></optgroup><option value="14" r="HMD">همدان</option><option value="50" r="HMD">ملایر</option><option value="108" r="HMD">نهاوند</option><option value="146" r="HMD">اسدآباد</option><option value="178" r="HMD">تویسرکان</option><option value="236" r="HMD">بهار</option><optgroup label="&nbsp;-- استان يزد --" r="YZD"></optgroup><option value="16" r="YZD">یزد</option><option value="123" r="YZD">میبد</option><option value="144" r="YZD">اردکان</option><option value="217" r="YZD">بافق</option><option value="218" r="YZD">طبس</option><option value="231" r="YZD">حمیدیا</option><option value="238" r="YZD">مهریز</option><option value="278" r="YZD">ابرکوه</option>
+              	</select>
+              </div>
+              
+              <div class="box-txt-right">
+                	 <label id="txt" for="noe_melk">نوع ملک :</label>
+                     <select dir="rtl" name="request_list_noe_melk">
+                        <option>آپارتمان</option>
+                        <option>خانه ویلایی</option>
+                        <option>سوییت</option>
+                        <option>دفتر کار</option>
+                        <option>مغازه</option>
+                        <option>زمین</option>
+                        <option>کلنگی</option>
+                        <option>مستغلات - آپارتمان</option>
+                        <option>مستغلات - خانه شهری</option>
+                        <option>مستغلات - پاساژ با مرکز خرید</option>
+                        <option>مستغلات - باغ - باغچه</option>
+                        <option>مستغلات - انبار</option>
+                        <option>مستغلات - پارکینگ</option>
+                        <option>مستغلات - سوله</option>
+                        <option>مستغلات - کارگاه</option>
+                        <option>مستغلات - کارخانه</option>
+                        <option>مستغلات - استخر</option>
+                        <option>مستغلات - سالن ورزشی</option>
+                        <option>مستغلات - رستوران</option>
+                        <option>مستغلات - پرورش دام</option>
+                        <option>مستغلات - مرغ داری</option>
+                        <option>مستغلات - پرورش ماهی</option>
+                        <option>مستغلات - هتل</option>
+                        <option>مستغلات - هتل آپارتمان</option>
+                        <option>مستغلات - مسافرخانه</option>
+                    </select>
+              </div>
+              <div class="box-txt-left">
+                    <label id="txt" for="noe_vagozari">نوع معامله :</label>
+                     <select dir="rtl" name="request_list_noe_moamele">
+                        <option>فروش</option>
+                        <option>رهن و اجاره</option>
+                        <option>رهن</option>
+                        <option>اجاره</option>
+                        <option>پیش فروش</option>
+                        <option>اجاره موقت</option>
+                    </select>
+              </div>
+              
+              <div class="box-txt-right">
+              	<label id="txt" for="shahr" >قیمت :</label>
+              	<input type="range" name="request_list_gheymat" min="0" max="10" step="0.1" value="3">
+                <div class="list-c-m"></div>
+              </div>  
+              
+              <div class="box-txt-left">
+              	<label id="txt" for="shahr" >متراژ :</label>
+              	<input type="range" name="request_list_metraj" min="0" max="10" step="0.1" value="3">
+                <div class="list-c-m"></div>
+              </div> 
+              
+              <div class="box-txt-right">
+              	<label id="txt" for="shahr" >محدوده :</label>
+              	<input type="search" name="request_list_mahdode" placeholder="جستجو" results="0">
+              </div> 
+              
+               <div class="box-txt-left">
+              	<label id="txt" for="shahr" ><a href="#">جستجوی دقیق تر </a></label>
+              </div> 
+              
+              <div class="buttom cover">
+              	<button name="request_list_submit" type="submit" class="right">ثبت بعنوان درخواست ملک</button>
+              </div>  
+           
+           	<div class="show-result"></div> 
+          </form> 	
+        </div>   
+      </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>
