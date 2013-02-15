@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>نقشه</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="JScripts/jquery.js"></script>
+<script type="text/javascript" src="JScripts/jquery.zoomooz.min.js"></script>
+<script type="text/javascript" src="JScripts/map.js"></script>
+</head>
+
+<body>
+	<div class="map-setting">
+		<div class="close-map"></div>
+		<div class="map-options">
+			<div id="mp-options-container">
+				<div class="cover"><label class="mp-option">طرقبه<input type="checkbox" name="" value="value" /></label></div>
+				<div class="cover"><label class="mp-option">شاندیز<input type="checkbox" name="" value="value" /></label></div>
+				<div class="cover"><label class="mp-option">گلبهار<input type="checkbox" name="" value="value" /></label></div>
+				<div class="cover"><label class="mp-option">شهرک صنعتی<input type="checkbox" name="" value="value" /></label></div>
+				<div class="cover"><label class="mp-option">جاده قوچان<input type="checkbox" name="" value="value" /></label></div>
+				<div class="cover"><label class="mp-option">جاده خواجه ربیع<input type="checkbox" name="" value="value" /></label></div>
+				<div class="cover"><label class="mp-option">جاده کلات<input type="checkbox" name="" value="value" /></label></div>
+			</div>
+			<div class="cover">
+				<input type="text" name="new_section" />
+				<a href="#" id="add-new-section" class="btn">اضافه کردن ناحیه جدید</a>
+			</div>
+		</div>
+	</div>
+	<div class="map zoomContainer">
+		<script>
+			for (var i=0; i<2356; i++){
+				document.write('<div status="noselect" class="pixel" data-targetsize="0.6" data-closeclick="true"></div>');
+			}
+		</script>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$('div.pixel').zoomTarget({targetsize:0.1,debug:true});
+		});
+	</script>
+</body>
+</html>
