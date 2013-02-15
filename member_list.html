@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Untitled Document</title>
+ <!--<link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" language="JavaScript" src="JScripts/amin.js"></script>
+  <script type="text/javascript" language="JavaScript" src="JScripts/calendar.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/calendar.css">-->
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/form-style.css">
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="/resources/demos/external/jquery.bgiframe-2.1.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="JScripts/script.js"></script>
+    <script src="JScripts/melk_types.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<nav class="main-nav">
+			<menu>
+				<li><a href="index.html">صفحه اصلی</a></li>
+				<li><a href="add_estate_s1.html">ثبت ملک</a></li>
+				<li><a href="register.html">ثبت عضو</a></li>
+				<li><a href="invoice.html">صورتحساب</a></li>
+				<li><a href="outbox.html">صندوق خروجی</a></li>
+				<li><a href="member_list.html">لیست اعضا</a></li>
+				<li><a href="type_sms_filter.html">ارسال پیام</a></li>
+			</menu>
+		</nav>
+	    	<div class="header-search">
+		        	<form>
+				<input dir="rtl" id="search_input" type="text" placeholder="جستجو" autocomplete="off"/>
+		            </form>
+	        </div>
+    </div>
+    
+    <div class="content">
+
+        <div class="show">
+            <div id="wrap" class="typesms">
+				<div class="report">
+					<h3>لیست اعضا</h3>
+					<div class="report-file">
+						<div>
+							<form action="">
+								<div class="right">
+									<label id="txt">کد عضویت:</label>
+									<div class="box-txt cover">
+										<input type="text" />
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">نام خانوادگی:</label>
+									<div class="box-txt cover">
+										<input type="text" />
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">تلفن همراه:</label>
+									<div class="box-txt cover">
+										<input type="text" />
+									</div>
+								</div>
+								<div class="right">
+									<label id="txt">وضعیت:</label>
+									<div class="box-txt cover">
+										<select>
+											<option value="-1">نوع وضعیت را انتخاب کنید!----</option>
+											<option value="0">فعال</option>
+											<option value="1">غیر فعال</option>
+										</select>
+									</div>
+								</div>
+							            <div class="box-txt cover map-link-memberList">
+							                   <a href="map.html" class="map-link-estate">محدوده</a>
+							            </div>
+								<div class="right">
+									<input type="submit" class="left" value="فیلتر" />
+									<!--<input type="button" class="btn left" value="ارسال مجدد" />-->
+								</div>
+							</form>
+						</div>
+						<table>
+							<thead>
+								<tr>
+									<th></th>
+									<th>نام خانوادگی</th>
+									<th>نام املاک</th>
+									<th>موبایل</th>
+									<th>آدرس</th>
+									<th>باقیمانده شارژ</th>
+									<th class="th-btns"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>نام خانوادگی</td>
+									<td>نام املاک</td>
+									<td>موبایل</td>
+									<td>آدرس</td>
+									<td>باقیمانده شارژ</td>
+									<td><a class="btn" href="charge.html">شارژ</a><a class="btn" href="invoice.html">صورتحساب</a><a class="btn" href="profile.html">ویرایش</a><a class="btn" href="report_member.html">گزارش پیام های ارسالی</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>نام خانوادگی</td>
+									<td>نام املاک</td>
+									<td>موبایل</td>
+									<td>آدرس</td>
+									<td>باقیمانده شارژ</td>
+									<td><a class="btn" href="charge.html">شارژ</a><a class="btn" href="invoice.html">صورتحساب</a><a class="btn" href="profile.html">ویرایش</a><a class="btn" href="report_member.html">گزارش پیام های ارسالی</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>نام خانوادگی</td>
+									<td>نام املاک</td>
+									<td>موبایل</td>
+									<td>آدرس</td>
+									<td>باقیمانده شارژ</td>
+									<td><a class="btn" href="charge.html">شارژ</a><a class="btn" href="invoice.html">صورتحساب</a><a class="btn" href="profile.html">ویرایش</a><a class="btn" href="report_member.html">گزارش پیام های ارسالی</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>نام خانوادگی</td>
+									<td>نام املاک</td>
+									<td>موبایل</td>
+									<td>آدرس</td>
+									<td>باقیمانده شارژ</td>
+									<td><a class="btn" href="charge.html">شارژ</a><a class="btn" href="invoice.html">صورتحساب</a><a class="btn" href="profile.html">ویرایش</a><a class="btn" href="report_member.html">گزارش پیام های ارسالی</a></td>
+								</tr>
+								<tr>
+									<td><input type="checkbox"></td>
+									<td>نام خانوادگی</td>
+									<td>نام املاک</td>
+									<td>موبایل</td>
+									<td>آدرس</td>
+									<td>باقیمانده شارژ</td>
+									<td><a class="btn" href="charge.html">شارژ</a><a class="btn" href="invoice.html">صورتحساب</a><a class="btn" href="profile.html">ویرایش</a><a class="btn" href="report_member.html">گزارش پیام های ارسالی</a></td>
+								</tr>
+								<tr>
+									<td colspan="7" class="tar"><a class="btn" href="type_sms_filter.html">ارسال پیام</a></td>
+								</tr>
+							<tbody>
+						<table>
+					</div>
+				</div>
+            </div>    
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</body>
+</html>
